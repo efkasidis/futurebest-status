@@ -1,312 +1,322 @@
 <!doctype html>
-<html lang="th">
+<html lang="th" data-theme="sky">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FutureBest สถานะโพสต์</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#E8EEFB">
 <meta name="robots" content="noindex">
+<title>FutureBest สถานะโพสต์</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Mali:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --night:#22122E;      /* พื้นหลัง ม่วงกลางคืน */
-  --dusk:#301C3F;       /* พื้นผิวยกขึ้น */
-  --veil:#46305A;       /* เส้นแบ่ง */
-  --moon:#F7F1FF;       /* ตัวหนังสือหลัก */
-  --mist:#B8A6CC;       /* ตัวหนังสือรอง / รอเวลา */
-  --gold:#EFC66A;       /* โพสต์แล้ว (สีเดียวกับตัวอักษรทองบนการ์ด) */
-  --rose:#FF8A9E;       /* ไม่สำเร็จ */
-  --ash:#7A6A8A;        /* ไม่ได้รัน / ข้าม */
-  --sky:#8FD3FF;        /* กำลังทำ */
+:root,[data-theme="sky"]{
+  --bg1:#EEF2FB; --bg2:#DCE4F7; --blob1:#A9C4FF; --blob2:#D7C6FF;
+  --glass:rgba(255,255,255,.62); --glass-2:rgba(255,255,255,.82); --edge:rgba(255,255,255,.9); --line:rgba(40,60,120,.10);
+  --ink:#16203A; --ink-2:#5B6680; --ink-3:#8C95AB;
+  --accent:#3D6BF5; --accent-2:#8B5CF6; --accent-soft:rgba(61,107,245,.12);
+  --ok:#17A673; --ok-soft:rgba(23,166,115,.13); --bad:#E5484D; --bad-soft:rgba(229,72,77,.12);
+  --run:#3D6BF5; --mute:#9AA3B8; --shadow:0 10px 30px -12px rgba(40,60,120,.25);
+}
+[data-theme="lavender"]{
+  --bg1:#F5F0FC; --bg2:#E7DCF8; --blob1:#D9B8FF; --blob2:#FFC2DE;
+  --ink:#24163A; --ink-2:#6A5B82; --ink-3:#9A8DB0; --line:rgba(80,40,120,.10);
+  --accent:#7C4DFF; --accent-2:#E0559F; --accent-soft:rgba(124,77,255,.12); --run:#7C4DFF;
+  --shadow:0 10px 30px -12px rgba(90,50,140,.28);
+}
+[data-theme="mint"]{
+  --bg1:#ECF7F4; --bg2:#D8EEE9; --blob1:#9FE3CF; --blob2:#B9D7FF;
+  --ink:#10302A; --ink-2:#4E6F68; --ink-3:#86A39C; --line:rgba(20,90,70,.10);
+  --accent:#0E9F84; --accent-2:#3B82F6; --accent-soft:rgba(14,159,132,.12); --run:#0E9F84;
+  --shadow:0 10px 30px -12px rgba(20,90,70,.25);
+}
+[data-theme="night"]{
+  --bg1:#12142B; --bg2:#1C1A3A; --blob1:#2C3F8F; --blob2:#4B2A7A;
+  --glass:rgba(255,255,255,.07); --glass-2:rgba(255,255,255,.11); --edge:rgba(255,255,255,.14); --line:rgba(255,255,255,.08);
+  --ink:#EEF0FF; --ink-2:#AEB4D6; --ink-3:#7C83A8;
+  --accent:#7AA2FF; --accent-2:#B38CFF; --accent-soft:rgba(122,162,255,.16); --run:#7AA2FF;
+  --ok:#3DD39A; --ok-soft:rgba(61,211,154,.16); --bad:#FF6B7A; --bad-soft:rgba(255,107,122,.16); --mute:#6E759A;
+  --shadow:0 10px 30px -12px rgba(0,0,0,.6);
 }
 *{box-sizing:border-box}
-html{background:var(--night)}
-body{margin:0;background:var(--night);color:var(--moon);font:400 16px/1.6 "IBM Plex Sans Thai",system-ui,sans-serif;
-  background-image:radial-gradient(1px 1px at 12% 18%,#fff8 50%,transparent),radial-gradient(1px 1px at 78% 9%,#fff6 50%,transparent),
-  radial-gradient(1.5px 1.5px at 64% 31%,#fff5 50%,transparent),radial-gradient(1px 1px at 30% 44%,#fff4 50%,transparent),
-  radial-gradient(1px 1px at 90% 52%,#fff5 50%,transparent);background-attachment:fixed}
-main{max-width:640px;margin:0 auto;padding:28px 16px 64px}
-a{color:var(--gold)}
-a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
-h1{font:700 30px/1.15 Mali,sans-serif;margin:0;color:var(--gold);letter-spacing:.01em}
-h2{font:600 19px/1.3 "IBM Plex Sans Thai",sans-serif;margin:40px 0 12px;color:var(--moon)}
-.sub{color:var(--mist);margin:4px 0 0;font-size:14px}
+html{background:var(--bg1)}
+body{margin:0;min-height:100vh;color:var(--ink);font:400 15px/1.55 "IBM Plex Sans Thai",system-ui,sans-serif;
+  background:radial-gradient(60% 40% at 10% 0%,var(--blob1) 0%,transparent 70%),radial-gradient(55% 35% at 100% 20%,var(--blob2) 0%,transparent 70%),linear-gradient(180deg,var(--bg1),var(--bg2));
+  background-attachment:fixed;-webkit-font-smoothing:antialiased}
+main{max-width:520px;margin:0 auto;padding:max(16px,env(safe-area-inset-top)) 16px 48px}
+a{color:var(--accent);text-decoration:none;font-weight:500}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
+.card{background:var(--glass);border:1px solid var(--edge);border-radius:22px;box-shadow:var(--shadow);
+  -webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%)}
+h2{font-size:15px;font-weight:600;margin:0;color:var(--ink)}
+.sec{margin-top:14px;padding:16px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.sec-head small{color:var(--ink-3);font-size:12.5px}
 
-/* ---- หน้าปัด 24 ชั่วโมง ---- */
-.dial-wrap{position:relative;margin:26px auto 6px;width:min(340px,86vw);aspect-ratio:1}
-.dial-wrap svg{width:100%;height:100%;display:block;overflow:visible}
-.center{position:absolute;inset:22%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
-.center .k{color:var(--mist);font-size:13px}
-.center .big{font:700 34px/1.1 Mali,sans-serif;color:var(--moon);margin:2px 0}
-.center .what{font-size:15px;color:var(--gold);font-weight:500}
-.center .eta{font-size:13px;color:var(--mist);margin-top:2px}
-.verdict{text-align:center;font-size:17px;margin:6px 0 0}
-.verdict b{color:var(--gold);font-weight:600}
-.verdict.bad b{color:var(--rose)}
-.hint{text-align:center;color:var(--mist);font-size:14px;margin:6px auto 0;max-width:46ch}
+/* หัวหน้า */
+.top{display:flex;align-items:center;gap:10px;padding:6px 2px 12px}
+.logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#fff;font-weight:700;font-size:18px;box-shadow:var(--shadow)}
+.brand{flex:1;min-width:0}
+.brand b{display:block;font-size:17px;line-height:1.2}
+.brand span{font-size:12.5px;color:var(--ink-2)}
+.themes{display:flex;gap:6px;padding:5px;border-radius:999px}
+.themes button{width:22px;height:22px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0}
+.themes button[aria-pressed="true"]{border-color:var(--ink)}
+.t-sky{background:linear-gradient(135deg,#3D6BF5,#8B5CF6)} .t-lavender{background:linear-gradient(135deg,#7C4DFF,#E0559F)}
+.t-mint{background:linear-gradient(135deg,#0E9F84,#3B82F6)} .t-night{background:linear-gradient(135deg,#12142B,#4B2A7A)}
 
-/* ---- รอบของวันนี้ ---- */
-.slots{list-style:none;margin:0;padding:0;border-top:1px solid var(--veil)}
-.slot{display:grid;grid-template-columns:62px 1fr auto;gap:4px 14px;padding:14px 2px;border-bottom:1px solid var(--veil);align-items:start}
-.slot time{font:700 20px/1.2 Mali,sans-serif;color:var(--moon)}
-.slot .theme{font-weight:600}
-.slot .meta{grid-column:2/4;color:var(--mist);font-size:13.5px}
-.slot .meta a{margin-left:4px}
-.pill{font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap;border:1px solid currentColor}
-.s-posted{color:var(--gold)} .s-failed,.s-post_unconfirmed{color:var(--rose)} .s-missed,.s-skipped{color:var(--ash)}
-.s-running{color:var(--sky)} .s-pending{color:var(--mist);border-style:dashed}
+/* การ์ดหลัก */
+.hero{padding:18px;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center}
+.ring{width:96px;height:96px;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .v{position:absolute;inset:0;display:grid;place-items:center;text-align:center;line-height:1.1}
+.ring .v b{font-size:24px;font-weight:700}
+.ring .v span{display:block;font-size:11.5px;color:var(--ink-2);font-weight:500}
+.hero .k{font-size:13px;color:var(--ink-2)}
+.hero .t{font-size:24px;font-weight:700;line-height:1.2;margin:2px 0}
+.hero .s{font-size:13.5px;color:var(--ink-2)}
+.bar{height:6px;border-radius:9px;background:var(--line);margin-top:10px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,var(--accent),var(--accent-2));transition:width .6s}
+.alert{margin-top:12px;padding:12px 14px;border-radius:16px;background:var(--bad-soft);color:var(--bad);font-size:13.5px;font-weight:500}
+.alert:empty{display:none}
 
-/* ---- สุขภาพระบบ ---- */
-.health{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--veil);border-radius:14px;overflow:hidden}
-.health>div{padding:14px 12px;background:var(--dusk)}
-.health>div+div{border-left:1px solid var(--veil)}
-.health .n{font:700 24px/1.1 Mali,sans-serif;color:var(--moon)}
-.health .n.warn{color:var(--rose)}
-.health .l{font-size:13px;color:var(--mist);margin-top:4px}
+/* รอบวันนี้ */
+.slots{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.slot{padding:12px;border-radius:16px;background:var(--glass-2);border:1px solid var(--edge)}
+.slot .tm{font-size:19px;font-weight:700;line-height:1.2}
+.slot .th{font-size:13px;color:var(--ink-2);margin-bottom:8px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px}
+.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.c-posted{color:var(--ok);background:var(--ok-soft)}
+.c-failed,.c-post_unconfirmed,.c-fail{color:var(--bad);background:var(--bad-soft)}
+.c-running{color:var(--run);background:var(--accent-soft)}
+.c-pending,.c-none,.c-skip{color:var(--ink-3);background:var(--line)}
+.c-missed,.c-skipped{color:var(--mute);background:var(--line)}
+.slot .mt{font-size:12px;color:var(--ink-3);margin-top:6px;line-height:1.45}
 
-/* ---- 7 วัน ---- */
-.week{width:100%;border-collapse:collapse;font-size:14px}
-.week th{font-weight:500;color:var(--mist);text-align:center;padding:6px 2px}
-.week th:first-child,.week td:first-child{text-align:left;padding-left:2px;white-space:nowrap}
-.week td{text-align:center;padding:7px 2px;border-top:1px solid var(--veil)}
-.dot{display:inline-block;width:14px;height:14px;border-radius:50%;vertical-align:middle;border:2px solid currentColor}
-.dot.s-posted{background:var(--gold)} .dot.s-failed{background:var(--rose)} .dot.s-post_unconfirmed{background:transparent}
-.dot.s-running{background:var(--sky)} .dot.s-skipped{background:var(--ash)} .dot.s-missed{background:transparent}
-.dot.s-pending{opacity:.45;border-style:dashed}
-.dot.s-none{opacity:.18;border-width:1px}
-.legend{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--mist);font-size:13px;margin-top:10px}
-.legend span{display:inline-flex;align-items:center;gap:6px}
-.legend .dot{width:11px;height:11px}
+/* ตัวเลข */
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.kpi{padding:12px}
+.kpi b{display:block;font-size:20px;font-weight:700;line-height:1.2}
+.kpi b.warn{color:var(--bad)}
+.kpi span{font-size:12px;color:var(--ink-2)}
 
-/* ---- ประวัติ ---- */
-details{border:1px solid var(--veil);border-radius:14px;background:var(--dusk);margin-top:10px}
-summary{cursor:pointer;padding:12px 14px;font-weight:500}
-.log{list-style:none;margin:0;padding:0 14px 8px}
-.log li{padding:10px 0;border-top:1px solid var(--veil);font-size:14px;display:flex;justify-content:space-between;gap:12px}
-.log .d{color:var(--mist)}
-footer{margin-top:40px;color:var(--ash);font-size:13px;text-align:center}
-.empty{color:var(--mist);text-align:center;padding:30px 0}
-@media (prefers-reduced-motion:no-preference){
-  .hand{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
-  .node.s-running circle{animation:pulse 1.8s ease-in-out infinite}
-}
-@keyframes pulse{50%{opacity:.35}}
-/* ---- ขั้นตอนการทำงาน ---- */
-.flow{list-style:none;margin:0;padding:0;position:relative}
-.flow li{display:grid;grid-template-columns:28px 1fr;gap:0 12px;padding:10px 0;position:relative}
-.flow li::before{content:"";position:absolute;left:13px;top:38px;bottom:-10px;width:2px;background:var(--veil)}
-.flow li:last-child::before{display:none}
-.flow .ic{width:28px;height:28px;border-radius:50%;border:2px solid var(--ash);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--night);background:var(--night);z-index:1}
-.flow .nm{font-weight:600}
-.flow .ds{grid-column:2;color:var(--mist);font-size:13.5px}
-.flow .tm{grid-column:2;font-size:13.5px;color:var(--mist)}
-.flow .tm:empty{display:none}
-.flow .tm b{color:var(--moon);font-weight:600}
-.flow li.done .ic{border-color:var(--gold);background:var(--gold)}
-.flow li.done::before{background:var(--gold);opacity:.5}
-.flow li.running .ic{border-color:var(--sky)}
-.flow li.running .ic::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--sky)}
-.flow li.running .nm{color:var(--sky)}
-.flow li.fail .ic{border-color:var(--rose);background:var(--rose)}
-.flow li.fail .nm{color:var(--rose)}
-.flow li.skip .ic{border-style:dashed}
-.flow li.wait .nm{color:var(--mist)}
-.runline{color:var(--mist);font-size:14px;margin:-4px 0 10px}
-.runline b{color:var(--moon);font-weight:600}
-@media (prefers-reduced-motion:no-preference){.flow li.running .ic::after{animation:pulse 1.4s ease-in-out infinite}}
+/* ขั้นตอน */
+.steps{list-style:none;margin:0;padding:0}
+.steps li{display:grid;grid-template-columns:26px 1fr auto;gap:0 10px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+.steps li:first-child{border-top:0}
+.dot{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;background:var(--line)}
+.done .dot{background:var(--ok)} .fail .dot{background:var(--bad)} .skip .dot{background:transparent;border:1.5px dashed var(--ink-3)}
+.running .dot{background:var(--run);box-shadow:0 0 0 5px var(--accent-soft)}
+.wait .dot{background:transparent;border:1.5px solid var(--line)}
+.steps .nm{font-size:14px;font-weight:500}
+.wait .nm{color:var(--ink-3)}
+.steps .tm{font-size:12.5px;color:var(--ink-2);text-align:right;white-space:nowrap}
+.steps .tm b{color:var(--ink);font-weight:600}
+.running .tm b{color:var(--run)}
 
+/* 7 วัน */
+.week{width:100%;border-collapse:collapse;font-size:13px}
+.week th{font-weight:500;color:var(--ink-3);font-size:12px;padding:0 0 6px;text-align:center}
+.week th:first-child,.week td:first-child{text-align:left}
+.week td{padding:7px 0;border-top:1px solid var(--line);text-align:center;color:var(--ink-2)}
+.d{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:middle}
+.d.posted{background:var(--ok)} .d.failed,.d.post_unconfirmed{background:var(--bad)} .d.running{background:var(--run)}
+.d.missed{border:2px solid var(--mute)} .d.skipped{background:var(--mute)} .d.pending{border:1.5px dashed var(--ink-3)} .d.none{background:var(--line)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:10px;font-size:12px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.legend .d{width:10px;height:10px}
+
+details{margin-top:14px;padding:4px 16px}
+summary{cursor:pointer;padding:10px 0;font-weight:600;font-size:15px;list-style:none;display:flex;justify-content:space-between}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"แสดง";color:var(--accent);font-weight:500;font-size:13px}
+details[open] summary::after{content:"ซ่อน"}
+.log{list-style:none;margin:0 0 8px;padding:0}
+.log li{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:13px}
+.log .w{color:var(--ink-3);white-space:nowrap}
+footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
+@media (prefers-reduced-motion:no-preference){.running .dot{animation:pulse 1.6s ease-in-out infinite}}
+@keyframes pulse{50%{box-shadow:0 0 0 9px transparent}}
+@media (max-width:360px){.kpi b{font-size:17px}.hero{grid-template-columns:80px 1fr}.ring{width:80px;height:80px}}
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <h1>FutureBest</h1>
-    <p class="sub">สถานะโพสต์อัตโนมัติของ @futurebest88 อัปเดตหลังจบทุกรอบ</p>
+  <header class="top">
+    <div class="logo" aria-hidden="true">F</div>
+    <div class="brand"><b>FutureBest</b><span>@futurebest88 โพสต์อัตโนมัติ</span></div>
+    <div class="themes card" role="group" aria-label="เลือกธีมสี">
+      <button class="t-sky" data-t="sky" aria-label="ธีมฟ้า"></button>
+      <button class="t-lavender" data-t="lavender" aria-label="ธีมลาเวนเดอร์"></button>
+      <button class="t-mint" data-t="mint" aria-label="ธีมมิ้นต์"></button>
+      <button class="t-night" data-t="night" aria-label="ธีมกลางคืน"></button>
+    </div>
   </header>
 
-  <section aria-label="วันนี้">
-    <div class="dial-wrap">
-      <svg id="dial" viewBox="-170 -170 340 340" role="img" aria-label="หน้าปัดเวลา 24 ชั่วโมง แสดงรอบโพสต์ของวันนี้"></svg>
-      <div class="center" id="center"></div>
-    </div>
-    <p class="verdict" id="verdict"></p>
-    <p class="hint" id="hint"></p>
+  <section class="card hero" aria-live="polite">
+    <div class="ring" id="ring"></div>
+    <div id="heroText"></div>
+  </section>
+  <div class="alert" id="alert" role="status"></div>
+
+  <section class="card sec">
+    <div class="sec-head"><h2>รอบของวันนี้</h2><small id="todayDate"></small></div>
+    <div class="slots" id="slots"></div>
   </section>
 
-  <h2>ขั้นตอนการทำงาน</h2>
-  <p class="runline" id="runline">กำลังโหลดสถานะ</p>
-  <ol class="flow" id="flow"></ol>
+  <div class="kpis" id="kpis"></div>
 
-  <h2>รอบของวันนี้</h2>
-  <ul class="slots" id="slots"></ul>
+  <section class="card sec">
+    <div class="sec-head"><h2>ขั้นตอนการทำงาน</h2><small id="flowNote"></small></div>
+    <ol class="steps" id="steps"></ol>
+  </section>
 
-  <h2>สุขภาพระบบ</h2>
-  <div class="health" id="health"></div>
+  <section class="card sec">
+    <div class="sec-head"><h2>7 วันล่าสุด</h2></div>
+    <table class="week" id="week"></table>
+    <div class="legend">
+      <span><i class="d posted"></i>โพสต์แล้ว</span><span><i class="d failed"></i>ไม่สำเร็จ</span>
+      <span><i class="d missed"></i>ไม่ได้รัน</span><span><i class="d skipped"></i>ข้าม (เลยเวลา)</span>
+    </div>
+  </section>
 
-  <h2>7 วันล่าสุด</h2>
-  <table class="week" id="week"></table>
-  <div class="legend">
-    <span><i class="dot s-posted"></i>โพสต์แล้ว</span>
-    <span><i class="dot s-failed"></i>ไม่สำเร็จ</span>
-    <span><i class="dot s-missed"></i>ไม่ได้รัน</span>
-    <span><i class="dot s-skipped"></i>ข้ามเพราะเลยเวลา</span>
-    <span><i class="dot s-running"></i>กำลังทำ</span>
-  </div>
-
-  <h2>รันล่าสุด</h2>
-  <details><summary>ดูรายการรันทั้งหมด รวมรอบทดสอบ</summary><ul class="log" id="log"></ul></details>
-
+  <details class="card"><summary>รันทั้งหมด รวมรอบทดสอบ</summary><ul class="log" id="log"></ul></details>
   <footer id="foot"></footer>
 </main>
 <script>
 const SLOTS=[{h:7,m:0,theme:'การงาน'},{h:9,m:30,theme:'โชคลาภ',since:'2026-11-02'},{h:12,m:0,theme:'การเงิน'},{h:18,m:0,theme:'ความรัก'}];
-let FIRST_DAY='2026-11-02'; // วันเริ่มโพสต์อัตโนมัติ ก่อนหน้านั้นไม่นับว่า "ไม่ได้รัน"
-const LABEL={none:'ยังไม่เริ่มใช้',posted:'โพสต์แล้ว',failed:'ไม่สำเร็จ',post_unconfirmed:'ไม่แน่ใจว่าขึ้นไหม',skipped:'ข้าม (เลยเวลา)',missed:'ไม่ได้รัน',running:'กำลังทำ',pending:'รอเวลา',preview:'ทดสอบ'};
+const FIRST_DAY='2026-11-02';
+const LABEL={none:'ยังไม่เริ่ม',posted:'โพสต์แล้ว',failed:'ไม่สำเร็จ',post_unconfirmed:'ไม่แน่ใจ',skipped:'ข้าม',missed:'ไม่ได้รัน',running:'กำลังทำ',pending:'รอเวลา',preview:'ทดสอบ'};
 const SIGNS=['มังกร','กุมภ์','มีน','เมษ','พฤษภ','เมถุน','กรกฎ','สิงห์','กันย์','ตุลย์','พิจิก','ธนู'];
 const DAYS=['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'];
 const MONTHS=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
-const RUNNING_MIN=60; // หลังถึงเวลา ให้เวลาเครื่องทำงาน 1 ชั่วโมงก่อนนับว่า "ไม่ได้รัน"
-
-function bkkNow(){const n=new Date();return new Date(n.getTime()+(n.getTimezoneOffset()+420)*60000)}
+const STEPS=[['trigger','รับสัญญาณจาก GitHub'],['check','ตรวจความพร้อม'],['content','Gemini เขียนคำทำนาย'],['cards','วาดการ์ด 13 ใบ'],
+  ['voice','พากย์และตรวจเสียง'],['video','ประกอบคลิป'],['post','โพสต์ TikTok'],['dashboard','อัปเดตแดชบอร์ด']];
+const RUNNING_MIN=60;
 const pad=n=>String(n).padStart(2,'0');
 const ymd=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $=id=>document.getElementById(id);
+function bkkNow(){const n=new Date();return new Date(n.getTime()+(n.getTimezoneOffset()+420)*60000)}
+function bkk(t){const d=new Date(t);return new Date(d.getTime()+(d.getTimezoneOffset()+420)*60000)}
+const hm=t=>{const d=bkk(t);return `${pad(d.getHours())}:${pad(d.getMinutes())}`};
+const dm=t=>{const d=bkk(t);return `${d.getDate()} ${MONTHS[d.getMonth()]} ${hm(t)}`};
+function dur(a,b){const s=Math.max(0,Math.round((new Date(b)-new Date(a))/1000)),m=Math.floor(s/60),h=Math.floor(m/60);
+  return h?`${h} ชม. ${m%60} น.`:m?`${m} น. ${pad(s%60)} วิ`:`${s} วิ`}
+function left(ms){const m=Math.max(0,Math.round(ms/60000)),h=Math.floor(m/60);return h?`อีก ${h} ชม. ${m%60} นาที`:`อีก ${m} นาที`}
+
+/* ธีม: จำไว้ในเครื่องนี้ (ถ้าเบราว์เซอร์อนุญาต) */
+function setTheme(t){document.documentElement.dataset.theme=t;
+  document.querySelectorAll('.themes button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===t));
+  document.querySelector('meta[name=theme-color]').content=getComputedStyle(document.documentElement).getPropertyValue('--bg1').trim();
+  try{localStorage.setItem('fb-theme',t)}catch(e){}}
+document.querySelectorAll('.themes button').forEach(b=>b.onclick=()=>setTheme(b.dataset.t));
+let saved='sky';try{saved=localStorage.getItem('fb-theme')||'sky'}catch(e){}
+setTheme(saved);
 
 function slotStatus(runs,date,s,now){
   const key=`${ymd(date)}-${pad(s.h)}`;
   const posts=runs.filter(r=>r.kind==='post'&&r.slot===key);
   const last=posts[posts.length-1];
   if(last)return {st:last.result,run:last};
-  if(ymd(date)<(s.since&&s.since>FIRST_DAY?s.since:FIRST_DAY))return {st:'none'};
+  if(ymd(date)<(s.since||FIRST_DAY))return {st:'none'};
   const due=new Date(date);due.setHours(s.h,s.m,0,0);
   if(now<due)return {st:'pending'};
   if(now-due<RUNNING_MIN*60000)return {st:'running'};
   return {st:'missed'};
 }
-function fmtLeft(ms){const m=Math.round(ms/60000),h=Math.floor(m/60);return h?`อีก ${h} ชม. ${m%60} นาที`:`อีก ${m} นาที`}
 
-function drawDial(today,now){
-  const svg=document.getElementById('dial');const R=140;
-  const pt=(hr,r)=>{const a=(hr/24)*2*Math.PI-Math.PI/2;return [Math.cos(a)*r,Math.sin(a)*r]};
-  let g=`<circle r="${R}" fill="none" stroke="var(--veil)" stroke-width="2"/>`;
-  // ช่วงกลางวัน 06-24 ที่มีรอบโพสต์
-  const [x1,y1]=pt(6,R),[x2,y2]=pt(23.99,R);
-  g+=`<path d="M${x1} ${y1} A${R} ${R} 0 1 1 ${x2} ${y2}" fill="none" stroke="var(--dusk)" stroke-width="10" stroke-linecap="round"/>`;
-  for(let h=0;h<24;h++){const [a,b]=pt(h,R-14),[c,d]=pt(h,R-(h%6?20:26));
-    g+=`<line x1="${a}" y1="${b}" x2="${c}" y2="${d}" stroke="var(--veil)" stroke-width="${h%6?1:2}"/>`;
-    if(h%6===0){const [tx,ty]=pt(h,R-42);g+=`<text x="${tx}" y="${ty+5}" text-anchor="middle" fill="var(--ash)" font-size="13">${pad(h)}</text>`}}
-  today.forEach(t=>{const hr=t.h+t.m/60;const [x,y]=pt(hr,R);const [lx,ly]=pt(hr,R+30);
-    g+=`<g class="node s-${t.st}"><circle cx="${x}" cy="${y}" r="11" fill="var(--night)" stroke="currentColor" stroke-width="3" ${t.st==='pending'?'stroke-dasharray="3 3"':''}/>`
-      +(['posted','failed','running','skipped'].includes(t.st)?`<circle cx="${x}" cy="${y}" r="6" fill="currentColor"/>`:'')
-      +`<text x="${lx}" y="${ly+4}" text-anchor="middle" fill="currentColor" font-size="12" font-weight="600">${pad(t.h)}:${pad(t.m)}</text></g>`});
-  const hr=now.getHours()+now.getMinutes()/60;
-  const [mx,my]=pt(hr,R-30),[ax,ay]=pt(hr,R-20);
-  g+=`<g class="hand"><line x1="${ax}" y1="${ay}" x2="${mx}" y2="${my}" stroke="var(--gold)" stroke-width="2"/><circle cx="${mx}" cy="${my}" r="4.5" fill="var(--gold)"><title>ตอนนี้</title></circle></g>`;
-  svg.innerHTML=g;
+let runs=[],live=null,etag=null;
+function ring(done,total){
+  const r=40,c=2*Math.PI*r,p=total?done/total:0;
+  $('ring').innerHTML=`<svg viewBox="0 0 96 96" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--accent-2)"/></linearGradient></defs>
+    <circle cx="48" cy="48" r="${r}" fill="none" stroke="var(--line)" stroke-width="9"/>
+    <circle cx="48" cy="48" r="${r}" fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="round" stroke-dasharray="${c*p} ${c}"/></svg>
+    <div class="v"><div><b>${done}/${total}</b><span>โพสต์วันนี้</span></div></div>`;
 }
 
-function render(runs){
-  const now=bkkNow();const today=new Date(now);today.setHours(0,0,0,0);
+function render(){
+  const now=bkkNow(),today=new Date(now);today.setHours(0,0,0,0);
   const t=SLOTS.map(s=>({...s,...slotStatus(runs,today,s,now)}));
-  drawDial(t,now);
-  // กลางหน้าปัด: รอบถัดไป
-  let next=t.find(x=>x.st==='pending'),nextDay=today;
-  if(!next){next=SLOTS[0];nextDay=new Date(today);nextDay.setDate(today.getDate()+1)}
-  const due=new Date(nextDay);due.setHours(next.h,next.m,0,0);
-  const running=t.find(x=>x.st==='running');
-  document.getElementById('center').innerHTML=running
-    ?`<div class="k">กำลังทำรอบ</div><div class="big">${pad(running.h)}:${pad(running.m)}</div><div class="what">ดวง${running.theme}</div><div class="eta">ปกติใช้ 10-20 นาที</div>`
-    :`<div class="k">รอบต่อไป</div><div class="big">${pad(next.h)}:${pad(next.m)}</div><div class="what">ดวง${next.theme}</div><div class="eta">${fmtLeft(due-now)}</div>`;
-  const done=t.filter(x=>x.st==='posted').length,passed=t.filter(x=>!['pending','running'].includes(x.st)).length;
-  const bad=t.filter(x=>['failed','post_unconfirmed','missed'].includes(x.st));
-  const v=document.getElementById('verdict');
-  v.className='verdict'+(bad.length?' bad':'');
-  v.innerHTML=bad.length?`วันนี้มี <b>${bad.length} รอบ</b> ที่ต้องดู`:`วันนี้โพสต์แล้ว <b>${done} จาก 4 รอบ</b>`+(passed>done?` (ข้าม ${passed-done})`:'');
-  const h=document.getElementById('hint');
-  h.textContent=bad.some(x=>x.st==='missed')?'รอบที่ไม่ได้รัน: เช็กว่าคอมเปิดอยู่ เสียบปลั๊ก และหน้าต่างตัวรับงานขึ้น Listening for Jobs'
-    :bad.length?'กดลิงก์ "ดู log" ของรอบนั้นเพื่อดูสาเหตุ':'';
+  const active=live&&live.run&&live.run.started&&!live.run.finished;
+  const counted=t.filter(x=>x.st!=='none');
+  ring(t.filter(x=>x.st==='posted').length,counted.length);
 
-  document.getElementById('slots').innerHTML=t.map(x=>{
-    const r=x.run||{};const meta=[];
-    if(r.voice_avg)meta.push(`เสียงตรงบท ${Math.round(r.voice_avg*100)}%`);
-    if(r.sound)meta.push(r.sound.startsWith('failed')?'ใส่เพลง TikTok ไม่สำเร็จ':`เพลง: ${esc(r.sound)}`);
-    if(r.best&&r.best.length)meta.push('ห้าดาว: '+r.best.map(i=>SIGNS[i]).join(' '));
-    return `<li class="slot"><time>${pad(x.h)}:${pad(x.m)}</time><span class="theme">ดวง${x.theme}</span>
-      <span class="pill s-${x.st}">${LABEL[x.st]||x.st}</span>
-      ${meta.length||r.run_url?`<span class="meta">${meta.join(' / ')}${r.run_url?` <a href="${esc(r.run_url)}" target="_blank" rel="noopener">ดู log</a>`:''}</span>`:''}</li>`}).join('');
+  // ข้อความหลัก: กำลังทำ > รอบต่อไป
+  const H=$('heroText');
+  if(active){
+    const st=live.steps||{},idx=STEPS.findIndex(([id])=>st[id]&&st[id].status==='running');
+    const doneN=STEPS.filter(([id])=>st[id]&&st[id].end).length;
+    const cur=idx>=0?STEPS[idx][1]:'กำลังเตรียม';
+    const sl=live.run.slot||'';
+    H.innerHTML=`<div class="k">กำลังทำรอบ ${sl?sl.slice(-2)+':'+(sl.endsWith('-09')?'30':'00'):''} ${live.run.theme?'ดวง'+esc(live.run.theme):''}${live.run.kind==='test'?' (ทดสอบ)':''}</div>
+      <div class="t">${esc(cur)}</div><div class="s">ขั้นที่ ${Math.min(doneN+1,8)} จาก 8 / ผ่านไป ${dur(live.run.started,new Date())}</div>
+      <div class="bar"><i style="width:${Math.round(doneN/8*100)}%"></i></div>`;
+  }else{
+    let next=t.find(x=>x.st==='pending'),day=new Date(today);
+    if(!next){next=SLOTS[0];day.setDate(day.getDate()+1)}
+    const due=new Date(day);due.setHours(next.h,next.m,0,0);
+    H.innerHTML=`<div class="k">รอบต่อไป</div><div class="t">${pad(next.h)}:${pad(next.m)} ดวง${next.theme}</div><div class="s">${left(due-now)}</div>`;
+  }
+  const missed=t.filter(x=>x.st==='missed'),bad=t.filter(x=>['failed','post_unconfirmed'].includes(x.st));
+  $('alert').textContent=missed.length?`รอบ ${missed.map(x=>pad(x.h)+':'+pad(x.m)).join(', ')} ไม่ได้รัน: เช็กว่าคอมเปิด เสียบปลั๊ก และตัวรับงานขึ้น Listening for Jobs`
+    :bad.length?`รอบ ${bad.map(x=>pad(x.h)+':'+pad(x.m)).join(', ')} ไม่สำเร็จ: เปิด log ของรอบนั้นดูสาเหตุ`:'';
 
-  // สุขภาพ
-  const last=[...runs].reverse();
-  const login=last.find(r=>r.login_days!=null);
-  const week=[];for(let i=0;i<7;i++){const d=new Date(today);d.setDate(today.getDate()-i);week.push(d)}
-  let ok=0,total=0;week.forEach(d=>SLOTS.forEach(s=>{const st=slotStatus(runs,d,s,now).st;if(['pending','running','none'].includes(st))return;total++;if(st==='posted')ok++}));
-  const vs=last.filter(r=>r.voice_avg).slice(0,12).map(r=>r.voice_avg);
-  const ld=login?login.login_days:null;
-  document.getElementById('health').innerHTML=
-    `<div><div class="n ${ld!=null&&ld<14?'warn':''}">${ld==null?'-':ld+' วัน'}</div><div class="l">ล็อกอิน TikTok ใช้ได้อีก</div></div>`+
-    `<div><div class="n">${total?ok+'/'+total:'-'}</div><div class="l">โพสต์สำเร็จ 7 วัน</div></div>`+
-    `<div><div class="n">${vs.length?Math.round(vs.reduce((a,b)=>a+b)/vs.length*100)+'%':'-'}</div><div class="l">เสียงตรงบทเฉลี่ย</div></div>`;
+  $('todayDate').textContent=`${DAYS[today.getDay()]} ${today.getDate()} ${MONTHS[today.getMonth()]}`;
+  $('slots').innerHTML=t.map(x=>{const r=x.run||{},mt=[];
+    if(r.voice_avg)mt.push(`เสียงตรงบท ${Math.round(r.voice_avg*100)}%`);
+    if(r.sound)mt.push(r.sound.startsWith('failed')?'ใส่เพลงไม่สำเร็จ':'เพลง '+esc(r.sound.split(' / ')[0]));
+    if(r.run_url)mt.push(`<a href="${esc(r.run_url)}" target="_blank" rel="noopener">ดู log</a>`);
+    return `<div class="slot"><div class="tm">${pad(x.h)}:${pad(x.m)}</div><div class="th">ดวง${x.theme}</div>
+      <span class="chip c-${x.st}">${LABEL[x.st]||x.st}</span>${mt.length?`<div class="mt">${mt.join('<br>')}</div>`:''}</div>`}).join('');
 
-  document.getElementById('week').innerHTML=`<thead><tr><th>วัน</th>${SLOTS.map(s=>`<th>${pad(s.h)}:${pad(s.m)}<br><span style="font-size:12px">${s.theme}</span></th>`).join('')}</tr></thead><tbody>`+
+  // ตัวเลขสุขภาพระบบ
+  const rev=[...runs].reverse(),login=rev.find(r=>r.login_days!=null),ld=login?login.login_days:null;
+  let ok=0,total=0;for(let i=0;i<7;i++){const d=new Date(today);d.setDate(d.getDate()-i);
+    SLOTS.forEach(s=>{const st=slotStatus(runs,d,s,now).st;if(['pending','running','none'].includes(st))return;total++;if(st==='posted')ok++})}
+  const vs=rev.filter(r=>r.voice_avg).slice(0,12).map(r=>r.voice_avg);
+  $('kpis').innerHTML=`<div class="card kpi"><b class="${ld!=null&&ld<14?'warn':''}">${ld==null?'-':ld+' วัน'}</b><span>ล็อกอิน TikTok</span></div>
+    <div class="card kpi"><b>${total?Math.round(ok/total*100)+'%':'-'}</b><span>สำเร็จ 7 วัน${total?` (${ok}/${total})`:''}</span></div>
+    <div class="card kpi"><b>${vs.length?Math.round(vs.reduce((a,b)=>a+b)/vs.length*100)+'%':'-'}</b><span>เสียงตรงบท</span></div>`;
+
+  // ขั้นตอน
+  if(!live){$('steps').innerHTML='<li><span></span><span class="nm" style="color:var(--ink-3)">จะเริ่มแสดงหลังรอบถัดไป</span><span></span></li>';$('flowNote').textContent=''}
+  else{
+    const run=live.run||{},st=live.steps||{},last=live.last||{},nowD=new Date();
+    $('flowNote').innerHTML=active?'อัปเดตทุก 15 วิ':run.finished?`รอบล่าสุดจบ ${dm(run.finished)}${run.url?` <a href="${esc(run.url)}" target="_blank" rel="noopener">log</a>`:''}`:'';
+    $('steps').innerHTML=STEPS.map(([id,nm],i)=>{const c=st[id];let cls='wait',tm='';
+      if(c&&c.status==='running'&&active){cls='running';tm=`<b>${dur(c.start,nowD)}</b>`}
+      else if(c&&c.end){cls=c.status==='skip'?'skip':c.status==='fail'?'fail':'done';
+        tm=cls==='skip'?'ข้าม':id==='trigger'&&run.due?`${hm(c.end)} <b>ช้า ${dur(c.start,c.end)}</b>`:`${hm(c.end)} <b>${dur(c.start,c.end)}</b>`}
+      else if(last[id]&&last[id].end){tm=`${dm(last[id].end)} <b>${dur(last[id].start,last[id].end)}</b>`;if(!active)cls=last[id].status==='fail'?'fail':'done'}
+      return `<li class="${cls}"><span class="dot">${cls==='done'?'✓':cls==='fail'?'!':''}</span><span class="nm">${nm}</span><span class="tm">${tm}</span></li>`}).join('');
+  }
+
+  // 7 วัน
+  const week=[];for(let i=0;i<7;i++){const d=new Date(today);d.setDate(d.getDate()-i);week.push(d)}
+  $('week').innerHTML=`<thead><tr><th>วัน</th>${SLOTS.map(s=>`<th>${pad(s.h)}:${pad(s.m)}</th>`).join('')}</tr></thead><tbody>`+
     week.map(d=>`<tr><td>${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}</td>${SLOTS.map(s=>{const x=slotStatus(runs,d,s,now);
-      const lab=`${s.theme} ${LABEL[x.st]||x.st}`;const dot=`<i class="dot s-${x.st}" title="${lab}" aria-label="${lab}"></i>`;
+      const lab=`${s.theme} ${LABEL[x.st]||x.st}`,dot=`<i class="d ${x.st}" title="${lab}" aria-label="${lab}"></i>`;
       return `<td>${x.run&&x.run.run_url?`<a href="${esc(x.run.run_url)}" target="_blank" rel="noopener">${dot}</a>`:dot}</td>`}).join('')}</tr>`).join('')+'</tbody>';
 
-  document.getElementById('log').innerHTML=last.slice(0,40).map(r=>{const d=new Date(r.ts);
-    return `<li><span><span class="pill s-${r.kind==='post'?r.result:'pending'}">${r.kind==='post'?LABEL[r.result]||r.result:'ทดสอบ'}</span> ดวง${esc(r.theme)} รอบ ${esc((r.slot||'').slice(-2))}:${r.slot&&r.slot.endsWith('-09')?'30':'00'}</span>
-      <span class="d">${d.getDate()} ${MONTHS[d.getMonth()]} ${pad(d.getHours())}:${pad(d.getMinutes())}${r.run_url?` <a href="${esc(r.run_url)}" target="_blank" rel="noopener">log</a>`:''}</span></li>`}).join('')||'<li>ยังไม่มีการรัน</li>';
-  const lr=last[0];
-  document.getElementById('foot').textContent=lr?`ข้อมูลล่าสุดจากรันเมื่อ ${new Date(lr.ts).toLocaleString('th-TH',{dateStyle:'medium',timeStyle:'short'})}`:'';
+  $('log').innerHTML=rev.slice(0,40).map(r=>`<li><span><span class="chip c-${r.kind==='post'?r.result:'pending'}">${r.kind==='post'?LABEL[r.result]||r.result:'ทดสอบ'}</span> ดวง${esc(r.theme)}</span>
+    <span class="w">${dm(r.ts)}${r.run_url?` <a href="${esc(r.run_url)}" target="_blank" rel="noopener">log</a>`:''}</span></li>`).join('')||'<li>ยังไม่มีการรัน</li>';
+  $('foot').textContent=rev[0]?`ข้อมูลล่าสุด ${dm(rev[0].ts)}`:'';
 }
 
-
-const STEPS=[
- ['trigger','รับสัญญาณจาก GitHub','ตามเวลา 07:00 09:30 12:00 18:00'],
- ['check','ตรวจความพร้อม','ล็อกอิน TikTok ฟอนต์ไทย ชุดทดสอบ'],
- ['content','Gemini เขียนคำทำนาย 12 ราศี','ตรวจกฎและกันเนื้อหาซ้ำ'],
- ['cards','วาดการ์ด 13 ใบ','ระดับดาวจากตำแหน่งดวงดาวจริง'],
- ['voice','พากย์เสียงและตรวจเสียง','ตรงบทไม่ถึง 95% พากย์ใหม่'],
- ['video','ประกอบคลิป','ซับตามเสียงจริง ดนตรีคลอ'],
- ['post','โพสต์ TikTok','รอบ 09:30 ใส่เพลงจากคลัง TikTok'],
- ['dashboard','อัปเดตแดชบอร์ด','บันทึกผลของรอบนี้']];
-const ICON={done:'✓',fail:'✕',skip:'',running:'',wait:''};
 const parts=location.hostname.endsWith('github.io')?[location.hostname.split('.')[0],location.pathname.split('/')[1]]:['efkasidis','futurebest-status'];
 const LIVE_URL=`https://api.github.com/repos/${parts[0]}/${parts[1]}/contents/data/live.json?ref=live`;
-let live=null,etag=null;
-function dur(a,b){const s=Math.max(0,Math.round((new Date(b)-new Date(a))/1000));const m=Math.floor(s/60),h=Math.floor(m/60);
-  return h?`${h} ชม. ${m%60} นาที`:m?`${m} นาที ${s%60} วิ`:`${s} วิ`}
-function hm(t){const d=new Date(t);return `${pad(d.getHours())}:${pad(d.getMinutes())}`}
-function dm(t){const d=new Date(t);return `${d.getDate()} ${MONTHS[d.getMonth()]} ${hm(t)}`}
-function renderFlow(){
-  const fl=document.getElementById('flow'),rl=document.getElementById('runline');
-  if(!live){rl.textContent='ยังไม่มีข้อมูลขั้นตอน จะเริ่มแสดงหลังรอบถัดไป';fl.innerHTML='';return}
-  const run=live.run||{},steps=live.steps||{},last=live.last||{},active=run.started&&!run.finished;
-  const now=new Date();
-  rl.innerHTML=active?`กำลังทำรอบ <b>${run.slot?run.slot.slice(-2)+':'+(run.slot.endsWith('-09')?'30':'00'):''} ${run.theme?'ดวง'+esc(run.theme):''}</b> เริ่ม ${hm(run.started)} ผ่านไป ${dur(run.started,now)}${run.kind==='test'?' (ทดสอบ)':''}`
-    :run.finished?`รอบล่าสุด${run.theme?' ดวง'+esc(run.theme):''} จบเมื่อ ${dm(run.finished)} ใช้เวลารวม ${dur(run.started,run.finished)} ${run.result==='success'?'สำเร็จ':'<b style="color:var(--rose)">มีขั้นที่ไม่สำเร็จ</b>'}${run.url?` <a href="${esc(run.url)}" target="_blank" rel="noopener">ดู log</a>`:''}`:'';
-  fl.innerHTML=STEPS.map(([id,nm,ds])=>{
-    const cur=steps[id];let cls='wait',tm='';
-    if(cur&&cur.status==='running'&&active){cls='running';tm=`<b>กำลังทำ</b> ${dur(cur.start,now)}`}
-    else if(cur&&cur.end){cls=cur.status==='skip'?'skip':cur.status==='fail'?'fail':'done';
-      tm=cls==='skip'?'ข้ามขั้นนี้':`${cls==='fail'?'ไม่สำเร็จ ':''}${hm(cur.end)} <b>${dur(cur.start,cur.end)}</b>`;
-      if(id==='trigger'&&run.due&&cls==='done')tm=`รับ ${hm(cur.end)} <b>ช้า ${dur(cur.start,cur.end)}</b>`}
-    else if(last[id]&&last[id].end){tm=`ล่าสุด ${dm(last[id].end)} <b>${dur(last[id].start,last[id].end)}</b>`;if(!active)cls=last[id].status==='fail'?'fail':last[id].status==='skip'?'skip':'done'}
-    return `<li class="${cls}"><span class="ic">${ICON[cls]}</span><span class="nm">${nm}</span><span class="ds">${ds}</span><span class="tm">${tm}</span></li>`}).join('');
-}
 async function pollLive(){
   try{const r=await fetch(LIVE_URL,{headers:Object.assign({Accept:'application/vnd.github.raw+json'},etag?{'If-None-Match':etag}:{}),cache:'no-store'});
-    if(r.status===200){etag=r.headers.get('ETag');live=await r.json()}
-  }catch(e){}
-  renderFlow();
+    if(r.status===200){etag=r.headers.get('ETag');const was=live&&live.run&&live.run.finished;live=await r.json();
+      if(!was&&live.run&&live.run.finished)loadRuns()}}catch(e){}
+  render();
   setTimeout(pollLive,(live&&live.run&&live.run.started&&!live.run.finished)?15000:60000);
 }
-pollLive();setInterval(renderFlow,1000*5);
-
-fetch('data/runs.json?'+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]).then(runs=>{
-  render(runs.map(r=>({...r,ts:r.ts})));
-  setInterval(()=>render(runs),60000);
-});
+function loadRuns(){return fetch('data/runs.json?'+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]).then(d=>{runs=d;render()})}
+loadRuns().then(pollLive);
+setInterval(render,5000);
 </script>
 </body>
 </html>
