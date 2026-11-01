@@ -92,6 +92,30 @@ footer{margin-top:40px;color:var(--ash);font-size:13px;text-align:center}
   .node.s-running circle{animation:pulse 1.8s ease-in-out infinite}
 }
 @keyframes pulse{50%{opacity:.35}}
+/* ---- ขั้นตอนการทำงาน ---- */
+.flow{list-style:none;margin:0;padding:0;position:relative}
+.flow li{display:grid;grid-template-columns:28px 1fr;gap:0 12px;padding:10px 0;position:relative}
+.flow li::before{content:"";position:absolute;left:13px;top:38px;bottom:-10px;width:2px;background:var(--veil)}
+.flow li:last-child::before{display:none}
+.flow .ic{width:28px;height:28px;border-radius:50%;border:2px solid var(--ash);display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--night);background:var(--night);z-index:1}
+.flow .nm{font-weight:600}
+.flow .ds{grid-column:2;color:var(--mist);font-size:13.5px}
+.flow .tm{grid-column:2;font-size:13.5px;color:var(--mist)}
+.flow .tm:empty{display:none}
+.flow .tm b{color:var(--moon);font-weight:600}
+.flow li.done .ic{border-color:var(--gold);background:var(--gold)}
+.flow li.done::before{background:var(--gold);opacity:.5}
+.flow li.running .ic{border-color:var(--sky)}
+.flow li.running .ic::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--sky)}
+.flow li.running .nm{color:var(--sky)}
+.flow li.fail .ic{border-color:var(--rose);background:var(--rose)}
+.flow li.fail .nm{color:var(--rose)}
+.flow li.skip .ic{border-style:dashed}
+.flow li.wait .nm{color:var(--mist)}
+.runline{color:var(--mist);font-size:14px;margin:-4px 0 10px}
+.runline b{color:var(--moon);font-weight:600}
+@media (prefers-reduced-motion:no-preference){.flow li.running .ic::after{animation:pulse 1.4s ease-in-out infinite}}
+
 </style>
 </head>
 <body>
@@ -109,6 +133,10 @@ footer{margin-top:40px;color:var(--ash);font-size:13px;text-align:center}
     <p class="verdict" id="verdict"></p>
     <p class="hint" id="hint"></p>
   </section>
+
+  <h2>ขั้นตอนการทำงาน</h2>
+  <p class="runline" id="runline">กำลังโหลดสถานะ</p>
+  <ol class="flow" id="flow"></ol>
 
   <h2>รอบของวันนี้</h2>
   <ul class="slots" id="slots"></ul>
@@ -133,7 +161,7 @@ footer{margin-top:40px;color:var(--ash);font-size:13px;text-align:center}
 </main>
 <script>
 const SLOTS=[{h:7,m:0,theme:'การงาน'},{h:9,m:30,theme:'โชคลาภ',since:'2026-11-02'},{h:12,m:0,theme:'การเงิน'},{h:18,m:0,theme:'ความรัก'}];
-let FIRST_DAY='9999-12-31'; // วันแรกที่มีข้อมูล ก่อนหน้านั้นไม่นับว่า "ไม่ได้รัน"
+let FIRST_DAY='2026-11-02'; // วันเริ่มโพสต์อัตโนมัติ ก่อนหน้านั้นไม่นับว่า "ไม่ได้รัน"
 const LABEL={none:'ยังไม่เริ่มใช้',posted:'โพสต์แล้ว',failed:'ไม่สำเร็จ',post_unconfirmed:'ไม่แน่ใจว่าขึ้นไหม',skipped:'ข้าม (เลยเวลา)',missed:'ไม่ได้รัน',running:'กำลังทำ',pending:'รอเวลา',preview:'ทดสอบ'};
 const SIGNS=['มังกร','กุมภ์','มีน','เมษ','พฤษภ','เมถุน','กรกฎ','สิงห์','กันย์','ตุลย์','พิจิก','ธนู'];
 const DAYS=['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'];
@@ -179,7 +207,6 @@ function drawDial(today,now){
 }
 
 function render(runs){
-  FIRST_DAY=runs.length?runs.reduce((m,r)=>r.slot&&r.slot.slice(0,10)<m?r.slot.slice(0,10):m,'9999-12-31'):'9999-12-31';
   const now=bkkNow();const today=new Date(now);today.setHours(0,0,0,0);
   const t=SLOTS.map(s=>({...s,...slotStatus(runs,today,s,now)}));
   drawDial(t,now);
@@ -232,6 +259,49 @@ function render(runs){
   const lr=last[0];
   document.getElementById('foot').textContent=lr?`ข้อมูลล่าสุดจากรันเมื่อ ${new Date(lr.ts).toLocaleString('th-TH',{dateStyle:'medium',timeStyle:'short'})}`:'';
 }
+
+
+const STEPS=[
+ ['trigger','รับสัญญาณจาก GitHub','ตามเวลา 07:00 09:30 12:00 18:00'],
+ ['check','ตรวจความพร้อม','ล็อกอิน TikTok ฟอนต์ไทย ชุดทดสอบ'],
+ ['content','Gemini เขียนคำทำนาย 12 ราศี','ตรวจกฎและกันเนื้อหาซ้ำ'],
+ ['cards','วาดการ์ด 13 ใบ','ระดับดาวจากตำแหน่งดวงดาวจริง'],
+ ['voice','พากย์เสียงและตรวจเสียง','ตรงบทไม่ถึง 95% พากย์ใหม่'],
+ ['video','ประกอบคลิป','ซับตามเสียงจริง ดนตรีคลอ'],
+ ['post','โพสต์ TikTok','รอบ 09:30 ใส่เพลงจากคลัง TikTok'],
+ ['dashboard','อัปเดตแดชบอร์ด','บันทึกผลของรอบนี้']];
+const ICON={done:'✓',fail:'✕',skip:'',running:'',wait:''};
+const parts=location.hostname.endsWith('github.io')?[location.hostname.split('.')[0],location.pathname.split('/')[1]]:['efkasidis','futurebest-status'];
+const LIVE_URL=`https://api.github.com/repos/${parts[0]}/${parts[1]}/contents/data/live.json?ref=live`;
+let live=null,etag=null;
+function dur(a,b){const s=Math.max(0,Math.round((new Date(b)-new Date(a))/1000));const m=Math.floor(s/60),h=Math.floor(m/60);
+  return h?`${h} ชม. ${m%60} นาที`:m?`${m} นาที ${s%60} วิ`:`${s} วิ`}
+function hm(t){const d=new Date(t);return `${pad(d.getHours())}:${pad(d.getMinutes())}`}
+function dm(t){const d=new Date(t);return `${d.getDate()} ${MONTHS[d.getMonth()]} ${hm(t)}`}
+function renderFlow(){
+  const fl=document.getElementById('flow'),rl=document.getElementById('runline');
+  if(!live){rl.textContent='ยังไม่มีข้อมูลขั้นตอน จะเริ่มแสดงหลังรอบถัดไป';fl.innerHTML='';return}
+  const run=live.run||{},steps=live.steps||{},last=live.last||{},active=run.started&&!run.finished;
+  const now=new Date();
+  rl.innerHTML=active?`กำลังทำรอบ <b>${run.slot?run.slot.slice(-2)+':'+(run.slot.endsWith('-09')?'30':'00'):''} ${run.theme?'ดวง'+esc(run.theme):''}</b> เริ่ม ${hm(run.started)} ผ่านไป ${dur(run.started,now)}${run.kind==='test'?' (ทดสอบ)':''}`
+    :run.finished?`รอบล่าสุด${run.theme?' ดวง'+esc(run.theme):''} จบเมื่อ ${dm(run.finished)} ใช้เวลารวม ${dur(run.started,run.finished)} ${run.result==='success'?'สำเร็จ':'<b style="color:var(--rose)">มีขั้นที่ไม่สำเร็จ</b>'}${run.url?` <a href="${esc(run.url)}" target="_blank" rel="noopener">ดู log</a>`:''}`:'';
+  fl.innerHTML=STEPS.map(([id,nm,ds])=>{
+    const cur=steps[id];let cls='wait',tm='';
+    if(cur&&cur.status==='running'&&active){cls='running';tm=`<b>กำลังทำ</b> ${dur(cur.start,now)}`}
+    else if(cur&&cur.end){cls=cur.status==='skip'?'skip':cur.status==='fail'?'fail':'done';
+      tm=cls==='skip'?'ข้ามขั้นนี้':`${cls==='fail'?'ไม่สำเร็จ ':''}${hm(cur.end)} <b>${dur(cur.start,cur.end)}</b>`;
+      if(id==='trigger'&&run.due&&cls==='done')tm=`รับ ${hm(cur.end)} <b>ช้า ${dur(cur.start,cur.end)}</b>`}
+    else if(last[id]&&last[id].end){tm=`ล่าสุด ${dm(last[id].end)} <b>${dur(last[id].start,last[id].end)}</b>`;if(!active)cls=last[id].status==='fail'?'fail':last[id].status==='skip'?'skip':'done'}
+    return `<li class="${cls}"><span class="ic">${ICON[cls]}</span><span class="nm">${nm}</span><span class="ds">${ds}</span><span class="tm">${tm}</span></li>`}).join('');
+}
+async function pollLive(){
+  try{const r=await fetch(LIVE_URL,{headers:Object.assign({Accept:'application/vnd.github.raw+json'},etag?{'If-None-Match':etag}:{}),cache:'no-store'});
+    if(r.status===200){etag=r.headers.get('ETag');live=await r.json()}
+  }catch(e){}
+  renderFlow();
+  setTimeout(pollLive,(live&&live.run&&live.run.started&&!live.run.finished)?15000:60000);
+}
+pollLive();setInterval(renderFlow,1000*5);
 
 fetch('data/runs.json?'+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]).then(runs=>{
   render(runs.map(r=>({...r,ts:r.ts})));
