@@ -1,0 +1,18 @@
+[
+{
+"ts": "2026-11-02T05:14+07:00",
+"kind": "test",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/41355855681",
+"login_days": 161,
+"slot": "2026-11-01-18",
+"theme": "ความรัก",
+"voice": "f5:ref_13",
+"best": [
+2,
+10
+],
+"voice_avg": 0.98,
+"voice_min": 0.939,
+"result": "preview"
+}
+]
