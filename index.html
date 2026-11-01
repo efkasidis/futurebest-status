@@ -136,6 +136,22 @@ details[open] summary::after{content:"ซ่อน"}
 .log li{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:13px}
 .log .w{color:var(--ink-3);white-space:nowrap}
 footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
+
+/* สลับมุมมองรอบวันนี้ */
+.seg{display:inline-flex;padding:3px;border-radius:999px;background:var(--line)}
+.seg button{border:0;background:transparent;color:var(--ink-2);font:500 12.5px "IBM Plex Sans Thai",sans-serif;padding:4px 12px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--glass-2);color:var(--ink);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.clock{position:relative;width:min(300px,78vw);aspect-ratio:1;margin:4px auto 6px}
+.clock svg{width:100%;height:100%;overflow:visible;display:block}
+.clock .mid{position:absolute;inset:28%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1.15}
+.clock .mid b{font-size:30px;font-weight:700}
+.clock .mid span{font-size:12px;color:var(--ink-2)}
+.clist{list-style:none;margin:6px 0 0;padding:0}
+.clist li{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:13.5px}
+.clist li b{font-weight:700;min-width:46px}
+.clist li .th{flex:1;color:var(--ink-2)}
+.clist li .mt{font-size:12px;color:var(--ink-3)}
+[hidden]{display:none!important}
 @media (prefers-reduced-motion:no-preference){.running .dot{animation:pulse 1.6s ease-in-out infinite}}
 @keyframes pulse{50%{box-shadow:0 0 0 9px transparent}}
 @media (max-width:360px){.kpi b{font-size:17px}.hero{grid-template-columns:80px 1fr}.ring{width:80px;height:80px}}
@@ -161,8 +177,10 @@ footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
   <div class="alert" id="alert" role="status"></div>
 
   <section class="card sec">
-    <div class="sec-head"><h2>รอบของวันนี้</h2><small id="todayDate"></small></div>
-    <div class="slots" id="slots"></div>
+    <div class="sec-head"><h2>รอบของวันนี้ <small id="todayDate" style="font-weight:400"></small></h2>
+      <div class="seg" role="group" aria-label="มุมมอง"><button data-v="clock">นาฬิกา</button><button data-v="cards">การ์ด</button></div></div>
+    <div id="clockView"><div class="clock"><svg id="clockSvg" viewBox="-160 -160 320 320" role="img" aria-label="นาฬิกา 24 ชั่วโมง แสดงรอบโพสต์วันนี้"></svg><div class="mid" id="clockMid"></div></div><ul class="clist" id="clist"></ul></div>
+    <div class="slots" id="slots" hidden></div>
   </section>
 
   <div class="kpis" id="kpis"></div>
@@ -227,6 +245,39 @@ function slotStatus(runs,date,s,now){
   return {st:'missed'};
 }
 
+
+/* มุมมองรอบวันนี้: นาฬิกา (ค่าเริ่มต้น) หรือ การ์ด */
+let view='clock';try{view=localStorage.getItem('fb-view')||'clock'}catch(e){}
+function setView(v){view=v;$('clockView').hidden=v!=='clock';$('slots').hidden=v!=='cards';
+  document.querySelectorAll('.seg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v));
+  try{localStorage.setItem('fb-view',v)}catch(e){}}
+document.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>setView(b.dataset.v));
+setView(view);
+const ST_COLOR={posted:'var(--ok)',failed:'var(--bad)',post_unconfirmed:'var(--bad)',running:'var(--run)',missed:'var(--mute)',skipped:'var(--mute)',pending:'var(--ink-3)',none:'var(--ink-3)'};
+function drawClock(t,now){
+  const R=118,pt=(hr,r)=>{const a=hr/24*2*Math.PI-Math.PI/2;return [Math.cos(a)*r,Math.sin(a)*r]};
+  let g=`<circle r="${R}" fill="none" stroke="var(--line)" stroke-width="14"/>`;
+  const [ax,ay]=pt(6,R),[bx,by]=pt(23.99,R);
+  g+=`<path d="M${ax} ${ay} A${R} ${R} 0 1 1 ${bx} ${by}" fill="none" stroke="var(--accent-soft)" stroke-width="14" stroke-linecap="round"/>`;
+  for(let h=0;h<24;h++){const [x1,y1]=pt(h,R-14),[x2,y2]=pt(h,R-(h%6?18:24));
+    g+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="var(--ink-3)" stroke-width="${h%6?1:2}" opacity="${h%6?.45:.8}"/>`;
+    if(h%6===0){const [tx,ty]=pt(h,R-36);g+=`<text x="${tx}" y="${ty+4}" text-anchor="middle" fill="var(--ink-3)" font-size="12">${pad(h)}</text>`}}
+  const hr=now.getHours()+now.getMinutes()/60,[hx,hy]=pt(hr,R);
+  g+=`<circle cx="${hx}" cy="${hy}" r="5" fill="var(--ink)"><title>ตอนนี้</title></circle>`;
+  t.forEach(x=>{const h=x.h+x.m/60,[cx,cy]=pt(h,R),[lx,ly]=pt(h,R+26),c=ST_COLOR[x.st]||'var(--ink-3)';
+    const solid=['posted','failed','post_unconfirmed','running','skipped'].includes(x.st);
+    g+=`<circle cx="${cx}" cy="${cy}" r="11" fill="${solid?c:'var(--glass-2)'}" stroke="${c}" stroke-width="2.5" ${x.st==='pending'?'stroke-dasharray="3 3"':''}/>`
+      +(x.st==='posted'?`<path d="M${cx-4.5} ${cy} l3 3 l6 -6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>`:'')
+      +`<text x="${lx}" y="${ly+4}" text-anchor="middle" fill="var(--ink)" font-size="12" font-weight="600">${pad(x.h)}:${pad(x.m)}</text>`});
+  $('clockSvg').innerHTML=g;
+  $('clockMid').innerHTML=`<b>${pad(now.getHours())}:${pad(now.getMinutes())}</b><span>เวลาไทยตอนนี้</span>`;
+  $('clist').innerHTML=t.map(x=>{const r=x.run||{},mt=[];
+    if(r.voice_avg)mt.push(`เสียง ${Math.round(r.voice_avg*100)}%`);
+    if(r.sound&&!r.sound.startsWith('failed'))mt.push(esc(r.sound.split(' / ')[0]));
+    return `<li><b>${pad(x.h)}:${pad(x.m)}</b><span class="th">ดวง${x.theme}${mt.length?`<br><span class="mt">${mt.join(' / ')}</span>`:''}</span>
+      ${r.run_url?`<a href="${esc(r.run_url)}" target="_blank" rel="noopener" class="mt">log</a>`:''}<span class="chip c-${x.st}">${LABEL[x.st]||x.st}</span></li>`}).join('');
+}
+
 let runs=[],live=null,etag=null;
 function ring(done,total){
   const r=40,c=2*Math.PI*r,p=total?done/total:0;
@@ -263,6 +314,7 @@ function render(){
   $('alert').textContent=missed.length?`รอบ ${missed.map(x=>pad(x.h)+':'+pad(x.m)).join(', ')} ไม่ได้รัน: เช็กว่าคอมเปิด เสียบปลั๊ก และตัวรับงานขึ้น Listening for Jobs`
     :bad.length?`รอบ ${bad.map(x=>pad(x.h)+':'+pad(x.m)).join(', ')} ไม่สำเร็จ: เปิด log ของรอบนั้นดูสาเหตุ`:'';
 
+  drawClock(t,now);
   $('todayDate').textContent=`${DAYS[today.getDay()]} ${today.getDate()} ${MONTHS[today.getMonth()]}`;
   $('slots').innerHTML=t.map(x=>{const r=x.run||{},mt=[];
     if(r.voice_avg)mt.push(`เสียงตรงบท ${Math.round(r.voice_avg*100)}%`);
