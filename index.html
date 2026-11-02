@@ -152,6 +152,22 @@ footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
 .clist li .th{flex:1;color:var(--ink-2)}
 .clist li .mt{font-size:12px;color:var(--ink-3)}
 [hidden]{display:none!important}
+
+/* คลิปที่โพสต์แล้ว */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.clip{display:block;color:inherit;font-weight:400;border-radius:16px;overflow:hidden;background:var(--glass-2);border:1px solid var(--edge)}
+.clip .cv{position:relative;aspect-ratio:9/16;background:var(--line)}
+.clip .cv img{width:100%;height:100%;object-fit:cover;display:block}
+.clip .du{position:absolute;right:6px;bottom:6px;font-size:11px;font-weight:600;color:#fff;background:rgba(0,0,0,.55);padding:1px 6px;border-radius:6px}
+.clip .sch{position:absolute;left:6px;top:6px;font-size:11px;font-weight:600;color:#fff;background:var(--run);padding:2px 7px;border-radius:999px}
+.clip .bd{padding:8px 10px 10px}
+.clip .tt{font-size:13px;font-weight:600;line-height:1.35}
+.clip .hk{font-size:12px;color:var(--ink-2);margin-top:2px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.clip .wh{font-size:11.5px;color:var(--ink-3);margin-top:4px}
+.stats{display:flex;gap:10px;margin-top:6px;font-size:12px;color:var(--ink-2)}
+.stats span{display:inline-flex;align-items:center;gap:3px}
+.stats svg{width:13px;height:13px}
+.more{display:block;text-align:center;margin-top:12px;font-size:13.5px}
 @media (prefers-reduced-motion:no-preference){.running .dot{animation:pulse 1.6s ease-in-out infinite}}
 @keyframes pulse{50%{box-shadow:0 0 0 9px transparent}}
 @media (max-width:360px){.kpi b{font-size:17px}.hero{grid-template-columns:80px 1fr}.ring{width:80px;height:80px}}
@@ -184,6 +200,12 @@ footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
   </section>
 
   <div class="kpis" id="kpis"></div>
+
+  <section class="card sec">
+    <div class="sec-head"><h2>คลิปบน TikTok</h2><small id="galNote"></small></div>
+    <div class="gal" id="gal"></div>
+    <a class="more" href="https://www.tiktok.com/@futurebest88" target="_blank" rel="noopener">เปิดช่องบน TikTok</a>
+  </section>
 
   <section class="card sec">
     <div class="sec-head"><h2>ขั้นตอนการทำงาน</h2><small id="flowNote"></small></div>
@@ -358,6 +380,24 @@ function render(){
     <span class="w">${dm(r.ts)}${r.run_url?` <a href="${esc(r.run_url)}" target="_blank" rel="noopener">log</a>`:''}</span></li>`).join('')||'<li>ยังไม่มีการรัน</li>';
   $('foot').textContent=rev[0]?`ข้อมูลล่าสุด ${dm(rev[0].ts)}`:'';
 }
+
+
+/* คลิปที่โพสต์จริงบน TikTok (อ่านจาก TikTok Studio ทุกครั้งที่ระบบรัน) */
+const ICO={v:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+ l:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+ c:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></svg>'};
+const fmtN=n=>n==null?'-':n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?(n/1e3).toFixed(1)+'K':String(n);
+function renderGallery(d){
+  const posts=(d.posts||[]).filter(p=>!p.when||p.when>='2026-11-01').slice(0,12);
+  $('galNote').textContent=d.synced_at?`อัปเดต ${dm(d.synced_at)}`:'';
+  $('gal').innerHTML=posts.map(p=>{const t=p.when&&p.when.includes('T')?dm(p.when):esc(p.when||'');
+    return `<a class="clip" href="${esc(p.url)}" target="_blank" rel="noopener"><div class="cv"><img src="${esc(p.cover)}" alt="ปกคลิป ${esc(p.title)}" loading="lazy" onerror="this.style.display='none'">
+      ${p.scheduled?`<span class="sch">ตั้งเวลา ${t}</span>`:''}${p.duration?`<span class="du">${esc(p.duration)}</span>`:''}</div>
+      <div class="bd"><div class="tt">${esc(p.title)}</div>${p.hook?`<div class="hk">${esc(p.hook)}</div>`:''}<div class="wh">${p.scheduled?'รอโพสต์':'โพสต์ '+t}</div>
+      ${p.scheduled?'':`<div class="stats"><span>${ICO.v}${fmtN(p.views)}</span><span>${ICO.l}${fmtN(p.likes)}</span><span>${ICO.c}${fmtN(p.comments)}</span></div>`}</div></a>`}).join('')
+    ||'<p style="grid-column:1/-1;color:var(--ink-3);font-size:13px;margin:0">จะแสดงหลังระบบอ่านรายการโพสต์จาก TikTok ครั้งแรก</p>';
+}
+fetch('data/posts.json?'+Date.now()).then(r=>r.ok?r.json():{}).catch(()=>({})).then(renderGallery);
 
 const parts=location.hostname.endsWith('github.io')?[location.hostname.split('.')[0],location.pathname.split('/')[1]]:['efkasidis','futurebest-status'];
 const LIVE_URL=`https://api.github.com/repos/${parts[0]}/${parts[1]}/contents/data/live.json?ref=live`;
