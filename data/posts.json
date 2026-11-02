@@ -1,5 +1,5 @@
 {
-"synced_at": "2026-11-03T01:07+07:00",
+"synced_at": "2026-11-03T01:35+07:00",
 "posts": [
 {
 "id": "7703634977551863048",
@@ -30,6 +30,20 @@
 "comments": 0
 },
 {
+"id": "7703642804676726023",
+"url": "https://www.tiktok.com/@futurebest88/video/7703642804676726023",
+"cover": "data/covers/7703642804676726023.jpg",
+"title": "ดวงการงาน 12 ราศี • 3/11/2569",
+"hook": "ราศีธนู: ผู้ใหญ่ป้อนงานใหญ่ให้",
+"duration": "01:26",
+"privacy": "Everyone",
+"when": "2026-11-03T07:15+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
 "id": "7703542307793997074",
 "url": "https://www.tiktok.com/@futurebest88/video/7703542307793997074",
 "cover": "data/covers/7703542307793997074.jpg",
@@ -39,7 +53,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T18:58+07:00",
 "scheduled": false,
-"views": 47,
+"views": 51,
 "likes": 1,
 "comments": 0
 },
@@ -53,7 +67,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T13:10+07:00",
 "scheduled": false,
-"views": 88,
+"views": 89,
 "likes": 1,
 "comments": 0
 },
@@ -67,7 +81,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T09:35+07:00",
 "scheduled": false,
-"views": 143,
+"views": 144,
 "likes": 3,
 "comments": 0
 },
@@ -307,20 +321,6 @@
 "scheduled": false,
 "views": 11,
 "likes": 0,
-"comments": 0
-},
-{
-"id": "7349952814388432146",
-"url": "https://www.tiktok.com/@futurebest88/video/7349952814388432146",
-"cover": "data/covers/7349952814388432146.jpg",
-"title": "#เทรนด์วันนี้ #ราศี #ดูดวง #จักรราศี #horoscope #zodiacsigns #eyes #ราศีเมษ #ราศ",
-"hook": "",
-"duration": "",
-"privacy": "Everyone",
-"when": "2024-03-24T22:30+07:00",
-"scheduled": false,
-"views": 195,
-"likes": 6,
 "comments": 0
 }
 ]
