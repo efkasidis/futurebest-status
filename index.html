@@ -167,7 +167,14 @@ footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
 .stats{display:flex;gap:10px;margin-top:6px;font-size:12px;color:var(--ink-2)}
 .stats span{display:inline-flex;align-items:center;gap:3px}
 .stats svg{width:13px;height:13px}
-.more{display:block;text-align:center;margin-top:12px;font-size:13.5px}
+
+/* มุมมองรายการของคลิป */
+.gal.list{grid-template-columns:1fr;gap:8px}
+.gal.list .clip{display:grid;grid-template-columns:72px 1fr;align-items:stretch}
+.gal.list .clip .cv{aspect-ratio:auto;height:100%;min-height:118px}
+.gal.list .clip .sch{display:none}
+.gal.list .clip .bd{padding:9px 12px}
+.more{display:block;text-align:center;margin:12px 0 0;font-size:13.5px;line-height:1.7}
 @media (prefers-reduced-motion:no-preference){.running .dot{animation:pulse 1.6s ease-in-out infinite}}
 @keyframes pulse{50%{box-shadow:0 0 0 9px transparent}}
 @media (max-width:360px){.kpi b{font-size:17px}.hero{grid-template-columns:80px 1fr}.ring{width:80px;height:80px}}
@@ -202,9 +209,10 @@ footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
   <div class="kpis" id="kpis"></div>
 
   <section class="card sec">
-    <div class="sec-head"><h2>คลิปบน TikTok</h2><small id="galNote"></small></div>
+    <div class="sec-head"><h2>คลิปบน TikTok</h2>
+      <div class="seg" id="galSeg" role="group" aria-label="มุมมองคลิป"><button data-g="grid">ตาราง</button><button data-g="list">รายการ</button></div></div>
     <div class="gal" id="gal"></div>
-    <a class="more" href="https://www.tiktok.com/@futurebest88" target="_blank" rel="noopener">เปิดช่องบน TikTok</a>
+    <p class="more"><small id="galNote" style="color:var(--ink-3)"></small><br><a href="https://www.tiktok.com/@futurebest88" target="_blank" rel="noopener">เปิดช่องบน TikTok</a></p>
   </section>
 
   <section class="card sec">
@@ -271,9 +279,9 @@ function slotStatus(runs,date,s,now){
 /* มุมมองรอบวันนี้: นาฬิกา (ค่าเริ่มต้น) หรือ การ์ด */
 let view='clock';try{view=localStorage.getItem('fb-view')||'clock'}catch(e){}
 function setView(v){view=v;$('clockView').hidden=v!=='clock';$('slots').hidden=v!=='cards';
-  document.querySelectorAll('.seg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v));
+  document.querySelectorAll('.seg button[data-v]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v));
   try{localStorage.setItem('fb-view',v)}catch(e){}}
-document.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>setView(b.dataset.v));
+document.querySelectorAll('.seg button[data-v]').forEach(b=>b.onclick=()=>setView(b.dataset.v));
 setView(view);
 const ST_COLOR={scheduled:'var(--run)',posted:'var(--ok)',failed:'var(--bad)',post_unconfirmed:'var(--bad)',running:'var(--run)',missed:'var(--mute)',skipped:'var(--mute)',pending:'var(--ink-3)',none:'var(--ink-3)'};
 function drawClock(t,now){
@@ -389,14 +397,21 @@ const ICO={v:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-
 const fmtN=n=>n==null?'-':n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?(n/1e3).toFixed(1)+'K':String(n);
 function renderGallery(d){
   const posts=(d.posts||[]).filter(p=>!p.when||p.when>='2026-11-01').slice(0,12);
-  $('galNote').textContent=d.synced_at?`อัปเดต ${dm(d.synced_at)}`:'';
+  $('galNote').textContent=d.synced_at?`ข้อมูลจาก TikTok เมื่อ ${dm(d.synced_at)}`:'';
   $('gal').innerHTML=posts.map(p=>{const t=p.when&&p.when.includes('T')?dm(p.when):esc(p.when||'');
     return `<a class="clip" href="${esc(p.url)}" target="_blank" rel="noopener"><div class="cv"><img src="${esc(p.cover)}" alt="ปกคลิป ${esc(p.title)}" loading="lazy" onerror="this.style.display='none'">
       ${p.scheduled?`<span class="sch">ตั้งเวลา ${t}</span>`:''}${p.duration?`<span class="du">${esc(p.duration)}</span>`:''}</div>
-      <div class="bd"><div class="tt">${esc(p.title)}</div>${p.hook?`<div class="hk">${esc(p.hook)}</div>`:''}<div class="wh">${p.scheduled?'รอโพสต์':'โพสต์ '+t}</div>
+      <div class="bd"><div class="tt">${esc(p.title)}</div>${p.hook?`<div class="hk">${esc(p.hook)}</div>`:''}<div class="wh">${p.scheduled?'ตั้งเวลาโพสต์ '+t:'โพสต์ '+t}</div>
       ${p.scheduled?'':`<div class="stats"><span>${ICO.v}${fmtN(p.views)}</span><span>${ICO.l}${fmtN(p.likes)}</span><span>${ICO.c}${fmtN(p.comments)}</span></div>`}</div></a>`}).join('')
     ||'<p style="grid-column:1/-1;color:var(--ink-3);font-size:13px;margin:0">จะแสดงหลังระบบอ่านรายการโพสต์จาก TikTok ครั้งแรก</p>';
 }
+
+let galView='grid';try{galView=localStorage.getItem('fb-gal')||'grid'}catch(e){}
+function setGal(v){galView=v;$('gal').classList.toggle('list',v==='list');
+  document.querySelectorAll('#galSeg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.g===v));
+  try{localStorage.setItem('fb-gal',v)}catch(e){}}
+document.querySelectorAll('#galSeg button').forEach(b=>b.onclick=()=>setGal(b.dataset.g));
+setGal(galView);
 fetch('data/posts.json?'+Date.now()).then(r=>r.ok?r.json():{}).catch(()=>({})).then(renderGallery);
 
 const parts=location.hostname.endsWith('github.io')?[location.hostname.split('.')[0],location.pathname.split('/')[1]]:['efkasidis','futurebest-status'];
