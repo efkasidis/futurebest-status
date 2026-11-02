@@ -89,7 +89,7 @@ h2{font-size:15px;font-weight:600;margin:0;color:var(--ink)}
 .chip::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
 .c-posted{color:var(--ok);background:var(--ok-soft)}
 .c-failed,.c-post_unconfirmed,.c-fail{color:var(--bad);background:var(--bad-soft)}
-.c-running{color:var(--run);background:var(--accent-soft)}
+.c-running,.c-scheduled{color:var(--run);background:var(--accent-soft)}
 .c-pending,.c-none,.c-skip{color:var(--ink-3);background:var(--line)}
 .c-missed,.c-skipped{color:var(--mute);background:var(--line)}
 .slot .mt{font-size:12px;color:var(--ink-3);margin-top:6px;line-height:1.45}
@@ -121,7 +121,7 @@ h2{font-size:15px;font-weight:600;margin:0;color:var(--ink)}
 .week th:first-child,.week td:first-child{text-align:left}
 .week td{padding:7px 0;border-top:1px solid var(--line);text-align:center;color:var(--ink-2)}
 .d{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:middle}
-.d.posted{background:var(--ok)} .d.failed,.d.post_unconfirmed{background:var(--bad)} .d.running{background:var(--run)}
+.d.posted{background:var(--ok)} .d.failed,.d.post_unconfirmed{background:var(--bad)} .d.running{background:var(--run)} .d.scheduled{border:2px solid var(--run)}
 .d.missed{border:2px solid var(--mute)} .d.skipped{background:var(--mute)} .d.pending{border:1.5px dashed var(--ink-3)} .d.none{background:var(--line)}
 .legend{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:10px;font-size:12px;color:var(--ink-2)}
 .legend span{display:inline-flex;align-items:center;gap:5px}
@@ -195,7 +195,7 @@ footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
     <table class="week" id="week"></table>
     <div class="legend">
       <span><i class="d posted"></i>โพสต์แล้ว</span><span><i class="d failed"></i>ไม่สำเร็จ</span>
-      <span><i class="d missed"></i>ไม่ได้รัน</span><span><i class="d skipped"></i>ข้าม (เลยเวลา)</span>
+      <span><i class="d missed"></i>ไม่ได้รัน</span><span><i class="d skipped"></i>ข้าม (เลยเวลา)</span><span><i class="d scheduled"></i>ตั้งเวลาแล้ว</span>
     </div>
   </section>
 
@@ -205,7 +205,7 @@ footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
 <script>
 const SLOTS=[{h:7,m:0,theme:'การงาน'},{h:9,m:30,theme:'โชคลาภ',since:'2026-11-02'},{h:12,m:0,theme:'การเงิน'},{h:18,m:0,theme:'ความรัก'}];
 const FIRST_DAY='2026-11-02';
-const LABEL={none:'ยังไม่เริ่ม',posted:'โพสต์แล้ว',failed:'ไม่สำเร็จ',post_unconfirmed:'ไม่แน่ใจ',skipped:'ข้าม',missed:'ไม่ได้รัน',running:'กำลังทำ',pending:'รอเวลา',preview:'ทดสอบ'};
+const LABEL={scheduled:'ตั้งเวลาแล้ว',none:'ยังไม่เริ่ม',posted:'โพสต์แล้ว',failed:'ไม่สำเร็จ',post_unconfirmed:'ไม่แน่ใจ',skipped:'ข้าม',missed:'ไม่ได้รัน',running:'กำลังทำ',pending:'รอเวลา',preview:'ทดสอบ'};
 const SIGNS=['มังกร','กุมภ์','มีน','เมษ','พฤษภ','เมถุน','กรกฎ','สิงห์','กันย์','ตุลย์','พิจิก','ธนู'];
 const DAYS=['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'];
 const MONTHS=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
@@ -237,7 +237,7 @@ function slotStatus(runs,date,s,now){
   const key=`${ymd(date)}-${pad(s.h)}`;
   const posts=runs.filter(r=>r.kind==='post'&&r.slot===key);
   const last=posts[posts.length-1];
-  if(last)return {st:last.result,run:last};
+  if(last){if(last.result==='scheduled'&&last.scheduled_at)return {st:new Date(last.scheduled_at)>new Date()?'scheduled':'posted',run:last};return {st:last.result,run:last}}
   if(ymd(date)<(s.since||FIRST_DAY))return {st:'none'};
   const due=new Date(date);due.setHours(s.h,s.m,0,0);
   if(now<due)return {st:'pending'};
@@ -253,7 +253,7 @@ function setView(v){view=v;$('clockView').hidden=v!=='clock';$('slots').hidden=v
   try{localStorage.setItem('fb-view',v)}catch(e){}}
 document.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>setView(b.dataset.v));
 setView(view);
-const ST_COLOR={posted:'var(--ok)',failed:'var(--bad)',post_unconfirmed:'var(--bad)',running:'var(--run)',missed:'var(--mute)',skipped:'var(--mute)',pending:'var(--ink-3)',none:'var(--ink-3)'};
+const ST_COLOR={scheduled:'var(--run)',posted:'var(--ok)',failed:'var(--bad)',post_unconfirmed:'var(--bad)',running:'var(--run)',missed:'var(--mute)',skipped:'var(--mute)',pending:'var(--ink-3)',none:'var(--ink-3)'};
 function drawClock(t,now){
   const R=118,pt=(hr,r)=>{const a=hr/24*2*Math.PI-Math.PI/2;return [Math.cos(a)*r,Math.sin(a)*r]};
   let g=`<circle r="${R}" fill="none" stroke="var(--line)" stroke-width="14"/>`;
@@ -272,6 +272,7 @@ function drawClock(t,now){
   $('clockSvg').innerHTML=g;
   $('clockMid').innerHTML=`<b>${pad(now.getHours())}:${pad(now.getMinutes())}</b><span>เวลาไทยตอนนี้</span>`;
   $('clist').innerHTML=t.map(x=>{const r=x.run||{},mt=[];
+    if(r.scheduled_at)mt.push(`โพสต์ ${hm(r.scheduled_at)}`);
     if(r.voice_avg)mt.push(`เสียง ${Math.round(r.voice_avg*100)}%`);
     if(r.sound&&!r.sound.startsWith('failed'))mt.push(esc(r.sound.split(' / ')[0]));
     return `<li><b>${pad(x.h)}:${pad(x.m)}</b><span class="th">ดวง${x.theme}${mt.length?`<br><span class="mt">${mt.join(' / ')}</span>`:''}</span>
@@ -317,6 +318,7 @@ function render(){
   drawClock(t,now);
   $('todayDate').textContent=`${DAYS[today.getDay()]} ${today.getDate()} ${MONTHS[today.getMonth()]}`;
   $('slots').innerHTML=t.map(x=>{const r=x.run||{},mt=[];
+    if(r.scheduled_at)mt.push(`โพสต์ ${hm(r.scheduled_at)}`);
     if(r.voice_avg)mt.push(`เสียงตรงบท ${Math.round(r.voice_avg*100)}%`);
     if(r.sound)mt.push(r.sound.startsWith('failed')?'ใส่เพลงไม่สำเร็จ':'เพลง '+esc(r.sound.split(' / ')[0]));
     if(r.run_url)mt.push(`<a href="${esc(r.run_url)}" target="_blank" rel="noopener">ดู log</a>`);
