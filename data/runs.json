@@ -109,5 +109,14 @@
 "voice_avg": 0.978,
 "voice_min": 0.955,
 "result": "post_unconfirmed"
+},
+{
+"ts": "2026-11-02T13:06+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/41397669723",
+"login_days": 160,
+"slot": "2026-11-02-12",
+"theme": "การเงิน",
+"result": "failed"
 }
 ]
