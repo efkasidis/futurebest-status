@@ -1,5 +1,5 @@
 {
-"synced_at": "2026-11-02T13:11+07:00",
+"synced_at": "2026-11-02T18:59+07:00",
 "posts": [
 {
 "id": "7703380850305436934",
@@ -16,6 +16,20 @@
 "comments": 0
 },
 {
+"id": "7703542307793997074",
+"url": "https://www.tiktok.com/@futurebest88/video/7703542307793997074",
+"cover": "data/covers/7703542307793997074.jpg",
+"title": "ดวงความรัก 12 ราศี • 2/11/2569",
+"hook": "ราศีมีน: คนใหม่เข้ามาขายขนมจีบ",
+"duration": "01:37",
+"privacy": "Everyone",
+"when": "2026-11-02T18:58+07:00",
+"scheduled": false,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
 "id": "7703452656064400658",
 "url": "https://www.tiktok.com/@futurebest88/video/7703452656064400658",
 "cover": "data/covers/7703452656064400658.jpg",
@@ -25,8 +39,8 @@
 "privacy": "Everyone",
 "when": "2026-11-02T13:10+07:00",
 "scheduled": false,
-"views": 0,
-"likes": 0,
+"views": 57,
+"likes": 1,
 "comments": 0
 },
 {
@@ -39,8 +53,8 @@
 "privacy": "Everyone",
 "when": "2026-11-02T09:35+07:00",
 "scheduled": false,
-"views": 38,
-"likes": 2,
+"views": 110,
+"likes": 3,
 "comments": 0
 },
 {
@@ -53,8 +67,8 @@
 "privacy": "Everyone",
 "when": "2026-11-02T07:36+07:00",
 "scheduled": false,
-"views": 255,
-"likes": 9,
+"views": 332,
+"likes": 15,
 "comments": 0
 },
 {
@@ -67,8 +81,8 @@
 "privacy": "Everyone",
 "when": "2026-11-02T04:07+07:00",
 "scheduled": false,
-"views": 68,
-"likes": 0,
+"views": 103,
+"likes": 1,
 "comments": 0
 },
 {
