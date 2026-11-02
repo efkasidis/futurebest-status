@@ -184,5 +184,14 @@
 ],
 "result": "scheduled",
 "scheduled_at": "2026-11-03T07:15+07:00"
+},
+{
+"ts": "2026-11-03T02:50+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/41513145426",
+"login_days": 160,
+"slot": "2026-11-02-18",
+"theme": "ความรัก",
+"result": "failed"
 }
 ]
