@@ -1,6 +1,20 @@
 {
-"synced_at": "2026-11-03T02:50+07:00",
+"synced_at": "2026-11-03T02:58+07:00",
 "posts": [
+{
+"id": "7703665731568782599",
+"url": "https://www.tiktok.com/@futurebest88/video/7703665731568782599",
+"cover": "data/covers/7703665731568782599.jpg",
+"title": "ดวงความรัก 12 ราศี • 3/11/2569",
+"hook": "ราศีเมถุน: คนคุยพร้อมขยับสถานะ",
+"duration": "01:50",
+"privacy": "Everyone",
+"when": "2026-11-03T17:55+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7703634977551863048",
 "url": "https://www.tiktok.com/@futurebest88/video/7703634977551863048",
@@ -53,8 +67,8 @@
 "privacy": "Everyone",
 "when": "2026-11-02T18:58+07:00",
 "scheduled": false,
-"views": 57,
-"likes": 1,
+"views": 58,
+"likes": 2,
 "comments": 0
 },
 {
@@ -306,20 +320,6 @@
 "when": "",
 "scheduled": false,
 "views": 0,
-"likes": 0,
-"comments": 0
-},
-{
-"id": "7350574279181782290",
-"url": "https://www.tiktok.com/@futurebest88/video/7350574279181782290",
-"cover": "data/covers/7350574279181782290.jpg",
-"title": "#เทรนด์วันนี้ #ราศี #ดูดวง #จักรราศี #horoscope #zodiacsigns #eyes #ราศีเมษ #ราศ",
-"hook": "",
-"duration": "",
-"privacy": "",
-"when": "2024-03-26T14:42+07:00",
-"scheduled": false,
-"views": 11,
 "likes": 0,
 "comments": 0
 }
