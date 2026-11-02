@@ -396,7 +396,7 @@ const ICO={v:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-
  c:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></svg>'};
 const fmtN=n=>n==null?'-':n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?(n/1e3).toFixed(1)+'K':String(n);
 function renderGallery(d){
-  const posts=(d.posts||[]).filter(p=>!p.when||p.when>='2026-11-01').slice(0,12);
+  const posts=(d.posts||[]).filter(p=>p.when&&p.when.includes('T')&&p.when>='2026-11-01').slice(0,12);
   $('galNote').textContent=d.synced_at?`ข้อมูลจาก TikTok เมื่อ ${dm(d.synced_at)}`:'';
   $('gal').innerHTML=posts.map(p=>{const t=p.when&&p.when.includes('T')?dm(p.when):esc(p.when||'');
     return `<a class="clip" href="${esc(p.url)}" target="_blank" rel="noopener"><div class="cv"><img src="${esc(p.cover)}" alt="ปกคลิป ${esc(p.title)}" loading="lazy" onerror="this.style.display='none'">
@@ -416,12 +416,25 @@ fetch('data/posts.json?'+Date.now()).then(r=>r.ok?r.json():{}).catch(()=>({})).t
 
 const parts=location.hostname.endsWith('github.io')?[location.hostname.split('.')[0],location.pathname.split('/')[1]]:['efkasidis','futurebest-status'];
 const LIVE_URL=`https://api.github.com/repos/${parts[0]}/${parts[1]}/contents/data/live.json?ref=live`;
+const RAW_URL=`https://raw.githubusercontent.com/${parts[0]}/${parts[1]}/live/data/live.json`;
+let apiBlockedUntil=0;
+async function fetchLive(){
+  // ทางหลัก: GitHub API (สดทันที คำขอที่ไม่มีอะไรเปลี่ยนไม่นับโควตา) ถ้าโดนจำกัดโควตา ใช้สำเนาจาก CDN (ช้าได้ถึง 5 นาที) ไปก่อน 10 นาที
+  if(Date.now()>apiBlockedUntil){
+    try{const r=await fetch(LIVE_URL,{headers:Object.assign({Accept:'application/vnd.github.raw+json'},etag?{'If-None-Match':etag}:{}),cache:'no-store'});
+      if(r.status===304)return null;
+      if(r.ok){etag=r.headers.get('ETag');return await r.json()}
+      apiBlockedUntil=Date.now()+10*60000;
+    }catch(e){apiBlockedUntil=Date.now()+10*60000}
+  }
+  try{const r=await fetch(RAW_URL+'?t='+Date.now(),{cache:'no-store'});if(r.ok)return await r.json()}catch(e){}
+  return null;
+}
 async function pollLive(){
-  try{const r=await fetch(LIVE_URL,{headers:Object.assign({Accept:'application/vnd.github.raw+json'},etag?{'If-None-Match':etag}:{}),cache:'no-store'});
-    if(r.status===200){etag=r.headers.get('ETag');const was=live&&live.run&&live.run.finished;live=await r.json();
-      if(!was&&live.run&&live.run.finished)loadRuns()}}catch(e){}
+  const got=await fetchLive();
+  if(got){const was=live&&live.run&&live.run.finished;live=got;if(!was&&live.run&&live.run.finished)loadRuns()}
   render();
-  setTimeout(pollLive,(live&&live.run&&live.run.started&&!live.run.finished)?15000:60000);
+  setTimeout(pollLive,(live&&live.run&&live.run.started&&!live.run.finished)?20000:60000);
 }
 function loadRuns(){return fetch('data/runs.json?'+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]).then(d=>{runs=d;render()})}
 loadRuns().then(pollLive);
