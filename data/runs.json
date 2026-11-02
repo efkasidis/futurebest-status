@@ -94,5 +94,20 @@
 "sound": "Felt Room Window / 02:47 · Tessa Galloway",
 "result": "scheduled",
 "scheduled_at": "2026-11-03T09:45+07:00"
+},
+{
+"ts": "2026-11-02T12:52+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/41395773077",
+"login_days": 160,
+"slot": "2026-11-02-12",
+"theme": "การเงิน",
+"voice": "f5:ref_13",
+"best": [
+2
+],
+"voice_avg": 0.978,
+"voice_min": 0.955,
+"result": "post_unconfirmed"
 }
 ]
