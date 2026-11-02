@@ -1,5 +1,5 @@
 {
-"synced_at": "2026-11-02T13:06+07:00",
+"synced_at": "2026-11-02T13:11+07:00",
 "posts": [
 {
 "id": "7703380850305436934",
@@ -16,6 +16,20 @@
 "comments": 0
 },
 {
+"id": "7703452656064400658",
+"url": "https://www.tiktok.com/@futurebest88/video/7703452656064400658",
+"cover": "data/covers/7703452656064400658.jpg",
+"title": "ดวงการเงิน 12 ราศี • 2/11/2569",
+"hook": "ราศีมีน: ดอกผลพอกพูนโตไว",
+"duration": "01:23",
+"privacy": "Everyone",
+"when": "2026-11-02T13:10+07:00",
+"scheduled": false,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
 "id": "7703372426872114433",
 "url": "https://www.tiktok.com/@futurebest88/video/7703372426872114433",
 "cover": "data/covers/7703372426872114433.jpg",
@@ -25,7 +39,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T09:35+07:00",
 "scheduled": false,
-"views": 34,
+"views": 38,
 "likes": 2,
 "comments": 0
 },
@@ -39,7 +53,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T07:36+07:00",
 "scheduled": false,
-"views": 244,
+"views": 255,
 "likes": 9,
 "comments": 0
 },
