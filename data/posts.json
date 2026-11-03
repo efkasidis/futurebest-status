@@ -1,6 +1,20 @@
 {
-"synced_at": "2026-11-03T18:41+07:00",
+"synced_at": "2026-11-03T23:15+07:00",
 "posts": [
+{
+"id": "7703977412316466440",
+"url": "https://www.tiktok.com/@futurebest88/video/7703977412316466440",
+"cover": "data/covers/7703977412316466440.jpg",
+"title": "ดวงความรัก 12 ราศี • 4/11/2569",
+"hook": "ราศีเมถุน: เสน่ห์แรงมีคนเข้าหา",
+"duration": "01:34",
+"privacy": "Everyone",
+"when": "2026-11-04T17:45+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7703844588141808902",
 "url": "https://www.tiktok.com/@futurebest88/video/7703844588141808902",
@@ -25,7 +39,7 @@
 "privacy": "Everyone",
 "when": "2026-11-03T17:55+07:00",
 "scheduled": false,
-"views": 2,
+"views": 32,
 "likes": 0,
 "comments": 0
 },
@@ -39,7 +53,7 @@
 "privacy": "Everyone",
 "when": "2026-11-03T11:45+07:00",
 "scheduled": false,
-"views": 81,
+"views": 104,
 "likes": 0,
 "comments": 0
 },
@@ -53,8 +67,8 @@
 "privacy": "Everyone",
 "when": "2026-11-03T09:45+07:00",
 "scheduled": false,
-"views": 92,
-"likes": 1,
+"views": 103,
+"likes": 2,
 "comments": 0
 },
 {
@@ -67,7 +81,7 @@
 "privacy": "Everyone",
 "when": "2026-11-03T07:15+07:00",
 "scheduled": false,
-"views": 106,
+"views": 116,
 "likes": 1,
 "comments": 0
 },
@@ -81,7 +95,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T18:58+07:00",
 "scheduled": false,
-"views": 116,
+"views": 117,
 "likes": 3,
 "comments": 0
 },
@@ -95,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T13:10+07:00",
 "scheduled": false,
-"views": 133,
+"views": 139,
 "likes": 1,
 "comments": 0
 },
@@ -123,7 +137,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T07:36+07:00",
 "scheduled": false,
-"views": 336,
+"views": 337,
 "likes": 15,
 "comments": 0
 },
@@ -308,20 +322,6 @@
 "views": 453,
 "likes": 9,
 "comments": 2
-},
-{
-"id": "7350584251525451016",
-"url": "https://www.tiktok.com/@futurebest88/video/7350584251525451016",
-"cover": "data/covers/7350584251525451016.jpg",
-"title": "#เทรนด์วันนี้ #ราศี #ดูดวง #จักรราศี #horoscope #zodiacsigns #eyes #ราศีเมษ #ราศ",
-"hook": "",
-"duration": "",
-"privacy": "Everyone",
-"when": "2024-03-26T15:21+07:00",
-"scheduled": false,
-"views": 163,
-"likes": 6,
-"comments": 0
 }
 ]
 }
