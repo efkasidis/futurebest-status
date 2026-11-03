@@ -236,5 +236,36 @@
 ],
 "result": "scheduled",
 "scheduled_at": "2026-11-04T17:45+07:00"
+},
+{
+"ts": "2026-11-04T03:56+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/41713087227",
+"login_days": 159,
+"slot": "2026-11-04-09",
+"theme": "โชคลาภ",
+"best": [
+5,
+9,
+11
+],
+"sound": "停在哪个夏天 / 04:00 · 阿良的旧摩托",
+"result": "scheduled",
+"scheduled_at": "2026-11-04T09:30+07:00"
+},
+{
+"ts": "2026-11-04T03:56+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/41713087227",
+"login_days": 159,
+"slot": "2026-11-04-12",
+"theme": "การเงิน",
+"best": [
+3,
+7,
+11
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-04T12:05+07:00"
 }
 ]
