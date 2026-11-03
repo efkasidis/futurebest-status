@@ -1,5 +1,5 @@
 {
-"synced_at": "2026-11-03T14:49+07:00",
+"synced_at": "2026-11-03T18:41+07:00",
 "posts": [
 {
 "id": "7703844588141808902",
@@ -24,8 +24,8 @@
 "duration": "01:50",
 "privacy": "Everyone",
 "when": "2026-11-03T17:55+07:00",
-"scheduled": true,
-"views": 0,
+"scheduled": false,
+"views": 2,
 "likes": 0,
 "comments": 0
 },
@@ -39,7 +39,7 @@
 "privacy": "Everyone",
 "when": "2026-11-03T11:45+07:00",
 "scheduled": false,
-"views": 28,
+"views": 81,
 "likes": 0,
 "comments": 0
 },
@@ -53,7 +53,7 @@
 "privacy": "Everyone",
 "when": "2026-11-03T09:45+07:00",
 "scheduled": false,
-"views": 54,
+"views": 92,
 "likes": 1,
 "comments": 0
 },
@@ -67,7 +67,7 @@
 "privacy": "Everyone",
 "when": "2026-11-03T07:15+07:00",
 "scheduled": false,
-"views": 86,
+"views": 106,
 "likes": 1,
 "comments": 0
 },
@@ -81,7 +81,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T18:58+07:00",
 "scheduled": false,
-"views": 105,
+"views": 116,
 "likes": 3,
 "comments": 0
 },
@@ -95,7 +95,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T13:10+07:00",
 "scheduled": false,
-"views": 109,
+"views": 133,
 "likes": 1,
 "comments": 0
 },
