@@ -174,6 +174,19 @@ footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
 .gal.list .clip .cv{aspect-ratio:auto;height:100%;min-height:118px}
 .gal.list .clip .sch{display:none}
 .gal.list .clip .bd{padding:9px 12px}
+
+/* การเติบโตของช่อง */
+.gtiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.gtile{padding:10px 12px;border-radius:14px;background:var(--glass-2);border:1px solid var(--edge)}
+.gtile b{display:block;font-size:19px;font-weight:700;line-height:1.2}
+.gtile span{font-size:11.5px;color:var(--ink-2)}
+.gtile i{font-style:normal;font-size:11.5px;font-weight:600}
+.up{color:var(--ok)} .down{color:var(--bad)}
+.chart{margin-top:6px}
+.chart h3{font-size:13px;font-weight:600;margin:10px 0 4px;color:var(--ink-2)}
+.chart svg{width:100%;height:auto;display:block;overflow:visible}
+.chart .lg{display:flex;gap:12px;font-size:11.5px;color:var(--ink-3);margin-top:2px}
+.chart .lg span::before{content:"";display:inline-block;width:10px;height:3px;border-radius:2px;margin-right:4px;vertical-align:middle;background:currentColor}
 .more{display:block;text-align:center;margin:12px 0 0;font-size:13.5px;line-height:1.7}
 @media (prefers-reduced-motion:no-preference){.running .dot{animation:pulse 1.6s ease-in-out infinite}}
 @keyframes pulse{50%{box-shadow:0 0 0 9px transparent}}
@@ -207,6 +220,14 @@ footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
   </section>
 
   <div class="kpis" id="kpis"></div>
+
+  <section class="card sec">
+    <div class="sec-head"><h2>การเติบโตของช่อง</h2><small id="growNote"></small></div>
+    <div class="gtiles" id="gtiles"></div>
+    <div class="chart"><h3>ผู้ติดตาม</h3><svg id="chFollow" viewBox="0 0 320 120" role="img" aria-label="กราฟผู้ติดตามรายวัน"></svg></div>
+    <div class="chart"><h3>วิวเฉลี่ยต่อคลิป และคอมเมนต์ (ตามวันที่โพสต์)</h3><svg id="chViews" viewBox="0 0 320 130" role="img" aria-label="กราฟวิวเฉลี่ยต่อคลิปและคอมเมนต์รายวัน"></svg>
+      <div class="lg"><span style="color:var(--accent)">วิวเฉลี่ย/คลิป</span><span style="color:var(--accent-2)">คอมเมนต์รวม</span></div></div>
+  </section>
 
   <section class="card sec">
     <div class="sec-head"><h2>คลิปบน TikTok</h2>
@@ -412,6 +433,53 @@ function setGal(v){galView=v;$('gal').classList.toggle('list',v==='list');
   try{localStorage.setItem('fb-gal',v)}catch(e){}}
 document.querySelectorAll('#galSeg button').forEach(b=>b.onclick=()=>setGal(b.dataset.g));
 setGal(galView);
+
+/* การเติบโต: ผู้ติดตามรายวัน (stats.json) + วิวเฉลี่ย/คอมเมนต์ตามวันที่โพสต์ (posts_archive.json) */
+const fmtD=k=>{const [y,m,d]=k.split('-').map(Number);return `${d} ${MONTHS[m-1]}`};
+function axisMax(v){if(v<=10)return 10;const p=Math.pow(10,Math.floor(Math.log10(v)));return Math.ceil(v/p)*p}
+function lineChart(el,pts,color){
+  const W=320,H=120,L=34,B=20,T=8;
+  if(!pts.length){el.innerHTML=`<text x="160" y="60" text-anchor="middle" fill="var(--ink-3)" font-size="12">จะมีข้อมูลหลังระบบอ่านจาก TikTok</text>`;return}
+  const vals=pts.map(p=>p[1]),lo=Math.min(...vals),hi=Math.max(...vals),pad=Math.max(1,Math.round((hi-lo)*0.15)),y0=Math.max(0,lo-pad),y1=hi+pad;
+  const x=i=>pts.length===1?(L+W)/2:L+i*(W-L-8)/(pts.length-1),y=v=>T+(H-B-T)*(1-(v-y0)/(y1-y0||1));
+  let g=`<line x1="${L}" y1="${H-B}" x2="${W}" y2="${H-B}" stroke="var(--line)"/>`;
+  [y0,y1].forEach(v=>g+=`<text x="${L-6}" y="${y(v)+4}" text-anchor="end" fill="var(--ink-3)" font-size="10">${fmtN(Math.round(v))}</text>`);
+  g+=`<polyline fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="${pts.map((p,i)=>x(i)+','+y(p[1])).join(' ')}"/>`;
+  pts.forEach((p,i)=>{g+=`<circle cx="${x(i)}" cy="${y(p[1])}" r="3" fill="${color}"><title>${fmtD(p[0])}: ${p[1]}</title></circle>`;
+    if(pts.length<=8||i%Math.ceil(pts.length/7)===0||i===pts.length-1)g+=`<text x="${x(i)}" y="${H-5}" text-anchor="middle" fill="var(--ink-3)" font-size="10">${fmtD(p[0])}</text>`});
+  el.innerHTML=g;
+}
+function barChart(el,days){
+  const W=320,H=130,L=34,R=26,B=20,T=8;
+  if(!days.length){el.innerHTML=`<text x="160" y="65" text-anchor="middle" fill="var(--ink-3)" font-size="12">จะมีข้อมูลหลังระบบอ่านจาก TikTok</text>`;return}
+  const vm=axisMax(Math.max(...days.map(d=>d.avg))),cm=Math.max(4,Math.max(...days.map(d=>d.com)));
+  const bw=Math.min(26,(W-L-R)/days.length*0.6),x=i=>L+(i+0.5)*(W-L-R)/days.length,y=v=>T+(H-B-T)*(1-v/vm),yc=v=>T+(H-B-T)*(1-v/cm);
+  let g=`<line x1="${L}" y1="${H-B}" x2="${W-R}" y2="${H-B}" stroke="var(--line)"/>`+
+    `<text x="${L-6}" y="${T+4}" text-anchor="end" fill="var(--ink-3)" font-size="10">${fmtN(vm)}</text><text x="${L-6}" y="${H-B+4}" text-anchor="end" fill="var(--ink-3)" font-size="10">0</text>`+
+    `<text x="${W-R+6}" y="${T+4}" fill="var(--accent-2)" font-size="10">${cm}</text>`;
+  days.forEach((d,i)=>{g+=`<rect x="${x(i)-bw/2}" y="${y(d.avg)}" width="${bw}" height="${H-B-y(d.avg)}" rx="4" fill="var(--accent)" opacity=".85"><title>${fmtD(d.day)}: วิวเฉลี่ย ${d.avg} (${d.n} คลิป) คอมเมนต์ ${d.com}</title></rect>`;
+    if(days.length<=8||i%Math.ceil(days.length/7)===0||i===days.length-1)g+=`<text x="${x(i)}" y="${H-5}" text-anchor="middle" fill="var(--ink-3)" font-size="10">${fmtD(d.day)}</text>`});
+  g+=`<polyline fill="none" stroke="var(--accent-2)" stroke-width="2" points="${days.map((d,i)=>x(i)+','+yc(d.com)).join(' ')}"/>`+days.map((d,i)=>`<circle cx="${x(i)}" cy="${yc(d.com)}" r="3" fill="var(--accent-2)"/>`).join('');
+  el.innerHTML=g;
+}
+function renderGrowth(stats,archive){
+  const fd=Object.entries((stats&&stats.days)||{}).sort().map(([k,v])=>[k,v.followers]).filter(p=>p[1]!=null).slice(-30);
+  lineChart($('chFollow'),fd,'var(--accent)');
+  const by={};Object.values(archive||{}).forEach(p=>{if(p.scheduled||!p.when||p.views==null)return;const k=ymd(bkk(p.when));(by[k]=by[k]||{day:k,v:0,n:0,com:0});by[k].v+=p.views;by[k].n++;by[k].com+=p.comments||0});
+  const days=Object.values(by).sort((a,b)=>a.day<b.day?-1:1).slice(-14).map(d=>({...d,avg:Math.round(d.v/d.n)}));
+  barChart($('chViews'),days);
+  const nowF=fd.length?fd[fd.length-1][1]:null,weekAgo=fd.find(p=>p[0]>=ymd(new Date(bkkNow().getTime()-7*864e5)));
+  const diff=nowF!=null&&weekAgo?nowF-weekAgo[1]:null;
+  const last7=days.filter(d=>d.day>=ymd(new Date(bkkNow().getTime()-7*864e5)));
+  const n7=last7.reduce((a,d)=>a+d.n,0),v7=last7.reduce((a,d)=>a+d.v,0),c7=last7.reduce((a,d)=>a+d.com,0);
+  $('gtiles').innerHTML=`<div class="gtile"><b>${nowF==null?'-':fmtN(nowF)}</b><span>ผู้ติดตาม ${diff==null||!diff?'':`<i class="${diff>0?'up':'down'}">${diff>0?'+':''}${diff} ใน 7 วัน</i>`}</span></div>
+    <div class="gtile"><b>${n7?fmtN(Math.round(v7/n7)):'-'}</b><span>วิวเฉลี่ย/คลิป 7 วัน</span></div>
+    <div class="gtile"><b>${c7}</b><span>คอมเมนต์ 7 วัน${n7?` (${n7} คลิป)`:''}</span></div>`;
+  const last=Object.entries((stats&&stats.days)||{}).sort().pop();
+  $('growNote').textContent=last?`อัปเดต ${dm(last[1].at)}`:'';
+}
+Promise.all(['data/stats.json','data/posts_archive.json'].map(u=>fetch(u+'?'+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null))).then(([st,ar])=>renderGrowth(st,ar));
+
 fetch('data/posts.json?'+Date.now()).then(r=>r.ok?r.json():{}).catch(()=>({})).then(renderGallery);
 
 const parts=location.hostname.endsWith('github.io')?[location.hostname.split('.')[0],location.pathname.split('/')[1]]:['efkasidis','futurebest-status'];
