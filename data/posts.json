@@ -1,6 +1,48 @@
 {
-"synced_at": "2026-11-04T22:50+07:00",
+"synced_at": "2026-11-05T11:54+07:00",
 "posts": [
+{
+"id": "7704546122357837064",
+"url": "https://www.tiktok.com/@futurebest88/video/7704546122357837064",
+"cover": "data/covers/7704546122357837064.jpg",
+"title": "ดวงการเงิน 12 ราศี • 6/11/2569",
+"hook": "ราศีมังกร: ผู้ใหญ่พร้อมดันเงินทุน",
+"duration": "01:25",
+"privacy": "Everyone",
+"when": "2026-11-06T12:00+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7704545162097167634",
+"url": "https://www.tiktok.com/@futurebest88/video/7704545162097167634",
+"cover": "data/covers/7704545162097167634.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 6/11/2569 🥇 ราศีพฤษภ 95% — งานรักโชคปังสุด 🥈 ราศีมัง",
+"hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
+"duration": "00:35",
+"privacy": "Everyone",
+"when": "2026-11-06T09:30+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7704543956192726280",
+"url": "https://www.tiktok.com/@futurebest88/video/7704543956192726280",
+"cover": "data/covers/7704543956192726280.jpg",
+"title": "ดวงการงาน 12 ราศี • 6/11/2569",
+"hook": "ราศีพฤษภ: โอกาสใหญ่ไหลเข้า",
+"duration": "01:20",
+"privacy": "Everyone",
+"when": "2026-11-06T07:00+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7704269325309398280",
 "url": "https://www.tiktok.com/@futurebest88/video/7704269325309398280",
@@ -24,7 +66,7 @@
 "duration": "01:29",
 "privacy": "Everyone",
 "when": "2026-11-05T11:50+07:00",
-"scheduled": true,
+"scheduled": false,
 "views": 0,
 "likes": 0,
 "comments": 0
@@ -38,9 +80,9 @@
 "duration": "00:39",
 "privacy": "Everyone",
 "when": "2026-11-05T09:20+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
+"scheduled": false,
+"views": 46,
+"likes": 4,
 "comments": 0
 },
 {
@@ -52,8 +94,8 @@
 "duration": "01:29",
 "privacy": "Everyone",
 "when": "2026-11-05T06:50+07:00",
-"scheduled": true,
-"views": 0,
+"scheduled": false,
+"views": 44,
 "likes": 0,
 "comments": 0
 },
@@ -67,8 +109,8 @@
 "privacy": "Everyone",
 "when": "2026-11-04T17:45+07:00",
 "scheduled": false,
-"views": 23,
-"likes": 0,
+"views": 92,
+"likes": 2,
 "comments": 0
 },
 {
@@ -81,8 +123,8 @@
 "privacy": "Everyone",
 "when": "2026-11-04T12:05+07:00",
 "scheduled": false,
-"views": 79,
-"likes": 1,
+"views": 98,
+"likes": 2,
 "comments": 0
 },
 {
@@ -95,8 +137,8 @@
 "privacy": "Everyone",
 "when": "2026-11-04T09:30+07:00",
 "scheduled": false,
-"views": 106,
-"likes": 4,
+"views": 124,
+"likes": 5,
 "comments": 0
 },
 {
@@ -109,7 +151,7 @@
 "privacy": "Everyone",
 "when": "2026-11-04T07:10+07:00",
 "scheduled": false,
-"views": 116,
+"views": 131,
 "likes": 1,
 "comments": 0
 },
@@ -123,7 +165,7 @@
 "privacy": "Everyone",
 "when": "2026-11-03T17:55+07:00",
 "scheduled": false,
-"views": 122,
+"views": 125,
 "likes": 0,
 "comments": 0
 },
@@ -137,7 +179,7 @@
 "privacy": "Everyone",
 "when": "2026-11-03T11:45+07:00",
 "scheduled": false,
-"views": 160,
+"views": 161,
 "likes": 2,
 "comments": 0
 },
@@ -151,7 +193,7 @@
 "privacy": "Everyone",
 "when": "2026-11-03T09:45+07:00",
 "scheduled": false,
-"views": 120,
+"views": 121,
 "likes": 3,
 "comments": 0
 },
@@ -165,7 +207,7 @@
 "privacy": "Everyone",
 "when": "2026-11-03T07:15+07:00",
 "scheduled": false,
-"views": 158,
+"views": 165,
 "likes": 1,
 "comments": 0
 },
@@ -179,7 +221,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T18:58+07:00",
 "scheduled": false,
-"views": 120,
+"views": 122,
 "likes": 3,
 "comments": 0
 },
@@ -193,7 +235,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T13:10+07:00",
 "scheduled": false,
-"views": 140,
+"views": 141,
 "likes": 1,
 "comments": 0
 },
@@ -207,7 +249,7 @@
 "privacy": "Everyone",
 "when": "2026-11-02T09:35+07:00",
 "scheduled": false,
-"views": 174,
+"views": 175,
 "likes": 3,
 "comments": 0
 },
@@ -280,48 +322,6 @@
 "views": 417,
 "likes": 6,
 "comments": 2
-},
-{
-"id": "7366258082676018450",
-"url": "https://www.tiktok.com/@futurebest88/video/7366258082676018450",
-"cover": "data/covers/7366258082676018450.jpg",
-"title": "เช็คดวงความรักเดือนมิถุนายน ของคุณกันยัง? ราศีไหนจะปัง ราศีไหนจะสมหวัง ทำยังไงดี",
-"hook": "",
-"duration": "00:14",
-"privacy": "Everyone",
-"when": "2024-05-07T21:03+07:00",
-"scheduled": false,
-"views": 412,
-"likes": 5,
-"comments": 4
-},
-{
-"id": "7366257282394459399",
-"url": "https://www.tiktok.com/@futurebest88/video/7366257282394459399",
-"cover": "data/covers/7366257282394459399.jpg",
-"title": "เช็คดวงความรักเดือนมิถุนายน ของคุณกันยัง? ราศีไหนจะปัง ราศีไหนจะสมหวัง ทำยังไงดี",
-"hook": "",
-"duration": "00:14",
-"privacy": "Everyone",
-"when": "2024-05-07T21:00+07:00",
-"scheduled": false,
-"views": 398,
-"likes": 4,
-"comments": 2
-},
-{
-"id": "7366256384544935175",
-"url": "https://www.tiktok.com/@futurebest88/video/7366256384544935175",
-"cover": "data/covers/7366256384544935175.jpg",
-"title": "เช็คดวงความรักเดือนมิถุนายน ของคุณกันยัง? ราศีไหนจะปัง ราศีไหนจะสมหวัง ทำยังไงดี",
-"hook": "",
-"duration": "00:14",
-"privacy": "Everyone",
-"when": "2024-05-07T20:57+07:00",
-"scheduled": false,
-"views": 401,
-"likes": 5,
-"comments": 0
 }
 ]
 }
