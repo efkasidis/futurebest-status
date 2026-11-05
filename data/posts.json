@@ -1,6 +1,34 @@
 {
-"synced_at": "2026-11-05T18:46+07:00",
+"synced_at": "2026-11-06T06:01+07:00",
 "posts": [
+{
+"id": "7704826171283885320",
+"url": "https://www.tiktok.com/@futurebest88/video/7704826171283885320",
+"cover": "data/covers/7704826171283885320.jpg",
+"title": "ดวงการงาน 12 ราศี • 7/11/2569",
+"hook": "ราศีพฤษภ: ดีลใหญ่ผ่านฉลุย",
+"duration": "01:28",
+"privacy": "Everyone",
+"when": "2026-11-07T07:05+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7704717756347813138",
+"url": "https://www.tiktok.com/@futurebest88/video/7704717756347813138",
+"cover": "data/covers/7704717756347813138.jpg",
+"title": "ดวงความรัก 12 ราศี • 6/11/2569",
+"hook": "ราศีมังกร: เสน่ห์แรงเคมีตรงกัน",
+"duration": "01:30",
+"privacy": "Everyone",
+"when": "2026-11-06T17:50+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7704546122357837064",
 "url": "https://www.tiktok.com/@futurebest88/video/7704546122357837064",
@@ -53,7 +81,7 @@
 "privacy": "Everyone",
 "when": "2026-11-05T17:55+07:00",
 "scheduled": false,
-"views": 3,
+"views": 80,
 "likes": 0,
 "comments": 0
 },
@@ -67,8 +95,8 @@
 "privacy": "Everyone",
 "when": "2026-11-05T11:50+07:00",
 "scheduled": false,
-"views": 75,
-"likes": 0,
+"views": 99,
+"likes": 1,
 "comments": 0
 },
 {
@@ -81,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-05T09:20+07:00",
 "scheduled": false,
-"views": 126,
+"views": 136,
 "likes": 10,
 "comments": 0
 },
@@ -95,7 +123,7 @@
 "privacy": "Everyone",
 "when": "2026-11-05T06:50+07:00",
 "scheduled": false,
-"views": 114,
+"views": 115,
 "likes": 0,
 "comments": 0
 },
@@ -293,34 +321,6 @@
 "scheduled": false,
 "views": 421,
 "likes": 5,
-"comments": 2
-},
-{
-"id": "7367062195642977543",
-"url": "https://www.tiktok.com/@futurebest88/video/7367062195642977543",
-"cover": "data/covers/7367062195642977543.jpg",
-"title": "💸✨ดวงการเงิน 12 ราศี พฤษภาคม 2567 ราศีไหนเฮง ราศีไหนปัง #ดวงการเงิน #เช็คดวง #ดู",
-"hook": "ดวงการเงิน 12 ราศี พฤษภาคม 2567 ราศีไหนเฮง ราศีไหนปัง #ดวงการเงิน #เช็คดวง #ดูดวง #12ราศี ",
-"duration": "00:14",
-"privacy": "Everyone",
-"when": "2024-05-10T01:04+07:00",
-"scheduled": false,
-"views": 402,
-"likes": 9,
-"comments": 0
-},
-{
-"id": "7367061014245887240",
-"url": "https://www.tiktok.com/@futurebest88/video/7367061014245887240",
-"cover": "data/covers/7367061014245887240.jpg",
-"title": "💸✨ดวงการเงิน 12 ราศี พฤษภาคม 2567 ราศีไหนเฮง ราศีไหนปัง #ดวงการเงิน #เช็คดวง #ดู",
-"hook": "ดวงการเงิน 12 ราศี พฤษภาคม 2567 ราศีไหนเฮง ราศีไหนปัง #ดวงการเงิน #เช็คดวง #ดูดวง #12ราศี ",
-"duration": "00:14",
-"privacy": "Everyone",
-"when": "2024-05-10T00:59+07:00",
-"scheduled": false,
-"views": 417,
-"likes": 6,
 "comments": 2
 }
 ]
