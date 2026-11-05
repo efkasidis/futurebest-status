@@ -276,5 +276,49 @@
 "slot": "2026-11-04-18",
 "theme": "ความรัก",
 "result": "skipped"
+},
+{
+"ts": "2026-11-05T11:54+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/41927892530",
+"login_days": 157,
+"slot": "2026-11-06-07",
+"theme": "การงาน",
+"best": [
+4,
+6,
+10
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-06T07:00+07:00"
+},
+{
+"ts": "2026-11-05T11:54+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/41927892530",
+"login_days": 157,
+"slot": "2026-11-06-09",
+"theme": "พุ่งแรง",
+"best": [
+4,
+0,
+8
+],
+"sound": "Morning Patrol / 00:53 · Petunia Cartwright",
+"result": "scheduled",
+"scheduled_at": "2026-11-06T09:30+07:00"
+},
+{
+"ts": "2026-11-05T11:54+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/41927892530",
+"login_days": 157,
+"slot": "2026-11-06-12",
+"theme": "การเงิน",
+"best": [
+0
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-06T12:00+07:00"
 }
 ]
