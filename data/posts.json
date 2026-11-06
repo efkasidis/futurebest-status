@@ -1,15 +1,43 @@
 {
-"synced_at": "2026-11-06T22:38+07:00",
+"synced_at": "2026-11-06T23:26+07:00",
 "posts": [
 {
-"id": "7704826171283885320",
-"url": "https://www.tiktok.com/@futurebest88/video/7704826171283885320",
-"cover": "data/covers/7704826171283885320.jpg",
-"title": "ดวงการงาน 12 ราศี • 7/11/2569",
-"hook": "ราศีพฤษภ: ดีลใหญ่ผ่านฉลุย",
+"id": "7705095521358138631",
+"url": "https://www.tiktok.com/@futurebest88/video/7705095521358138631",
+"cover": "data/covers/7705095521358138631.jpg",
+"title": "ดวงความรัก 12 ราศี • 7/11/2569",
+"hook": "ราศีมังกร: คนรักเตรียมข่าวดีให้",
 "duration": "01:28",
 "privacy": "Everyone",
-"when": "2026-11-07T07:05+07:00",
+"when": "2026-11-07T17:50+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7705092272517418247",
+"url": "https://www.tiktok.com/@futurebest88/video/7705092272517418247",
+"cover": "data/covers/7705092272517418247.jpg",
+"title": "ดวงการเงิน 12 ราศี • 7/11/2569",
+"hook": "ราศีมังกร: ผู้ใหญ่พร้อมเพิ่มงบ",
+"duration": "01:22",
+"privacy": "Everyone",
+"when": "2026-11-07T12:05+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7705087002781404434",
+"url": "https://www.tiktok.com/@futurebest88/video/7705087002781404434",
+"cover": "data/covers/7705087002781404434.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 7/11/2569 🥇 ราศีพฤษภ 95% — งานและโชคปังสุดๆ 🥈 ราศีมั",
+"hook": "",
+"duration": "00:35",
+"privacy": "Everyone",
+"when": "2026-11-07T09:40+07:00",
 "scheduled": true,
 "views": 0,
 "likes": 0,
@@ -39,7 +67,7 @@
 "privacy": "Everyone",
 "when": "2026-11-06T12:00+07:00",
 "scheduled": false,
-"views": 63,
+"views": 66,
 "likes": 0,
 "comments": 0
 },
@@ -53,7 +81,7 @@
 "privacy": "Everyone",
 "when": "2026-11-06T09:30+07:00",
 "scheduled": false,
-"views": 124,
+"views": 125,
 "likes": 5,
 "comments": 2
 },
@@ -294,34 +322,6 @@
 "views": 337,
 "likes": 15,
 "comments": 0
-},
-{
-"id": "7703312297032158465",
-"url": "https://www.tiktok.com/@futurebest88/video/7703312297032158465",
-"cover": "data/covers/7703312297032158465.jpg",
-"title": "ดวงความรัก 12 ราศี • 1/11/2569",
-"hook": "ราศีมีน: มีเกณฑ์พบคนถูกชะตา",
-"duration": "01:26",
-"privacy": "Everyone",
-"when": "2026-11-02T04:07+07:00",
-"scheduled": false,
-"views": 137,
-"likes": 4,
-"comments": 0
-},
-{
-"id": "7367062910926916872",
-"url": "https://www.tiktok.com/@futurebest88/video/7367062910926916872",
-"cover": "data/covers/7367062910926916872.jpg",
-"title": "💸✨ดวงการเงิน 12 ราศี พฤษภาคม 2567 ราศีไหนเฮง ราศีไหนปัง #ดวงการเงิน #เช็คดวง #ดู",
-"hook": "ดวงการเงิน 12 ราศี พฤษภาคม 2567 ราศีไหนเฮง ราศีไหนปัง #ดวงการเงิน #เช็คดวง #ดูดวง #12ราศี ",
-"duration": "00:14",
-"privacy": "Everyone",
-"when": "2024-05-10T01:06+07:00",
-"scheduled": false,
-"views": 421,
-"likes": 5,
-"comments": 2
 }
 ]
 }
