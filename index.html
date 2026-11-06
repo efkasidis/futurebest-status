@@ -128,6 +128,7 @@ h2{font-size:15px;font-weight:600;margin:0;color:var(--ink)}
 .plan .chip2 span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .plan .chip2.past{opacity:.45}
 .plan .chip2.k-pick{border-color:rgba(124,77,255,.35);background:rgba(124,77,255,.08)}
+.plan .chip2.k-pair{border-color:rgba(196,92,124,.35);background:rgba(196,92,124,.08)}
 .plan .chip2.k-rank{border-color:rgba(214,158,46,.35);background:rgba(214,158,46,.08)}
 .week{width:100%;border-collapse:collapse;font-size:13px}
 .week th{font-weight:500;color:var(--ink-3);font-size:12px;padding:0 0 6px;text-align:center}
@@ -274,8 +275,9 @@ footer{text-align:center;color:var(--ink-3);font-size:12px;margin-top:18px}
 <script>
 // รอบ 07:00 วันจันทร์ พุธ ศุกร์ อาทิตย์ (ตั้งแต่ 7 พ.ย. 2569) เป็นคลิปเลือกไพ่ 1 ใบ
 const PICK_DAYS=[1,3,5,0],PICK_SINCE=new Date(2026,10,7);
-function themeOn(s,d){const extra=d.getFullYear()===2026&&d.getMonth()===10&&d.getDate()===7;return s.h===7&&(extra||PICK_DAYS.includes(d.getDay())&&d>=PICK_SINCE)?'เลือกไพ่':s.theme}
-const KIND={'เลือกไพ่':['🔮','เลือกไพ่ 1 ใบ','k-pick'],'การงาน':['💼','ดวงการงาน',''],'พุ่งแรง':['🏆','ดวงพุ่งแรง','k-rank'],'โชคลาภ':['🍀','ดวงโชคลาภ',''],'การเงิน':['💰','ดวงการเงิน',''],'ความรัก':['💕','ดวงความรัก','']};
+const PAIR_SINCE=new Date(2026,10,7);
+function themeOn(s,d){if(s.h===18&&d>=PAIR_SINCE&&Math.round((d-PAIR_SINCE)/86400000)%2===0)return 'คู่สมพงษ์';const extra=d.getFullYear()===2026&&d.getMonth()===10&&d.getDate()===7;return s.h===7&&(extra||PICK_DAYS.includes(d.getDay())&&d>=PICK_SINCE)?'เลือกไพ่':s.theme}
+const KIND={'เลือกไพ่':['🔮','เลือกไพ่ 1 ใบ','k-pick'],'การงาน':['💼','ดวงการงาน',''],'พุ่งแรง':['🏆','ดวงพุ่งแรง','k-rank'],'โชคลาภ':['🍀','ดวงโชคลาภ',''],'การเงิน':['💰','ดวงการเงิน',''],'ความรัก':['💕','ดวงความรัก',''],'คู่สมพงษ์':['💞','คู่สมพงษ์','k-pair']};
 function renderPlan(now){
   const today=new Date(now);today.setHours(0,0,0,0);const rows=[];
   for(let i=0;i<7;i++){const d=new Date(today);d.setDate(d.getDate()+i);
@@ -284,7 +286,7 @@ function renderPlan(now){
     rows.push(`<li><div class="day ${i===0?'now':''}">${i===0?'วันนี้':DAYS[d.getDay()]}<small>${d.getDate()} ${MONTHS[d.getMonth()]}</small></div><div class="chips">${chips}</div></li>`)}
   $('plan').innerHTML=rows.join('');
 }
-function TL(t){return t==='เลือกไพ่'?'เลือกไพ่ 1 ใบ':'ดวง'+t}
+function TL(t){return t==='เลือกไพ่'?'เลือกไพ่ 1 ใบ':t==='คู่สมพงษ์'?'3 คู่สมพงษ์':'ดวง'+t}
 const SLOTS=[{h:7,m:0,theme:'การงาน'},{h:9,m:30,theme:'พุ่งแรง',since:'2026-11-02'},{h:12,m:0,theme:'การเงิน'},{h:18,m:0,theme:'ความรัก'}];
 const FIRST_DAY='2026-11-02';
 const LABEL={scheduled:'ตั้งเวลาแล้ว',none:'ยังไม่เริ่ม',posted:'โพสต์แล้ว',failed:'ไม่สำเร็จ',post_unconfirmed:'ไม่แน่ใจ',skipped:'ข้าม',missed:'ไม่ได้รัน',running:'กำลังทำ',pending:'รอเวลา',preview:'ทดสอบ'};
