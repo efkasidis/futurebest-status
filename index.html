@@ -318,7 +318,9 @@ setTheme(saved);
 function slotStatus(runs,date,s,now){
   const key=`${ymd(date)}-${pad(s.h)}`;
   const posts=runs.filter(r=>r.kind==='post'&&r.slot===key);
-  const last=posts[posts.length-1];
+  // ถ้าเคยโพสต์/ตั้งเวลาสำเร็จแล้ว ใช้ผลนั้น (รอบสำรองที่รันทีหลังแล้วไม่สำเร็จหรือข้าม ไม่ควรทับ)
+  const ok=posts.filter(r=>['posted','scheduled'].includes(r.result));
+  const last=ok.length?ok[ok.length-1]:posts[posts.length-1];
   if(last){if(last.result==='scheduled'&&last.scheduled_at)return {st:new Date(last.scheduled_at)>new Date()?'scheduled':'posted',run:last};return {st:last.result,run:last}}
   if(ymd(date)<(s.since||FIRST_DAY))return {st:'none'};
   const due=new Date(date);due.setHours(s.h,s.m,0,0);
