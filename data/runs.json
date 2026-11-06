@@ -376,5 +376,18 @@
 "voice_avg": 0.941,
 "voice_min": 0.907,
 "result": "preview"
+},
+{
+"ts": "2026-11-06T22:38+07:00",
+"kind": "test",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/42242811045",
+"login_days": 156,
+"slot": "2026-11-08-07",
+"theme": "เลือกไพ่",
+"voice": "f5:ref_13+bright",
+"best": [],
+"voice_avg": 0.95,
+"voice_min": 0.93,
+"result": "preview"
 }
 ]
