@@ -502,5 +502,47 @@
 ],
 "result": "scheduled",
 "scheduled_at": "2026-11-07T17:55+07:00"
+},
+{
+"ts": "2026-11-07T15:57+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/42306145499",
+"login_days": 155,
+"slot": "2026-11-08-07",
+"theme": "เลือกไพ่",
+"best": [],
+"result": "scheduled",
+"scheduled_at": "2026-11-08T06:45+07:00"
+},
+{
+"ts": "2026-11-07T15:57+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/42306145499",
+"login_days": 155,
+"slot": "2026-11-08-09",
+"theme": "พุ่งแรง",
+"best": [
+1,
+5,
+7
+],
+"sound": "Fall Into You / 00:55 · Tam Lin",
+"result": "scheduled",
+"scheduled_at": "2026-11-08T09:15+07:00"
+},
+{
+"ts": "2026-11-07T15:57+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/42306145499",
+"login_days": 155,
+"slot": "2026-11-08-12",
+"theme": "การเงิน",
+"best": [
+5,
+7,
+11
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-08T11:50+07:00"
 }
 ]
