@@ -553,5 +553,18 @@
 "slot": "2026-11-07-12",
 "theme": "การเงิน",
 "result": "skipped"
+},
+{
+"ts": "2026-11-07T16:09+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/42358035359",
+"login_days": 155,
+"slot": "2026-11-08-18",
+"theme": "ความรัก",
+"best": [
+1
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-08T18:15+07:00"
 }
 ]
