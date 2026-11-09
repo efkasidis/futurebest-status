@@ -1,6 +1,48 @@
 {
-"synced_at": "2026-11-09T01:58+07:00",
+"synced_at": "2026-11-09T11:46+07:00",
 "posts": [
+{
+"id": "7706028239633911047",
+"url": "https://www.tiktok.com/@futurebest88/video/7706028239633911047",
+"cover": "data/covers/7706028239633911047.jpg",
+"title": "ดวงการเงิน 12 ราศี • 10/11/2569",
+"hook": "ราศีมีน: โอกาสเงินเปิดกว้าง",
+"duration": "01:23",
+"privacy": "Everyone",
+"when": "2026-11-10T12:15+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7706027344267414792",
+"url": "https://www.tiktok.com/@futurebest88/video/7706027344267414792",
+"cover": "data/covers/7706027344267414792.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 10/11/2569 🥇 ราศีมีน 95% — งานใหญ่เงินก้อนโต 🥈 ราศีก",
+"hook": "",
+"duration": "00:39",
+"privacy": "Everyone",
+"when": "2026-11-10T09:35+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7706025972935560466",
+"url": "https://www.tiktok.com/@futurebest88/video/7706025972935560466",
+"cover": "data/covers/7706025972935560466.jpg",
+"title": "ดวงการงาน 12 ราศี • 10/11/2569",
+"hook": "ราศีมีน: ผู้ใหญ่เมตตางานใหม่",
+"duration": "01:15",
+"privacy": "Everyone",
+"when": "2026-11-10T07:00+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7705830898314317074",
 "url": "https://www.tiktok.com/@futurebest88/video/7705830898314317074",
@@ -38,8 +80,8 @@
 "duration": "00:35",
 "privacy": "Everyone",
 "when": "2026-11-09T09:15+07:00",
-"scheduled": true,
-"views": 0,
+"scheduled": false,
+"views": 19,
 "likes": 0,
 "comments": 0
 },
@@ -52,10 +94,10 @@
 "duration": "01:08",
 "privacy": "Everyone",
 "when": "2026-11-09T07:00+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
-"comments": 0
+"scheduled": false,
+"views": 105,
+"likes": 9,
+"comments": 1
 },
 {
 "id": "7705353914824035591",
@@ -67,8 +109,8 @@
 "privacy": "Everyone",
 "when": "2026-11-08T18:15+07:00",
 "scheduled": false,
-"views": 34,
-"likes": 0,
+"views": 90,
+"likes": 1,
 "comments": 0
 },
 {
@@ -81,8 +123,8 @@
 "privacy": "Everyone",
 "when": "2026-11-08T11:50+07:00",
 "scheduled": false,
-"views": 87,
-"likes": 2,
+"views": 105,
+"likes": 3,
 "comments": 0
 },
 {
@@ -109,8 +151,8 @@
 "privacy": "Everyone",
 "when": "2026-11-08T06:45+07:00",
 "scheduled": false,
-"views": 117,
-"likes": 5,
+"views": 118,
+"likes": 4,
 "comments": 1
 },
 {
@@ -123,7 +165,7 @@
 "privacy": "Everyone",
 "when": "2026-11-07T17:50+07:00",
 "scheduled": false,
-"views": 167,
+"views": 169,
 "likes": 10,
 "comments": 0
 },
@@ -279,48 +321,6 @@
 "scheduled": false,
 "views": 115,
 "likes": 0,
-"comments": 0
-},
-{
-"id": "7703977412316466440",
-"url": "https://www.tiktok.com/@futurebest88/video/7703977412316466440",
-"cover": "data/covers/7703977412316466440.jpg",
-"title": "ดวงความรัก 12 ราศี • 4/11/2569",
-"hook": "ราศีเมถุน: เสน่ห์แรงมีคนเข้าหา",
-"duration": "01:34",
-"privacy": "Everyone",
-"when": "2026-11-04T17:45+07:00",
-"scheduled": false,
-"views": 119,
-"likes": 2,
-"comments": 0
-},
-{
-"id": "7704051896901782791",
-"url": "https://www.tiktok.com/@futurebest88/video/7704051896901782791",
-"cover": "data/covers/7704051896901782791.jpg",
-"title": "ดวงการเงิน 12 ราศี • 4/11/2569",
-"hook": "ราศีเมษ: เงินไหลเข้าไม่ขาดสาย",
-"duration": "01:30",
-"privacy": "Everyone",
-"when": "2026-11-04T12:05+07:00",
-"scheduled": false,
-"views": 102,
-"likes": 2,
-"comments": 0
-},
-{
-"id": "7704049190607031560",
-"url": "https://www.tiktok.com/@futurebest88/video/7704049190607031560",
-"cover": "data/covers/7704049190607031560.jpg",
-"title": "ดวงโชคลาภ 12 ราศี • 4/11/2569",
-"hook": "ราศีเมถุน: ผู้ใหญ่ให้ของมีค่า",
-"duration": "01:42",
-"privacy": "Everyone",
-"when": "2026-11-04T09:30+07:00",
-"scheduled": false,
-"views": 201,
-"likes": 6,
 "comments": 0
 }
 ]
