@@ -1,5 +1,5 @@
 {
-"synced_at": "2026-11-09T12:50+07:00",
+"synced_at": "2026-11-09T22:38+07:00",
 "posts": [
 {
 "id": "7706028239633911047",
@@ -52,9 +52,9 @@
 "duration": "00:52",
 "privacy": "Everyone",
 "when": "2026-11-09T18:10+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
+"scheduled": false,
+"views": 62,
+"likes": 1,
 "comments": 0
 },
 {
@@ -67,8 +67,8 @@
 "privacy": "Everyone",
 "when": "2026-11-09T11:55+07:00",
 "scheduled": false,
-"views": 2,
-"likes": 0,
+"views": 86,
+"likes": 1,
 "comments": 0
 },
 {
@@ -81,8 +81,8 @@
 "privacy": "Everyone",
 "when": "2026-11-09T09:15+07:00",
 "scheduled": false,
-"views": 33,
-"likes": 2,
+"views": 99,
+"likes": 5,
 "comments": 0
 },
 {
@@ -95,9 +95,9 @@
 "privacy": "Everyone",
 "when": "2026-11-09T07:00+07:00",
 "scheduled": false,
-"views": 182,
-"likes": 12,
-"comments": 1
+"views": 318,
+"likes": 14,
+"comments": 3
 },
 {
 "id": "7705353914824035591",
@@ -109,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-08T18:15+07:00",
 "scheduled": false,
-"views": 92,
+"views": 107,
 "likes": 1,
 "comments": 0
 },
@@ -123,7 +123,7 @@
 "privacy": "Everyone",
 "when": "2026-11-08T11:50+07:00",
 "scheduled": false,
-"views": 105,
+"views": 106,
 "likes": 3,
 "comments": 0
 },
@@ -137,7 +137,7 @@
 "privacy": "Everyone",
 "when": "2026-11-08T09:15+07:00",
 "scheduled": false,
-"views": 121,
+"views": 122,
 "likes": 5,
 "comments": 0
 },
@@ -151,7 +151,7 @@
 "privacy": "Everyone",
 "when": "2026-11-08T06:45+07:00",
 "scheduled": false,
-"views": 118,
+"views": 119,
 "likes": 4,
 "comments": 1
 },
@@ -165,7 +165,7 @@
 "privacy": "Everyone",
 "when": "2026-11-07T17:50+07:00",
 "scheduled": false,
-"views": 169,
+"views": 180,
 "likes": 10,
 "comments": 0
 },
@@ -193,7 +193,7 @@
 "privacy": "Everyone",
 "when": "2026-11-07T09:40+07:00",
 "scheduled": false,
-"views": 178,
+"views": 179,
 "likes": 13,
 "comments": 0
 },
@@ -235,8 +235,8 @@
 "privacy": "Everyone",
 "when": "2026-11-06T12:00+07:00",
 "scheduled": false,
-"views": 132,
-"likes": 1,
+"views": 133,
+"likes": 0,
 "comments": 0
 },
 {
