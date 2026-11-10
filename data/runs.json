@@ -749,5 +749,14 @@
 "sound": "조용한 아침 / 02:51 · 이서 도어",
 "result": "scheduled",
 "scheduled_at": "2026-11-11T09:40+07:00"
+},
+{
+"ts": "2026-11-11T01:38+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/42846809761",
+"login_days": 152,
+"slot": "2026-11-10-18",
+"theme": "ความรัก",
+"result": "failed"
 }
 ]
