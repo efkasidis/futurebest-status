@@ -1,6 +1,20 @@
 {
-"synced_at": "2026-11-11T02:12+07:00",
+"synced_at": "2026-11-11T05:48+07:00",
 "posts": [
+{
+"id": "7706678228404014343",
+"url": "https://www.tiktok.com/@futurebest88/video/7706678228404014343",
+"cover": "data/covers/7706678228404014343.jpg",
+"title": "ดวงการงาน 12 ราศี • 12/11/2569",
+"hook": "ราศีมีน: ผู้ใหญ่เปิดทางงาน",
+"duration": "01:40",
+"privacy": "Everyone",
+"when": "2026-11-12T07:15+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7706622689695288584",
 "url": "https://www.tiktok.com/@futurebest88/video/7706622689695288584",
@@ -67,7 +81,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T17:45+07:00",
 "scheduled": false,
-"views": 53,
+"views": 79,
 "likes": 2,
 "comments": 0
 },
@@ -81,7 +95,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T12:15+07:00",
 "scheduled": false,
-"views": 49,
+"views": 50,
 "likes": 0,
 "comments": 0
 },
@@ -95,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T09:35+07:00",
 "scheduled": false,
-"views": 124,
+"views": 128,
 "likes": 3,
 "comments": 0
 },
@@ -109,7 +123,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T07:00+07:00",
 "scheduled": false,
-"views": 106,
+"views": 113,
 "likes": 1,
 "comments": 0
 },
@@ -308,20 +322,6 @@
 "views": 133,
 "likes": 0,
 "comments": 0
-},
-{
-"id": "7704545162097167634",
-"url": "https://www.tiktok.com/@futurebest88/video/7704545162097167634",
-"cover": "data/covers/7704545162097167634.jpg",
-"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 6/11/2569 🥇 ราศีพฤษภ 95% — งานรักโชคปังสุด 🥈 ราศีมัง",
-"hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
-"duration": "00:35",
-"privacy": "Everyone",
-"when": "2026-11-06T09:30+07:00",
-"scheduled": false,
-"views": 128,
-"likes": 5,
-"comments": 2
 }
 ]
 }
