@@ -1,6 +1,34 @@
 {
-"synced_at": "2026-11-10T02:28+07:00",
+"synced_at": "2026-11-10T09:10+07:00",
 "posts": [
+{
+"id": "7706359357356641544",
+"url": "https://www.tiktok.com/@futurebest88/video/7706359357356641544",
+"cover": "data/covers/7706359357356641544.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 11/11/2569 🥇 ราศีมีน 95% — โชคใหญ่หล่นทับ 🥈 ราศีกรกฎ",
+"hook": "",
+"duration": "",
+"privacy": "Everyone",
+"when": "",
+"scheduled": false,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7706357527860006151",
+"url": "https://www.tiktok.com/@futurebest88/video/7706357527860006151",
+"cover": "data/covers/7706357527860006151.jpg",
+"title": "เลือกไพ่ 1 ใบ • ข้อความจากจักรวาลถึงคุณ 11/11/2569 1️⃣ ไพ่ขนนก — โล่งใจหายเหนื่อ",
+"hook": "",
+"duration": "01:04",
+"privacy": "Everyone",
+"when": "2026-11-11T06:50+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7706255744823250184",
 "url": "https://www.tiktok.com/@futurebest88/video/7706255744823250184",
@@ -52,8 +80,8 @@
 "duration": "01:15",
 "privacy": "Everyone",
 "when": "2026-11-10T07:00+07:00",
-"scheduled": true,
-"views": 0,
+"scheduled": false,
+"views": 5,
 "likes": 0,
 "comments": 0
 },
@@ -67,8 +95,8 @@
 "privacy": "Everyone",
 "when": "2026-11-09T18:10+07:00",
 "scheduled": false,
-"views": 126,
-"likes": 7,
+"views": 298,
+"likes": 17,
 "comments": 0
 },
 {
@@ -81,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-09T11:55+07:00",
 "scheduled": false,
-"views": 93,
+"views": 107,
 "likes": 1,
 "comments": 0
 },
@@ -95,7 +123,7 @@
 "privacy": "Everyone",
 "when": "2026-11-09T09:15+07:00",
 "scheduled": false,
-"views": 109,
+"views": 119,
 "likes": 6,
 "comments": 0
 },
@@ -293,34 +321,6 @@
 "scheduled": false,
 "views": 105,
 "likes": 1,
-"comments": 0
-},
-{
-"id": "7704266981368777991",
-"url": "https://www.tiktok.com/@futurebest88/video/7704266981368777991",
-"cover": "data/covers/7704266981368777991.jpg",
-"title": "ดวงการเงิน 12 ราศี • 5/11/2569",
-"hook": "ราศีมังกร: ผู้ใหญ่หนุนช่องทางเงิน",
-"duration": "01:29",
-"privacy": "Everyone",
-"when": "2026-11-05T11:50+07:00",
-"scheduled": false,
-"views": 111,
-"likes": 3,
-"comments": 0
-},
-{
-"id": "7704264675352923399",
-"url": "https://www.tiktok.com/@futurebest88/video/7704264675352923399",
-"cover": "data/covers/7704264675352923399.jpg",
-"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 5/11/2569 🥇 ราศีธนู 75% — งานรุ่งโชคใหญ่เข้า 🥈 ราศีส",
-"hook": "",
-"duration": "00:39",
-"privacy": "Everyone",
-"when": "2026-11-05T09:20+07:00",
-"scheduled": false,
-"views": 150,
-"likes": 10,
 "comments": 0
 }
 ]
