@@ -1,6 +1,34 @@
 {
-"synced_at": "2026-11-11T01:38+07:00",
+"synced_at": "2026-11-11T02:12+07:00",
 "posts": [
+{
+"id": "7706622689695288584",
+"url": "https://www.tiktok.com/@futurebest88/video/7706622689695288584",
+"cover": "data/covers/7706622689695288584.jpg",
+"title": "💞 3 คู่ราศีสมพงษ์ความรัก • 11/11/2569 🥇 ราศีกันย์ × ราศีมังกร 90% — แค่มองตาก็รู",
+"hook": "",
+"duration": "00:55",
+"privacy": "Everyone",
+"when": "2026-11-11T18:00+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7706620480907660596",
+"url": "https://www.tiktok.com/@futurebest88/video/7706620480907660596",
+"cover": "data/covers/7706620480907660596.jpg",
+"title": "ดวงการเงิน 12 ราศี • 11/11/2569",
+"hook": "ราศีมีน: ผู้ใหญ่ให้โอกาสเงิน",
+"duration": "01:18",
+"privacy": "Everyone",
+"when": "2026-11-11T11:55+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7706359357356641544",
 "url": "https://www.tiktok.com/@futurebest88/video/7706359357356641544",
@@ -39,7 +67,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T17:45+07:00",
 "scheduled": false,
-"views": 50,
+"views": 53,
 "likes": 2,
 "comments": 0
 },
@@ -67,8 +95,8 @@
 "privacy": "Everyone",
 "when": "2026-11-10T09:35+07:00",
 "scheduled": false,
-"views": 120,
-"likes": 2,
+"views": 124,
+"likes": 3,
 "comments": 0
 },
 {
@@ -294,34 +322,6 @@
 "views": 128,
 "likes": 5,
 "comments": 2
-},
-{
-"id": "7704543956192726280",
-"url": "https://www.tiktok.com/@futurebest88/video/7704543956192726280",
-"cover": "data/covers/7704543956192726280.jpg",
-"title": "ดวงการงาน 12 ราศี • 6/11/2569",
-"hook": "ราศีพฤษภ: โอกาสใหญ่ไหลเข้า",
-"duration": "01:20",
-"privacy": "Everyone",
-"when": "2026-11-06T07:00+07:00",
-"scheduled": false,
-"views": 120,
-"likes": 3,
-"comments": 0
-},
-{
-"id": "7704269325309398280",
-"url": "https://www.tiktok.com/@futurebest88/video/7704269325309398280",
-"cover": "data/covers/7704269325309398280.jpg",
-"title": "ดวงความรัก 12 ราศี • 5/11/2569",
-"hook": "ราศีพฤษภ: มีเกณฑ์พบรักสดใส",
-"duration": "01:54",
-"privacy": "Everyone",
-"when": "2026-11-05T17:55+07:00",
-"scheduled": false,
-"views": 106,
-"likes": 1,
-"comments": 0
 }
 ]
 }
