@@ -758,5 +758,33 @@
 "slot": "2026-11-10-18",
 "theme": "ความรัก",
 "result": "failed"
+},
+{
+"ts": "2026-11-11T02:12+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/42878183999",
+"login_days": 152,
+"slot": "2026-11-11-12",
+"theme": "การเงิน",
+"best": [
+2,
+6
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-11T11:55+07:00"
+},
+{
+"ts": "2026-11-11T02:12+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/42878183999",
+"login_days": 152,
+"slot": "2026-11-11-18",
+"theme": "คู่สมพงษ์",
+"best": [
+8,
+0
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-11T18:00+07:00"
 }
 ]
