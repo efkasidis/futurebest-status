@@ -722,5 +722,32 @@
 ],
 "result": "scheduled",
 "scheduled_at": "2026-11-10T17:45+07:00"
+},
+{
+"ts": "2026-11-10T09:10+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/42714241034",
+"login_days": 152,
+"slot": "2026-11-11-07",
+"theme": "เลือกไพ่",
+"best": [],
+"result": "scheduled",
+"scheduled_at": "2026-11-11T06:50+07:00"
+},
+{
+"ts": "2026-11-10T09:10+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/42714241034",
+"login_days": 152,
+"slot": "2026-11-11-09",
+"theme": "พุ่งแรง",
+"best": [
+2,
+6,
+8
+],
+"sound": "조용한 아침 / 02:51 · 이서 도어",
+"result": "scheduled",
+"scheduled_at": "2026-11-11T09:40+07:00"
 }
 ]
