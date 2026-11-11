@@ -1,6 +1,34 @@
 {
-"synced_at": "2026-11-11T09:02+07:00",
+"synced_at": "2026-11-11T10:20+07:00",
 "posts": [
+{
+"id": "7706748373579074868",
+"url": "https://www.tiktok.com/@futurebest88/video/7706748373579074868",
+"cover": "data/covers/7706748373579074868.jpg",
+"title": "ดวงการเงิน 12 ราศี • 12/11/2569",
+"hook": "ราศีมีน: โอกาสทองเงินไหลมา",
+"duration": "01:48",
+"privacy": "Everyone",
+"when": "2026-11-12T12:00+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7706746954105048338",
+"url": "https://www.tiktok.com/@futurebest88/video/7706746954105048338",
+"cover": "data/covers/7706746954105048338.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 12/11/2569 🥇 ราศีมีน 85% — โชคใหญ่เงินเข้า 🥈 ราศีกรก",
+"hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
+"duration": "00:41",
+"privacy": "Everyone",
+"when": "2026-11-12T09:30+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7706678228404014343",
 "url": "https://www.tiktok.com/@futurebest88/video/7706678228404014343",
@@ -52,7 +80,7 @@
 "duration": "00:40",
 "privacy": "Everyone",
 "when": "2026-11-11T09:40+07:00",
-"scheduled": true,
+"scheduled": false,
 "views": 0,
 "likes": 0,
 "comments": 0
@@ -67,7 +95,7 @@
 "privacy": "Everyone",
 "when": "2026-11-11T06:50+07:00",
 "scheduled": false,
-"views": 12,
+"views": 20,
 "likes": 0,
 "comments": 0
 },
@@ -81,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T17:45+07:00",
 "scheduled": false,
-"views": 102,
+"views": 110,
 "likes": 2,
 "comments": 0
 },
@@ -95,7 +123,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T12:15+07:00",
 "scheduled": false,
-"views": 56,
+"views": 57,
 "likes": 0,
 "comments": 0
 },
@@ -109,7 +137,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T09:35+07:00",
 "scheduled": false,
-"views": 140,
+"views": 150,
 "likes": 4,
 "comments": 0
 },
@@ -294,34 +322,6 @@
 "views": 113,
 "likes": 5,
 "comments": 1
-},
-{
-"id": "7704717756347813138",
-"url": "https://www.tiktok.com/@futurebest88/video/7704717756347813138",
-"cover": "data/covers/7704717756347813138.jpg",
-"title": "ดวงความรัก 12 ราศี • 6/11/2569",
-"hook": "ราศีมังกร: เสน่ห์แรงเคมีตรงกัน",
-"duration": "01:30",
-"privacy": "",
-"when": "2026-11-06T17:50+07:00",
-"scheduled": false,
-"views": 1,
-"likes": 0,
-"comments": 0
-},
-{
-"id": "7704546122357837064",
-"url": "https://www.tiktok.com/@futurebest88/video/7704546122357837064",
-"cover": "data/covers/7704546122357837064.jpg",
-"title": "ดวงการเงิน 12 ราศี • 6/11/2569",
-"hook": "ราศีมังกร: ผู้ใหญ่พร้อมดันเงินทุน",
-"duration": "01:25",
-"privacy": "Everyone",
-"when": "2026-11-06T12:00+07:00",
-"scheduled": false,
-"views": 133,
-"likes": 0,
-"comments": 0
 }
 ]
 }
