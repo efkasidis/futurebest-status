@@ -1,6 +1,20 @@
 {
-"synced_at": "2026-11-11T14:11+07:00",
+"synced_at": "2026-11-12T00:10+07:00",
 "posts": [
+{
+"id": "7706962176967265588",
+"url": "https://www.tiktok.com/@futurebest88/video/7706962176967265588",
+"cover": "data/covers/7706962176967265588.jpg",
+"title": "ดวงความรัก 12 ราศี • 12/11/2569",
+"hook": "ราศีเมษ: เสน่ห์แรงคนเข้าหา",
+"duration": "01:28",
+"privacy": "Everyone",
+"when": "2026-11-12T17:45+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7706748373579074868",
 "url": "https://www.tiktok.com/@futurebest88/video/7706748373579074868",
@@ -52,9 +66,9 @@
 "duration": "00:55",
 "privacy": "Everyone",
 "when": "2026-11-11T18:00+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
+"scheduled": false,
+"views": 68,
+"likes": 5,
 "comments": 0
 },
 {
@@ -67,8 +81,8 @@
 "privacy": "Everyone",
 "when": "2026-11-11T11:55+07:00",
 "scheduled": false,
-"views": 11,
-"likes": 1,
+"views": 82,
+"likes": 3,
 "comments": 0
 },
 {
@@ -81,8 +95,8 @@
 "privacy": "Everyone",
 "when": "2026-11-11T09:40+07:00",
 "scheduled": false,
-"views": 26,
-"likes": 1,
+"views": 86,
+"likes": 4,
 "comments": 0
 },
 {
@@ -95,9 +109,9 @@
 "privacy": "Everyone",
 "when": "2026-11-11T06:50+07:00",
 "scheduled": false,
-"views": 60,
+"views": 96,
 "likes": 0,
-"comments": 1
+"comments": 2
 },
 {
 "id": "7706255744823250184",
@@ -109,7 +123,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T17:45+07:00",
 "scheduled": false,
-"views": 136,
+"views": 172,
 "likes": 3,
 "comments": 0
 },
@@ -123,7 +137,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T12:15+07:00",
 "scheduled": false,
-"views": 62,
+"views": 85,
 "likes": 0,
 "comments": 0
 },
@@ -165,7 +179,7 @@
 "privacy": "Everyone",
 "when": "2026-11-09T18:10+07:00",
 "scheduled": false,
-"views": 388,
+"views": 395,
 "likes": 23,
 "comments": 0
 },
@@ -308,20 +322,6 @@
 "views": 179,
 "likes": 13,
 "comments": 0
-},
-{
-"id": "7705099684884319496",
-"url": "https://www.tiktok.com/@futurebest88/video/7705099684884319496",
-"cover": "data/covers/7705099684884319496.jpg",
-"title": "เลือกไพ่ 1 ใบ • ข้อความจากจักรวาลถึงคุณ 7/11/2569 1️⃣ ไพ่กุญแจ — คำตอบที่รอคอย 2",
-"hook": "ไพ่ชุดของช่อง FutureBest • เพื่อความบันเทิง #เลือกไพ่ #ไพ่ทำนาย #ข้อความจากจักรวาล #ดูดวง ",
-"duration": "01:05",
-"privacy": "Everyone",
-"when": "2026-11-07T06:50+07:00",
-"scheduled": false,
-"views": 113,
-"likes": 5,
-"comments": 1
 }
 ]
 }
