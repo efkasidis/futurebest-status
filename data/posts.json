@@ -1,6 +1,48 @@
 {
-"synced_at": "2026-11-12T00:10+07:00",
+"synced_at": "2026-11-12T14:45+07:00",
 "posts": [
+{
+"id": "7707187783344917767",
+"url": "https://www.tiktok.com/@futurebest88/video/7707187783344917767",
+"cover": "data/covers/7707187783344917767.jpg",
+"title": "ดวงการเงิน 12 ราศี • 13/11/2569",
+"hook": "ราศีเมษ: โอกาสทองเปิดทางเงิน",
+"duration": "01:32",
+"privacy": "Everyone",
+"when": "2026-11-13T12:10+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7707186410532408583",
+"url": "https://www.tiktok.com/@futurebest88/video/7707186410532408583",
+"cover": "data/covers/7707186410532408583.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 13/11/2569 🥇 ราศีสิงห์ 100% — โชคใหญ่สมบูรณ์แบบ 🥈 รา",
+"hook": "",
+"duration": "00:39",
+"privacy": "Everyone",
+"when": "2026-11-13T09:20+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7707182340220439815",
+"url": "https://www.tiktok.com/@futurebest88/video/7707182340220439815",
+"cover": "data/covers/7707182340220439815.jpg",
+"title": "เลือกไพ่ 1 ใบ • ข้อความจากจักรวาลถึงคุณ 13/11/2569 1️⃣ ไพ่ดวงดาว — โชคดีปังเกินค",
+"hook": "ไพ่ชุดของช่อง FutureBest • เพื่อความบันเทิง #เลือกไพ่ #ไพ่ทำนาย #ข้อความจากจักรวาล #ดูดวง ",
+"duration": "01:05",
+"privacy": "Everyone",
+"when": "2026-11-13T07:05+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7706962176967265588",
 "url": "https://www.tiktok.com/@futurebest88/video/7706962176967265588",
@@ -24,8 +66,8 @@
 "duration": "01:48",
 "privacy": "Everyone",
 "when": "2026-11-12T12:00+07:00",
-"scheduled": true,
-"views": 0,
+"scheduled": false,
+"views": 22,
 "likes": 0,
 "comments": 0
 },
@@ -38,9 +80,9 @@
 "duration": "00:41",
 "privacy": "Everyone",
 "when": "2026-11-12T09:30+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
+"scheduled": false,
+"views": 40,
+"likes": 1,
 "comments": 0
 },
 {
@@ -52,8 +94,8 @@
 "duration": "01:40",
 "privacy": "Everyone",
 "when": "2026-11-12T07:15+07:00",
-"scheduled": true,
-"views": 0,
+"scheduled": false,
+"views": 86,
 "likes": 0,
 "comments": 0
 },
@@ -67,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-11T18:00+07:00",
 "scheduled": false,
-"views": 68,
+"views": 119,
 "likes": 5,
 "comments": 0
 },
@@ -81,8 +123,8 @@
 "privacy": "Everyone",
 "when": "2026-11-11T11:55+07:00",
 "scheduled": false,
-"views": 82,
-"likes": 3,
+"views": 113,
+"likes": 7,
 "comments": 0
 },
 {
@@ -95,8 +137,8 @@
 "privacy": "Everyone",
 "when": "2026-11-11T09:40+07:00",
 "scheduled": false,
-"views": 86,
-"likes": 4,
+"views": 107,
+"likes": 5,
 "comments": 0
 },
 {
@@ -109,9 +151,9 @@
 "privacy": "Everyone",
 "when": "2026-11-11T06:50+07:00",
 "scheduled": false,
-"views": 96,
+"views": 109,
 "likes": 0,
-"comments": 2
+"comments": 4
 },
 {
 "id": "7706255744823250184",
@@ -123,7 +165,7 @@
 "privacy": "Everyone",
 "when": "2026-11-10T17:45+07:00",
 "scheduled": false,
-"views": 172,
+"views": 185,
 "likes": 3,
 "comments": 0
 },
@@ -280,48 +322,6 @@
 "views": 119,
 "likes": 4,
 "comments": 1
-},
-{
-"id": "7705355432356760850",
-"url": "https://www.tiktok.com/@futurebest88/video/7705355432356760850",
-"cover": "data/covers/7705355432356760850.jpg",
-"title": "💞 3 คู่ราศีสมพงษ์ความรัก • 7/11/2569 🥇 ราศีพฤษภ × ราศีกันย์ 90% — มองตาก็รู้ใจกั",
-"hook": "",
-"duration": "00:48",
-"privacy": "Everyone",
-"when": "2026-11-07T17:50+07:00",
-"scheduled": false,
-"views": 180,
-"likes": 10,
-"comments": 0
-},
-{
-"id": "7705092272517418247",
-"url": "https://www.tiktok.com/@futurebest88/video/7705092272517418247",
-"cover": "data/covers/7705092272517418247.jpg",
-"title": "ดวงการเงิน 12 ราศี • 7/11/2569",
-"hook": "ราศีมังกร: ผู้ใหญ่พร้อมเพิ่มงบ",
-"duration": "01:22",
-"privacy": "Everyone",
-"when": "2026-11-07T12:05+07:00",
-"scheduled": false,
-"views": 106,
-"likes": 6,
-"comments": 0
-},
-{
-"id": "7705087002781404434",
-"url": "https://www.tiktok.com/@futurebest88/video/7705087002781404434",
-"cover": "data/covers/7705087002781404434.jpg",
-"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 7/11/2569 🥇 ราศีพฤษภ 95% — งานและโชคปังสุดๆ 🥈 ราศีมั",
-"hook": "",
-"duration": "00:35",
-"privacy": "Everyone",
-"when": "2026-11-07T09:40+07:00",
-"scheduled": false,
-"views": 179,
-"likes": 13,
-"comments": 0
 }
 ]
 }
