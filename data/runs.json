@@ -1000,5 +1000,46 @@
 "slot": "2026-11-12-18",
 "theme": "ความรัก",
 "result": "skipped"
+},
+{
+"ts": "2026-11-13T19:46+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/43426043982",
+"login_days": 149,
+"slot": "2026-11-14-18",
+"theme": "ความรัก",
+"best": [
+3,
+7
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-14T17:50+07:00"
+},
+{
+"ts": "2026-11-13T19:46+07:00",
+"kind": "post",
+"slot": "2026-11-14-07",
+"theme": "การงาน",
+"result": "scheduled",
+"backfilled": true,
+"scheduled_at": "2026-11-14T07:15+07:00"
+},
+{
+"ts": "2026-11-13T19:46+07:00",
+"kind": "post",
+"slot": "2026-11-14-09",
+"theme": "พุ่งแรง",
+"result": "scheduled",
+"backfilled": true,
+"scheduled_at": "2026-11-14T09:40+07:00"
+},
+{
+"ts": "2026-11-13T19:46+07:00",
+"kind": "post",
+"slot": "2026-11-14-12",
+"theme": "การเงิน",
+"result": "scheduled",
+"backfilled": true,
+"scheduled_at": "2026-11-14T11:55+07:00"
 }
 ]
