@@ -1240,5 +1240,18 @@
 ],
 "result": "scheduled",
 "scheduled_at": "2026-11-15T18:05+07:00"
+},
+{
+"ts": "2026-11-15T02:31+07:00",
+"kind": "test",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/43631982908",
+"login_days": 148,
+"slot": "2026-11-16-07",
+"theme": "เลือกไพ่",
+"voice": "f5:ref_13+bright",
+"best": [],
+"voice_avg": 0.983,
+"voice_min": 0.971,
+"result": "preview"
 }
 ]
