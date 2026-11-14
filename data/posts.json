@@ -1,20 +1,6 @@
 {
-"synced_at": "2026-11-14T16:48+07:00",
+"synced_at": "2026-11-14T19:07+07:00",
 "posts": [
-{
-"id": "7707961667279244564",
-"url": "https://www.tiktok.com/@futurebest88/video/7707961667279244564",
-"cover": "data/covers/7707961667279244564.jpg",
-"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 15/11/2569 🥇 ราศีกันย์ 100% — เงินงานรักโชคปังสุด 🥈 ",
-"hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
-"duration": "",
-"privacy": "Everyone",
-"when": "",
-"scheduled": false,
-"views": 0,
-"likes": 0,
-"comments": 0
-},
 {
 "id": "7707946973839756564",
 "url": "https://www.tiktok.com/@futurebest88/video/7707946973839756564",
@@ -30,14 +16,14 @@
 "comments": 0
 },
 {
-"id": "7707959570315873556",
-"url": "https://www.tiktok.com/@futurebest88/video/7707959570315873556",
-"cover": "data/covers/7707959570315873556.jpg",
-"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 15/11/2569 🥇 ราศีกันย์ 100% — โชคใหญ่เข้าทุกด้าน 🥈 ร",
+"id": "7707961667279244564",
+"url": "https://www.tiktok.com/@futurebest88/video/7707961667279244564",
+"cover": "data/covers/7707961667279244564.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 15/11/2569 🥇 ราศีกันย์ 100% — เงินงานรักโชคปังสุด 🥈 ",
 "hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
-"duration": "00:40",
+"duration": "01:01",
 "privacy": "Everyone",
-"when": "2026-11-15T09:45+07:00",
+"when": "2026-11-15T09:25+07:00",
 "scheduled": true,
 "views": 0,
 "likes": 0,
@@ -66,8 +52,8 @@
 "duration": "01:28",
 "privacy": "Everyone",
 "when": "2026-11-14T17:50+07:00",
-"scheduled": true,
-"views": 0,
+"scheduled": false,
+"views": 1,
 "likes": 0,
 "comments": 0
 },
@@ -81,7 +67,7 @@
 "privacy": "Everyone",
 "when": "2026-11-14T11:55+07:00",
 "scheduled": false,
-"views": 54,
+"views": 73,
 "likes": 3,
 "comments": 2
 },
@@ -95,8 +81,8 @@
 "privacy": "Everyone",
 "when": "2026-11-14T09:40+07:00",
 "scheduled": false,
-"views": 84,
-"likes": 1,
+"views": 102,
+"likes": 2,
 "comments": 0
 },
 {
@@ -123,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-13T17:55+07:00",
 "scheduled": false,
-"views": 139,
+"views": 144,
 "likes": 5,
 "comments": 0
 },
@@ -321,6 +307,20 @@
 "scheduled": false,
 "views": 154,
 "likes": 4,
+"comments": 0
+},
+{
+"id": "7706025972935560466",
+"url": "https://www.tiktok.com/@futurebest88/video/7706025972935560466",
+"cover": "data/covers/7706025972935560466.jpg",
+"title": "ดวงการงาน 12 ราศี • 10/11/2569",
+"hook": "ราศีมีน: ผู้ใหญ่เมตตางานใหม่",
+"duration": "01:15",
+"privacy": "Everyone",
+"when": "2026-11-10T07:00+07:00",
+"scheduled": false,
+"views": 122,
+"likes": 2,
 "comments": 0
 }
 ]
