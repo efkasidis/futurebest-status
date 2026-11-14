@@ -1,5 +1,5 @@
 {
-"synced_at": "2026-11-14T19:07+07:00",
+"synced_at": "2026-11-14T22:09+07:00",
 "posts": [
 {
 "id": "7707946973839756564",
@@ -10,6 +10,20 @@
 "duration": "01:19",
 "privacy": "Everyone",
 "when": "2026-11-15T11:45+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7708044334095928597",
+"url": "https://www.tiktok.com/@futurebest88/video/7708044334095928597",
+"cover": "data/covers/7708044334095928597.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 15/11/2569 🥇 ราศีกันย์ 100% — โชคใหญ่หลั่งไหลมา 🥈 รา",
+"hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
+"duration": "01:00",
+"privacy": "Everyone",
+"when": "2026-11-15T09:45+07:00",
 "scheduled": true,
 "views": 0,
 "likes": 0,
@@ -53,7 +67,7 @@
 "privacy": "Everyone",
 "when": "2026-11-14T17:50+07:00",
 "scheduled": false,
-"views": 1,
+"views": 20,
 "likes": 0,
 "comments": 0
 },
@@ -67,8 +81,8 @@
 "privacy": "Everyone",
 "when": "2026-11-14T11:55+07:00",
 "scheduled": false,
-"views": 73,
-"likes": 3,
+"views": 91,
+"likes": 4,
 "comments": 2
 },
 {
@@ -81,8 +95,8 @@
 "privacy": "Everyone",
 "when": "2026-11-14T09:40+07:00",
 "scheduled": false,
-"views": 102,
-"likes": 2,
+"views": 110,
+"likes": 3,
 "comments": 0
 },
 {
@@ -95,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-14T07:15+07:00",
 "scheduled": false,
-"views": 87,
+"views": 89,
 "likes": 2,
 "comments": 0
 },
@@ -109,7 +123,7 @@
 "privacy": "Everyone",
 "when": "2026-11-13T17:55+07:00",
 "scheduled": false,
-"views": 144,
+"views": 158,
 "likes": 5,
 "comments": 0
 },
@@ -137,7 +151,7 @@
 "privacy": "Everyone",
 "when": "2026-11-13T09:20+07:00",
 "scheduled": false,
-"views": 115,
+"views": 116,
 "likes": 4,
 "comments": 0
 },
@@ -307,20 +321,6 @@
 "scheduled": false,
 "views": 154,
 "likes": 4,
-"comments": 0
-},
-{
-"id": "7706025972935560466",
-"url": "https://www.tiktok.com/@futurebest88/video/7706025972935560466",
-"cover": "data/covers/7706025972935560466.jpg",
-"title": "ดวงการงาน 12 ราศี • 10/11/2569",
-"hook": "ราศีมีน: ผู้ใหญ่เมตตางานใหม่",
-"duration": "01:15",
-"privacy": "Everyone",
-"when": "2026-11-10T07:00+07:00",
-"scheduled": false,
-"views": 122,
-"likes": 2,
 "comments": 0
 }
 ]
