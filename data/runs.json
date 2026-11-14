@@ -1279,5 +1279,22 @@
 "slot": "2026-11-14-18",
 "theme": "ความรัก",
 "result": "failed"
+},
+{
+"ts": "2026-11-15T03:35+07:00",
+"kind": "test",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/43636934883",
+"login_days": 148,
+"slot": "2026-11-16-18",
+"theme": "ความรักสั้น",
+"voice": "f5:ref_13+bright",
+"best": [
+0,
+1,
+2
+],
+"voice_avg": 0.988,
+"voice_min": 0.955,
+"result": "preview"
 }
 ]
