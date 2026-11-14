@@ -1,6 +1,48 @@
 {
-"synced_at": "2026-11-13T20:23+07:00",
+"synced_at": "2026-11-14T15:51+07:00",
 "posts": [
+{
+"id": "7707946973839756564",
+"url": "https://www.tiktok.com/@futurebest88/video/7707946973839756564",
+"cover": "data/covers/7707946973839756564.jpg",
+"title": "ดวงการเงิน 12 ราศี • 15/11/2569",
+"hook": "ราศีกันย์: เงินไหลมารอบทิศทาง",
+"duration": "01:19",
+"privacy": "Everyone",
+"when": "2026-11-15T11:45+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7707943143227870484",
+"url": "https://www.tiktok.com/@futurebest88/video/7707943143227870484",
+"cover": "data/covers/7707943143227870484.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 15/11/2569 🥇 ราศีกันย์ 100% — รับทรัพย์ใหญ่ทุกทาง 🥈 ",
+"hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
+"duration": "00:40",
+"privacy": "Everyone",
+"when": "2026-11-15T09:40+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7707941754774752533",
+"url": "https://www.tiktok.com/@futurebest88/video/7707941754774752533",
+"cover": "data/covers/7707941754774752533.jpg",
+"title": "เลือกไพ่ 1 ใบ • ข้อความจากจักรวาลถึงคุณ 15/11/2569 1️⃣ ไพ่หัวใจ — ไออุ่นโอบล้อม ",
+"hook": "",
+"duration": "01:05",
+"privacy": "Everyone",
+"when": "2026-11-15T07:10+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7707636368180055317",
 "url": "https://www.tiktok.com/@futurebest88/video/7707636368180055317",
@@ -24,10 +66,10 @@
 "duration": "01:25",
 "privacy": "Everyone",
 "when": "2026-11-14T11:55+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
-"comments": 0
+"scheduled": false,
+"views": 50,
+"likes": 3,
+"comments": 1
 },
 {
 "id": "7707630144743099669",
@@ -38,9 +80,9 @@
 "duration": "00:40",
 "privacy": "Everyone",
 "when": "2026-11-14T09:40+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
+"scheduled": false,
+"views": 69,
+"likes": 1,
 "comments": 0
 },
 {
@@ -52,9 +94,9 @@
 "duration": "01:23",
 "privacy": "Everyone",
 "when": "2026-11-14T07:15+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
+"scheduled": false,
+"views": 78,
+"likes": 2,
 "comments": 0
 },
 {
@@ -67,8 +109,8 @@
 "privacy": "Everyone",
 "when": "2026-11-13T17:55+07:00",
 "scheduled": false,
-"views": 20,
-"likes": 1,
+"views": 135,
+"likes": 4,
 "comments": 0
 },
 {
@@ -81,7 +123,7 @@
 "privacy": "Everyone",
 "when": "2026-11-13T12:10+07:00",
 "scheduled": false,
-"views": 66,
+"views": 110,
 "likes": 1,
 "comments": 0
 },
@@ -95,8 +137,8 @@
 "privacy": "Everyone",
 "when": "2026-11-13T09:20+07:00",
 "scheduled": false,
-"views": 81,
-"likes": 3,
+"views": 115,
+"likes": 4,
 "comments": 0
 },
 {
@@ -109,7 +151,7 @@
 "privacy": "Everyone",
 "when": "2026-11-13T07:05+07:00",
 "scheduled": false,
-"views": 90,
+"views": 102,
 "likes": 2,
 "comments": 0
 },
@@ -123,7 +165,7 @@
 "privacy": "Everyone",
 "when": "2026-11-12T17:45+07:00",
 "scheduled": false,
-"views": 104,
+"views": 116,
 "likes": 2,
 "comments": 0
 },
@@ -151,7 +193,7 @@
 "privacy": "Everyone",
 "when": "2026-11-12T09:30+07:00",
 "scheduled": false,
-"views": 109,
+"views": 110,
 "likes": 3,
 "comments": 0
 },
@@ -165,7 +207,7 @@
 "privacy": "Everyone",
 "when": "2026-11-12T07:15+07:00",
 "scheduled": false,
-"views": 109,
+"views": 110,
 "likes": 1,
 "comments": 0
 },
@@ -279,48 +321,6 @@
 "scheduled": false,
 "views": 122,
 "likes": 2,
-"comments": 0
-},
-{
-"id": "7705830898314317074",
-"url": "https://www.tiktok.com/@futurebest88/video/7705830898314317074",
-"cover": "data/covers/7705830898314317074.jpg",
-"title": "💞 3 คู่ราศีสมพงษ์ความรัก • 9/11/2569 🥇 ราศีเมถุน × ราศีกุมภ์ 88% — แค่มองตาก็รู้",
-"hook": "",
-"duration": "00:52",
-"privacy": "Everyone",
-"when": "2026-11-09T18:10+07:00",
-"scheduled": false,
-"views": 396,
-"likes": 23,
-"comments": 0
-},
-{
-"id": "7705829052107525383",
-"url": "https://www.tiktok.com/@futurebest88/video/7705829052107525383",
-"cover": "data/covers/7705829052107525383.jpg",
-"title": "ดวงการเงิน 12 ราศี • 9/11/2569",
-"hook": "ราศีเมถุน: โชคเงินไหลเข้ามาลื่น",
-"duration": "01:27",
-"privacy": "Everyone",
-"when": "2026-11-09T11:55+07:00",
-"scheduled": false,
-"views": 162,
-"likes": 2,
-"comments": 0
-},
-{
-"id": "7705826451735448850",
-"url": "https://www.tiktok.com/@futurebest88/video/7705826451735448850",
-"cover": "data/covers/7705826451735448850.jpg",
-"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 9/11/2569 🥇 ราศีกุมภ์ 95% — โชคใหญ่ล้นมือ 🥈 ราศีเมถุ",
-"hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
-"duration": "00:35",
-"privacy": "Everyone",
-"when": "2026-11-09T09:15+07:00",
-"scheduled": false,
-"views": 124,
-"likes": 6,
 "comments": 0
 }
 ]
