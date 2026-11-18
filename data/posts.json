@@ -1,6 +1,20 @@
 {
-"synced_at": "2026-11-18T17:30+07:00",
+"synced_at": "2026-11-18T18:44+07:00",
 "posts": [
+{
+"id": "7709475852710366485",
+"url": "https://www.tiktok.com/@futurebest88/video/7709475852710366485",
+"cover": "data/covers/7709475852710366485.jpg",
+"title": "💞 3 คู่ราศีสมพงษ์ความรัก • 19/11/2569 🥇 ราศีเมถุน × ราศีตุลย์ 88% — มองตาก็รู้ใจ",
+"hook": "",
+"duration": "00:21",
+"privacy": "Everyone",
+"when": "2026-11-19T17:55+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7709343440156380437",
 "url": "https://www.tiktok.com/@futurebest88/video/7709343440156380437",
@@ -52,8 +66,8 @@
 "duration": "00:26",
 "privacy": "Everyone",
 "when": "2026-11-18T18:00+07:00",
-"scheduled": true,
-"views": 0,
+"scheduled": false,
+"views": 3,
 "likes": 0,
 "comments": 0
 },
@@ -67,7 +81,7 @@
 "privacy": "Everyone",
 "when": "2026-11-18T12:05+07:00",
 "scheduled": false,
-"views": 63,
+"views": 69,
 "likes": 1,
 "comments": 0
 },
@@ -81,7 +95,7 @@
 "privacy": "Everyone",
 "when": "2026-11-18T09:30+07:00",
 "scheduled": false,
-"views": 102,
+"views": 104,
 "likes": 3,
 "comments": 0
 },
@@ -95,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-18T07:05+07:00",
 "scheduled": false,
-"views": 68,
+"views": 70,
 "likes": 1,
 "comments": 0
 },
@@ -306,20 +320,6 @@
 "when": "2026-11-14T09:40+07:00",
 "scheduled": false,
 "views": 127,
-"likes": 3,
-"comments": 0
-},
-{
-"id": "7707628572814658836",
-"url": "https://www.tiktok.com/@futurebest88/video/7707628572814658836",
-"cover": "data/covers/7707628572814658836.jpg",
-"title": "ดวงการงาน 12 ราศี • 14/11/2569",
-"hook": "ราศีเมษ: ผู้ใหญ่ยื่นข้อเสนอ",
-"duration": "01:23",
-"privacy": "Everyone",
-"when": "2026-11-14T07:15+07:00",
-"scheduled": false,
-"views": 95,
 "likes": 3,
 "comments": 0
 }
