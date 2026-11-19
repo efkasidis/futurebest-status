@@ -1,6 +1,20 @@
 {
-"synced_at": "2026-11-19T17:42+07:00",
+"synced_at": "2026-11-19T18:33+07:00",
 "posts": [
+{
+"id": "7709844049053699348",
+"url": "https://www.tiktok.com/@futurebest88/video/7709844049053699348",
+"cover": "data/covers/7709844049053699348.jpg",
+"title": "💕 ดวงความรักวันนี้ พุ่งแรงสุดคือใคร? • 20/11/2569 🥇 ราศีมังกร",
+"hook": "กดบันทึกไว้ดูทั้งวัน",
+"duration": "00:27",
+"privacy": "Everyone",
+"when": "2026-11-20T18:05+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7709714695917227316",
 "url": "https://www.tiktok.com/@futurebest88/video/7709714695917227316",
@@ -52,8 +66,8 @@
 "duration": "00:21",
 "privacy": "Everyone",
 "when": "2026-11-19T17:55+07:00",
-"scheduled": true,
-"views": 0,
+"scheduled": false,
+"views": 8,
 "likes": 0,
 "comments": 0
 },
@@ -67,7 +81,7 @@
 "privacy": "Everyone",
 "when": "2026-11-19T11:55+07:00",
 "scheduled": false,
-"views": 63,
+"views": 65,
 "likes": 6,
 "comments": 0
 },
@@ -81,7 +95,7 @@
 "privacy": "Everyone",
 "when": "2026-11-19T09:30+07:00",
 "scheduled": false,
-"views": 69,
+"views": 70,
 "likes": 3,
 "comments": 0
 },
@@ -95,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-19T06:45+07:00",
 "scheduled": false,
-"views": 66,
+"views": 67,
 "likes": 3,
 "comments": 0
 },
@@ -308,20 +322,6 @@
 "views": 114,
 "likes": 2,
 "comments": 0
-},
-{
-"id": "7707941754774752533",
-"url": "https://www.tiktok.com/@futurebest88/video/7707941754774752533",
-"cover": "data/covers/7707941754774752533.jpg",
-"title": "เลือกไพ่ 1 ใบ • ข้อความจากจักรวาลถึงคุณ 15/11/2569 1️⃣ ไพ่หัวใจ — ไออุ่นโอบล้อม ",
-"hook": "",
-"duration": "01:05",
-"privacy": "Everyone",
-"when": "2026-11-15T07:10+07:00",
-"scheduled": false,
-"views": 131,
-"likes": 3,
-"comments": 2
 }
 ]
 }
