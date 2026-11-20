@@ -1728,5 +1728,47 @@
 ],
 "result": "scheduled",
 "scheduled_at": "2026-11-20T18:05+07:00"
+},
+{
+"ts": "2026-11-20T13:12+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/44630084360",
+"login_days": 142,
+"slot": "2026-11-21-07",
+"theme": "การงานสั้น",
+"best": [
+0
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-21T06:45+07:00"
+},
+{
+"ts": "2026-11-20T13:12+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/44630084360",
+"login_days": 142,
+"slot": "2026-11-21-09",
+"theme": "พุ่งแรง",
+"best": [
+6,
+10,
+0
+],
+"sound": "소소한 하루의 작은 행복 / 00:31 · 박민재",
+"result": "scheduled",
+"scheduled_at": "2026-11-21T09:45+07:00"
+},
+{
+"ts": "2026-11-20T13:12+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/44630084360",
+"login_days": 142,
+"slot": "2026-11-21-12",
+"theme": "การเงินสั้น",
+"best": [
+0
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-21T12:05+07:00"
 }
 ]
