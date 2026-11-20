@@ -1770,5 +1770,19 @@
 ],
 "result": "scheduled",
 "scheduled_at": "2026-11-21T12:05+07:00"
+},
+{
+"ts": "2026-11-20T18:37+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/44726537478",
+"login_days": 142,
+"slot": "2026-11-21-18",
+"theme": "คู่สมพงษ์",
+"best": [
+4,
+0
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-21T17:55+07:00"
 }
 ]
