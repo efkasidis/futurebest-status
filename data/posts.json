@@ -1,6 +1,20 @@
 {
-"synced_at": "2026-11-21T05:20+07:00",
+"synced_at": "2026-11-21T08:26+07:00",
 "posts": [
+{
+"id": "7710429870219595029",
+"url": "https://www.tiktok.com/@futurebest88/video/7710429870219595029",
+"cover": "data/covers/7710429870219595029.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 22/11/2569 🥇 ราศีสิงห์ 95% — รับโชคใหญ่ล้นมือ 🥈 ราศี",
+"hook": "",
+"duration": "00:23",
+"privacy": "Everyone",
+"when": "2026-11-22T09:15+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7710381883242155285",
 "url": "https://www.tiktok.com/@futurebest88/video/7710381883242155285",
@@ -66,9 +80,9 @@
 "duration": "00:27",
 "privacy": "Everyone",
 "when": "2026-11-21T06:45+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
+"scheduled": false,
+"views": 18,
+"likes": 1,
 "comments": 0
 },
 {
@@ -81,7 +95,7 @@
 "privacy": "Everyone",
 "when": "2026-11-20T18:05+07:00",
 "scheduled": false,
-"views": 35,
+"views": 56,
 "likes": 2,
 "comments": 0
 },
@@ -109,7 +123,7 @@
 "privacy": "Everyone",
 "when": "2026-11-20T09:30+07:00",
 "scheduled": false,
-"views": 104,
+"views": 105,
 "likes": 5,
 "comments": 2
 },
@@ -123,7 +137,7 @@
 "privacy": "Everyone",
 "when": "2026-11-20T07:00+07:00",
 "scheduled": false,
-"views": 69,
+"views": 76,
 "likes": 1,
 "comments": 0
 },
@@ -308,20 +322,6 @@
 "views": 116,
 "likes": 5,
 "comments": 0
-},
-{
-"id": "7708344629615185172",
-"url": "https://www.tiktok.com/@futurebest88/video/7708344629615185172",
-"cover": "data/covers/7708344629615185172.jpg",
-"title": "💰 ดวงการเงินวันนี้ พุ่งแรงสุดคือใคร? • 16/11/2569 🥇 ราศีกันย์",
-"hook": "กดบันทึกไว้ดูทั้งวัน",
-"duration": "00:26",
-"privacy": "Everyone",
-"when": "2026-11-16T11:55+07:00",
-"scheduled": false,
-"views": 119,
-"likes": 6,
-"comments": 5
 }
 ]
 }
