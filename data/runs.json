@@ -1795,5 +1795,21 @@
 "best": [],
 "result": "scheduled",
 "scheduled_at": "2026-11-22T07:15+07:00"
+},
+{
+"ts": "2026-11-21T08:26+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/44849699386",
+"login_days": 141,
+"slot": "2026-11-22-09",
+"theme": "พุ่งแรง",
+"best": [
+7,
+11,
+5
+],
+"sound": "거리 모퉁이 / 03:28 · 방구석 조명",
+"result": "scheduled",
+"scheduled_at": "2026-11-22T09:15+07:00"
 }
 ]
