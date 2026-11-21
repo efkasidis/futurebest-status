@@ -1,6 +1,20 @@
 {
-"synced_at": "2026-11-21T08:26+07:00",
+"synced_at": "2026-11-21T10:12+07:00",
 "posts": [
+{
+"id": "7710457191223971092",
+"url": "https://www.tiktok.com/@futurebest88/video/7710457191223971092",
+"cover": "data/covers/7710457191223971092.jpg",
+"title": "💰 ดวงการเงินวันนี้ พุ่งแรงสุดคือใคร? • 22/11/2569 🥇 ราศีเมษ",
+"hook": "กดบันทึกไว้ดูทั้งวัน",
+"duration": "00:26",
+"privacy": "Everyone",
+"when": "2026-11-22T12:05+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7710429870219595029",
 "url": "https://www.tiktok.com/@futurebest88/video/7710429870219595029",
@@ -66,7 +80,7 @@
 "duration": "00:23",
 "privacy": "Everyone",
 "when": "2026-11-21T09:45+07:00",
-"scheduled": true,
+"scheduled": false,
 "views": 0,
 "likes": 0,
 "comments": 0
@@ -81,8 +95,8 @@
 "privacy": "Everyone",
 "when": "2026-11-21T06:45+07:00",
 "scheduled": false,
-"views": 18,
-"likes": 1,
+"views": 41,
+"likes": 4,
 "comments": 0
 },
 {
@@ -95,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-20T18:05+07:00",
 "scheduled": false,
-"views": 56,
+"views": 61,
 "likes": 2,
 "comments": 0
 },
@@ -137,7 +151,7 @@
 "privacy": "Everyone",
 "when": "2026-11-20T07:00+07:00",
 "scheduled": false,
-"views": 76,
+"views": 78,
 "likes": 1,
 "comments": 0
 },
@@ -307,20 +321,6 @@
 "scheduled": false,
 "views": 99,
 "likes": 3,
-"comments": 0
-},
-{
-"id": "7708346491907099924",
-"url": "https://www.tiktok.com/@futurebest88/video/7708346491907099924",
-"cover": "data/covers/7708346491907099924.jpg",
-"title": "💕 ดวงความรักวันนี้ พุ่งแรงสุดคือใคร? • 16/11/2569 🥇 ราศีมังกร",
-"hook": "กดบันทึกไว้ดูทั้งวัน",
-"duration": "00:27",
-"privacy": "Everyone",
-"when": "2026-11-16T18:10+07:00",
-"scheduled": false,
-"views": 116,
-"likes": 5,
 "comments": 0
 }
 ]
