@@ -1,6 +1,20 @@
 {
-"synced_at": "2026-11-21T12:00+07:00",
+"synced_at": "2026-11-21T17:08+07:00",
 "posts": [
+{
+"id": "7710564501166263572",
+"url": "https://www.tiktok.com/@futurebest88/video/7710564501166263572",
+"cover": "data/covers/7710564501166263572.jpg",
+"title": "💕 ดวงความรักวันนี้ พุ่งแรงสุดคือใคร? • 22/11/2569 🥇 ราศีกุมภ์",
+"hook": "กดบันทึกไว้ดูทั้งวัน",
+"duration": "00:28",
+"privacy": "Everyone",
+"when": "2026-11-22T17:55+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7710457191223971092",
 "url": "https://www.tiktok.com/@futurebest88/video/7710457191223971092",
@@ -66,9 +80,9 @@
 "duration": "00:26",
 "privacy": "Everyone",
 "when": "2026-11-21T12:05+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
+"scheduled": false,
+"views": 52,
+"likes": 2,
 "comments": 0
 },
 {
@@ -81,8 +95,8 @@
 "privacy": "Everyone",
 "when": "2026-11-21T09:45+07:00",
 "scheduled": false,
-"views": 21,
-"likes": 0,
+"views": 66,
+"likes": 3,
 "comments": 0
 },
 {
@@ -95,8 +109,8 @@
 "privacy": "Everyone",
 "when": "2026-11-21T06:45+07:00",
 "scheduled": false,
-"views": 74,
-"likes": 6,
+"views": 87,
+"likes": 10,
 "comments": 0
 },
 {
@@ -109,8 +123,8 @@
 "privacy": "Everyone",
 "when": "2026-11-20T18:05+07:00",
 "scheduled": false,
-"views": 73,
-"likes": 4,
+"views": 94,
+"likes": 6,
 "comments": 1
 },
 {
@@ -123,7 +137,7 @@
 "privacy": "Everyone",
 "when": "2026-11-20T11:45+07:00",
 "scheduled": false,
-"views": 73,
+"views": 75,
 "likes": 10,
 "comments": 2
 },
@@ -137,8 +151,8 @@
 "privacy": "Everyone",
 "when": "2026-11-20T09:30+07:00",
 "scheduled": false,
-"views": 105,
-"likes": 5,
+"views": 107,
+"likes": 6,
 "comments": 2
 },
 {
@@ -307,20 +321,6 @@
 "scheduled": false,
 "views": 97,
 "likes": 6,
-"comments": 0
-},
-{
-"id": "7708838141188132116",
-"url": "https://www.tiktok.com/@futurebest88/video/7708838141188132116",
-"cover": "data/covers/7708838141188132116.jpg",
-"title": "💼 ดวงการงานวันนี้ พุ่งแรงสุดคือใคร? • 17/11/2569 🥇 ราศีกันย์",
-"hook": "กดบันทึกไว้ดูทั้งวัน",
-"duration": "00:25",
-"privacy": "Everyone",
-"when": "2026-11-17T06:55+07:00",
-"scheduled": false,
-"views": 99,
-"likes": 3,
 "comments": 0
 }
 ]
