@@ -1850,5 +1850,61 @@
 "slot": "2026-11-21-18",
 "theme": "คู่สมพงษ์",
 "result": "skipped"
+},
+{
+"ts": "2026-11-22T19:39+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/44974156370",
+"login_days": 140,
+"slot": "2026-11-23-07",
+"theme": "เลือกไพ่",
+"best": [],
+"result": "scheduled",
+"scheduled_at": "2026-11-23T07:00+07:00"
+},
+{
+"ts": "2026-11-22T19:39+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/44974156370",
+"login_days": 140,
+"slot": "2026-11-23-09",
+"theme": "พุ่งแรง",
+"best": [
+7,
+11,
+5
+],
+"sound": "デジタル・ラブ・ビート / 00:32 · 赤電話クラブ",
+"result": "scheduled",
+"scheduled_at": "2026-11-23T09:35+07:00"
+},
+{
+"ts": "2026-11-22T19:39+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/44974156370",
+"login_days": 140,
+"slot": "2026-11-23-12",
+"theme": "การเงินสั้น",
+"best": [
+0,
+1,
+2
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-23T11:55+07:00"
+},
+{
+"ts": "2026-11-22T19:39+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/44974156370",
+"login_days": 140,
+"slot": "2026-11-23-18",
+"theme": "คู่สมพงษ์",
+"best": [
+5,
+1
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-23T17:50+07:00"
 }
 ]
