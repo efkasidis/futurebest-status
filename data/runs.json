@@ -1906,5 +1906,22 @@
 ],
 "result": "scheduled",
 "scheduled_at": "2026-11-23T17:50+07:00"
+},
+{
+"ts": "2026-11-22T19:56+07:00",
+"kind": "test",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45023674778",
+"login_days": 140,
+"slot": "2026-11-23-12",
+"theme": "การเงินสั้น",
+"voice": "f5:tavi1+bright",
+"best": [
+0,
+1,
+2
+],
+"voice_avg": 0.979,
+"voice_min": 0.946,
+"result": "failed"
 }
 ]
