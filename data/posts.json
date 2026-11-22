@@ -1,6 +1,62 @@
 {
-"synced_at": "2026-11-22T03:51+07:00",
+"synced_at": "2026-11-22T19:39+07:00",
 "posts": [
+{
+"id": "7710974539034889492",
+"url": "https://www.tiktok.com/@futurebest88/video/7710974539034889492",
+"cover": "data/covers/7710974539034889492.jpg",
+"title": "💞 3 คู่ราศีสมพงษ์ความรัก • 23/11/2569 🥇 ราศีเมถุน × ราศีกุมภ์ 90% — คู่นี้มองตาก",
+"hook": "",
+"duration": "00:21",
+"privacy": "Everyone",
+"when": "2026-11-23T17:50+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7710972446945332501",
+"url": "https://www.tiktok.com/@futurebest88/video/7710972446945332501",
+"cover": "data/covers/7710972446945332501.jpg",
+"title": "💰 ดวงการเงินวันนี้ พุ่งแรงสุดคือใคร? • 23/11/2569 🥇 ราศีเมษ",
+"hook": "กดบันทึกไว้ดูทั้งวัน",
+"duration": "00:27",
+"privacy": "Everyone",
+"when": "2026-11-23T11:55+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7710968385353321748",
+"url": "https://www.tiktok.com/@futurebest88/video/7710968385353321748",
+"cover": "data/covers/7710968385353321748.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 23/11/2569 🥇 ราศีสิงห์ 100% — โชคใหญ่เข้าก้อนโต 🥈 รา",
+"hook": "",
+"duration": "00:23",
+"privacy": "Everyone",
+"when": "2026-11-23T09:35+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7710966027449928980",
+"url": "https://www.tiktok.com/@futurebest88/video/7710966027449928980",
+"cover": "data/covers/7710966027449928980.jpg",
+"title": "เลือกไพ่ 1 ใบ • ข้อความจากจักรวาลถึงคุณ 23/11/2569 1️⃣ ไพ่หัวใจ — หัวใจเบ่งบาน 2",
+"hook": "",
+"duration": "00:22",
+"privacy": "Everyone",
+"when": "2026-11-23T07:00+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7710564501166263572",
 "url": "https://www.tiktok.com/@futurebest88/video/7710564501166263572",
@@ -10,8 +66,8 @@
 "duration": "00:28",
 "privacy": "Everyone",
 "when": "2026-11-22T17:55+07:00",
-"scheduled": true,
-"views": 0,
+"scheduled": false,
+"views": 5,
 "likes": 0,
 "comments": 0
 },
@@ -24,9 +80,9 @@
 "duration": "00:26",
 "privacy": "Everyone",
 "when": "2026-11-22T12:05+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
+"scheduled": false,
+"views": 87,
+"likes": 3,
 "comments": 0
 },
 {
@@ -38,10 +94,10 @@
 "duration": "00:23",
 "privacy": "Everyone",
 "when": "2026-11-22T09:15+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
-"comments": 0
+"scheduled": false,
+"views": 80,
+"likes": 3,
+"comments": 1
 },
 {
 "id": "7710381883242155285",
@@ -52,10 +108,10 @@
 "duration": "00:22",
 "privacy": "Everyone",
 "when": "2026-11-22T07:15+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
-"comments": 0
+"scheduled": false,
+"views": 88,
+"likes": 5,
+"comments": 1
 },
 {
 "id": "7710216228182281492",
@@ -67,7 +123,7 @@
 "privacy": "Everyone",
 "when": "2026-11-21T17:55+07:00",
 "scheduled": false,
-"views": 41,
+"views": 77,
 "likes": 1,
 "comments": 0
 },
@@ -81,9 +137,9 @@
 "privacy": "Everyone",
 "when": "2026-11-21T12:05+07:00",
 "scheduled": false,
-"views": 79,
+"views": 85,
 "likes": 4,
-"comments": 1
+"comments": 2
 },
 {
 "id": "7710131687585303828",
@@ -95,8 +151,8 @@
 "privacy": "Everyone",
 "when": "2026-11-21T09:45+07:00",
 "scheduled": false,
-"views": 97,
-"likes": 5,
+"views": 104,
+"likes": 6,
 "comments": 0
 },
 {
@@ -109,8 +165,8 @@
 "privacy": "Everyone",
 "when": "2026-11-21T06:45+07:00",
 "scheduled": false,
-"views": 118,
-"likes": 11,
+"views": 129,
+"likes": 12,
 "comments": 0
 },
 {
@@ -125,7 +181,7 @@
 "scheduled": false,
 "views": 95,
 "likes": 6,
-"comments": 1
+"comments": 2
 },
 {
 "id": "7709714695917227316",
@@ -151,7 +207,7 @@
 "privacy": "Everyone",
 "when": "2026-11-20T09:30+07:00",
 "scheduled": false,
-"views": 108,
+"views": 110,
 "likes": 6,
 "comments": 2
 },
@@ -265,62 +321,6 @@
 "scheduled": false,
 "views": 112,
 "likes": 3,
-"comments": 0
-},
-{
-"id": "7709175493555178773",
-"url": "https://www.tiktok.com/@futurebest88/video/7709175493555178773",
-"cover": "data/covers/7709175493555178773.jpg",
-"title": "เลือกไพ่ 1 ใบ • ข้อความจากจักรวาลถึงคุณ 18/11/2569 1️⃣ ไพ่ขนนก — เบาสบายรับข่าวด",
-"hook": "",
-"duration": "00:22",
-"privacy": "Everyone",
-"when": "2026-11-18T07:05+07:00",
-"scheduled": false,
-"views": 81,
-"likes": 2,
-"comments": 0
-},
-{
-"id": "7708844940385668372",
-"url": "https://www.tiktok.com/@futurebest88/video/7708844940385668372",
-"cover": "data/covers/7708844940385668372.jpg",
-"title": "💞 3 คู่ราศีสมพงษ์ความรัก • 17/11/2569 🥇 ราศีเมถุน × ราศีตุลย์ 88% — แค่มองตาก็รู",
-"hook": "",
-"duration": "00:21",
-"privacy": "Everyone",
-"when": "2026-11-17T17:45+07:00",
-"scheduled": false,
-"views": 131,
-"likes": 3,
-"comments": 0
-},
-{
-"id": "7708841708917640468",
-"url": "https://www.tiktok.com/@futurebest88/video/7708841708917640468",
-"cover": "data/covers/7708841708917640468.jpg",
-"title": "💰 ดวงการเงินวันนี้ พุ่งแรงสุดคือใคร? • 17/11/2569 🥇 ราศีกันย์",
-"hook": "กดบันทึกไว้ดูทั้งวัน",
-"duration": "00:25",
-"privacy": "Everyone",
-"when": "2026-11-17T12:10+07:00",
-"scheduled": false,
-"views": 116,
-"likes": 3,
-"comments": 0
-},
-{
-"id": "7708840392283933972",
-"url": "https://www.tiktok.com/@futurebest88/video/7708840392283933972",
-"cover": "data/covers/7708840392283933972.jpg",
-"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 17/11/2569 🥇 ราศีกันย์ 95% — โชคใหญ่เงินเข้าไม่หยุด ",
-"hook": "",
-"duration": "00:23",
-"privacy": "Everyone",
-"when": "2026-11-17T09:40+07:00",
-"scheduled": false,
-"views": 97,
-"likes": 6,
 "comments": 0
 }
 ]
