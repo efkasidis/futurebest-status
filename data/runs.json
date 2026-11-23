@@ -1941,5 +1941,50 @@
 "slot": "2026-11-23-09",
 "theme": "พุ่งแรง",
 "result": "failed"
+},
+{
+"ts": "2026-11-24T03:50+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45259687984",
+"login_days": 139,
+"slot": "2026-11-24-12",
+"theme": "การเงินสั้น",
+"best": [
+0,
+1
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-24T12:15+07:00"
+},
+{
+"ts": "2026-11-24T03:50+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45259687984",
+"login_days": 139,
+"slot": "2026-11-24-18",
+"theme": "ความรักสั้น",
+"best": [
+0
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-24T18:00+07:00"
+},
+{
+"ts": "2026-11-24T03:50+07:00",
+"kind": "post",
+"slot": "2026-11-24-07",
+"theme": "การงานสั้น",
+"result": "scheduled",
+"backfilled": true,
+"scheduled_at": "2026-11-24T07:05+07:00"
+},
+{
+"ts": "2026-11-24T03:50+07:00",
+"kind": "post",
+"slot": "2026-11-24-09",
+"theme": "พุ่งแรง",
+"result": "scheduled",
+"backfilled": true,
+"scheduled_at": "2026-11-24T09:45+07:00"
 }
 ]
