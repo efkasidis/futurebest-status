@@ -1,6 +1,48 @@
 {
-"synced_at": "2026-11-24T22:29+07:00",
+"synced_at": "2026-11-25T03:25+07:00",
 "posts": [
+{
+"id": "7711836709343907093",
+"url": "https://www.tiktok.com/@futurebest88/video/7711836709343907093",
+"cover": "data/covers/7711836709343907093.jpg",
+"title": "💞 3 คู่ราศีสมพงษ์ความรัก • 25/11/2569 🥇 ราศีพฤษภ × ราศีกันย์ 88% — พลังรักธาตุดิ",
+"hook": "",
+"duration": "00:21",
+"privacy": "Everyone",
+"when": "2026-11-25T18:15+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7711832646405344533",
+"url": "https://www.tiktok.com/@futurebest88/video/7711832646405344533",
+"cover": "data/covers/7711832646405344533.jpg",
+"title": "💰 ดวงการเงินวันนี้ พุ่งแรงสุดคือใคร? • 25/11/2569 🥇 ราศีมังกร",
+"hook": "กดบันทึกไว้ดูทั้งวัน",
+"duration": "00:22",
+"privacy": "Everyone",
+"when": "2026-11-25T12:10+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7711831623511100673",
+"url": "https://www.tiktok.com/@futurebest88/video/7711831623511100673",
+"cover": "data/covers/7711831623511100673.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 25/11/2569 🥇 ราศีกันย์ 100% — ผู้ใหญ่ให้โชคใหญ่ 🥈 รา",
+"hook": "",
+"duration": "00:23",
+"privacy": "Everyone",
+"when": "2026-11-25T09:30+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7711472006516018452",
 "url": "https://www.tiktok.com/@futurebest88/video/7711472006516018452",
@@ -11,7 +53,7 @@
 "privacy": "Everyone",
 "when": "2026-11-24T18:00+07:00",
 "scheduled": false,
-"views": 23,
+"views": 55,
 "likes": 1,
 "comments": 0
 },
@@ -39,7 +81,7 @@
 "privacy": "Everyone",
 "when": "2026-11-24T09:45+07:00",
 "scheduled": false,
-"views": 81,
+"views": 82,
 "likes": 8,
 "comments": 0
 },
@@ -280,48 +322,6 @@
 "views": 79,
 "likes": 1,
 "comments": 0
-},
-{
-"id": "7709475852710366485",
-"url": "https://www.tiktok.com/@futurebest88/video/7709475852710366485",
-"cover": "data/covers/7709475852710366485.jpg",
-"title": "💞 3 คู่ราศีสมพงษ์ความรัก • 19/11/2569 🥇 ราศีเมถุน × ราศีตุลย์ 88% — มองตาก็รู้ใจ",
-"hook": "",
-"duration": "00:21",
-"privacy": "Everyone",
-"when": "2026-11-19T17:55+07:00",
-"scheduled": false,
-"views": 94,
-"likes": 4,
-"comments": 0
-},
-{
-"id": "7709343440156380437",
-"url": "https://www.tiktok.com/@futurebest88/video/7709343440156380437",
-"cover": "data/covers/7709343440156380437.jpg",
-"title": "💰 ดวงการเงินวันนี้ พุ่งแรงสุดคือใคร? • 19/11/2569 🥇 ราศีเมษ",
-"hook": "กดบันทึกไว้ดูทั้งวัน",
-"duration": "00:26",
-"privacy": "Everyone",
-"when": "2026-11-19T11:55+07:00",
-"scheduled": false,
-"views": 83,
-"likes": 6,
-"comments": 0
-},
-{
-"id": "7709342937854790932",
-"url": "https://www.tiktok.com/@futurebest88/video/7709342937854790932",
-"cover": "data/covers/7709342937854790932.jpg",
-"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 19/11/2569 🥇 ราศีตุลย์ 100% — ทุกอย่างปังไร้รอยต่อ 🥈",
-"hook": "",
-"duration": "00:27",
-"privacy": "Everyone",
-"when": "2026-11-19T09:30+07:00",
-"scheduled": false,
-"views": 95,
-"likes": 6,
-"comments": 1
 }
 ]
 }
