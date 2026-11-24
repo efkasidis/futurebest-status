@@ -1,5 +1,5 @@
 {
-"synced_at": "2026-11-24T19:46+07:00",
+"synced_at": "2026-11-24T22:29+07:00",
 "posts": [
 {
 "id": "7711472006516018452",
@@ -11,7 +11,7 @@
 "privacy": "Everyone",
 "when": "2026-11-24T18:00+07:00",
 "scheduled": false,
-"views": 9,
+"views": 23,
 "likes": 1,
 "comments": 0
 },
@@ -25,8 +25,8 @@
 "privacy": "Everyone",
 "when": "2026-11-24T12:15+07:00",
 "scheduled": false,
-"views": 82,
-"likes": 4,
+"views": 83,
+"likes": 5,
 "comments": 0
 },
 {
@@ -39,7 +39,7 @@
 "privacy": "Everyone",
 "when": "2026-11-24T09:45+07:00",
 "scheduled": false,
-"views": 80,
+"views": 81,
 "likes": 8,
 "comments": 0
 },
