@@ -2105,5 +2105,14 @@
 ],
 "result": "scheduled",
 "scheduled_at": "2026-11-25T18:15+07:00"
+},
+{
+"ts": "2026-11-25T03:29+07:00",
+"kind": "test",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45474035035",
+"login_days": 138,
+"slot": "2026-11-24-18",
+"theme": "ความรักสั้น",
+"result": "failed"
 }
 ]
