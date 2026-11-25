@@ -1,6 +1,20 @@
 {
-"synced_at": "2026-11-25T18:31+07:00",
+"synced_at": "2026-11-25T19:44+07:00",
 "posts": [
+{
+"id": "7712088990446423316",
+"url": "https://www.tiktok.com/@futurebest88/video/7712088990446423316",
+"cover": "data/covers/7712088990446423316.jpg",
+"title": "💕 ดวงความรักวันนี้ พุ่งแรงสุดคือใคร? • 26/11/2569 🥇 ราศีกุมภ์",
+"hook": "กดบันทึกไว้ดูทั้งวัน",
+"duration": "00:29",
+"privacy": "Everyone",
+"when": "2026-11-26T18:15+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7711967768647699732",
 "url": "https://www.tiktok.com/@futurebest88/video/7711967768647699732",
@@ -53,7 +67,7 @@
 "privacy": "Everyone",
 "when": "2026-11-25T18:15+07:00",
 "scheduled": false,
-"views": 2,
+"views": 8,
 "likes": 0,
 "comments": 0
 },
@@ -81,7 +95,7 @@
 "privacy": "Everyone",
 "when": "2026-11-25T09:30+07:00",
 "scheduled": false,
-"views": 69,
+"views": 82,
 "likes": 3,
 "comments": 0
 },
@@ -95,7 +109,7 @@
 "privacy": "Everyone",
 "when": "2026-11-24T18:00+07:00",
 "scheduled": false,
-"views": 84,
+"views": 86,
 "likes": 2,
 "comments": 0
 },
@@ -308,20 +322,6 @@
 "views": 129,
 "likes": 12,
 "comments": 0
-},
-{
-"id": "7709844049053699348",
-"url": "https://www.tiktok.com/@futurebest88/video/7709844049053699348",
-"cover": "data/covers/7709844049053699348.jpg",
-"title": "💕 ดวงความรักวันนี้ พุ่งแรงสุดคือใคร? • 20/11/2569 🥇 ราศีมังกร",
-"hook": "กดบันทึกไว้ดูทั้งวัน",
-"duration": "00:27",
-"privacy": "Everyone",
-"when": "2026-11-20T18:05+07:00",
-"scheduled": false,
-"views": 95,
-"likes": 6,
-"comments": 2
 }
 ]
 }
