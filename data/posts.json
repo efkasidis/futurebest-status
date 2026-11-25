@@ -1,5 +1,5 @@
 {
-"synced_at": "2026-11-26T01:07+07:00",
+"synced_at": "2026-11-26T01:14+07:00",
 "posts": [
 {
 "id": "7712088990446423316",
@@ -38,6 +38,20 @@
 "duration": "00:27",
 "privacy": "Everyone",
 "when": "2026-11-26T09:40+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7712173927090441478",
+"url": "https://www.tiktok.com/@futurebest88/video/7712173927090441478",
+"cover": "data/covers/7712173927090441478.jpg",
+"title": "💼 ดวงการงานวันนี้ พุ่งแรงสุดคือใคร? • 26/11/2569 🥇 ราศีมังกร",
+"hook": "กดบันทึกไว้ดูทั้งวัน",
+"duration": "00:26",
+"privacy": "Everyone",
+"when": "2026-11-26T07:05+07:00",
 "scheduled": true,
 "views": 0,
 "likes": 0,
@@ -307,20 +321,6 @@
 "scheduled": false,
 "views": 106,
 "likes": 7,
-"comments": 0
-},
-{
-"id": "7710130385404841236",
-"url": "https://www.tiktok.com/@futurebest88/video/7710130385404841236",
-"cover": "data/covers/7710130385404841236.jpg",
-"title": "💼 ดวงการงานวันนี้ พุ่งแรงสุดคือใคร? • 21/11/2569 🥇 ราศีกรกฎ",
-"hook": "กดบันทึกไว้ดูทั้งวัน",
-"duration": "00:27",
-"privacy": "Everyone",
-"when": "2026-11-21T06:45+07:00",
-"scheduled": false,
-"views": 129,
-"likes": 12,
 "comments": 0
 }
 ]
