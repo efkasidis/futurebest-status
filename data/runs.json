@@ -2313,5 +2313,23 @@
 "voice_avg": 0.983,
 "voice_min": 0.958,
 "result": "failed"
+},
+{
+"ts": "2026-11-26T01:44+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45677712239",
+"login_days": 137,
+"slot": "2026-11-26-09",
+"theme": "พุ่งแรง",
+"voice": "f5:tavi1+bright",
+"best": [
+9,
+5,
+1
+],
+"voice_avg": 0.96,
+"voice_min": 0.945,
+"sound": "Defend yourself / 01:00 · Vue Bleue",
+"result": "failed"
 }
 ]
