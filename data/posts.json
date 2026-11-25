@@ -1,5 +1,5 @@
 {
-"synced_at": "2026-11-26T01:14+07:00",
+"synced_at": "2026-11-26T01:19+07:00",
 "posts": [
 {
 "id": "7712088990446423316",
@@ -10,6 +10,20 @@
 "duration": "00:29",
 "privacy": "Everyone",
 "when": "2026-11-26T18:15+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7712175247109147924",
+"url": "https://www.tiktok.com/@futurebest88/video/7712175247109147924",
+"cover": "data/covers/7712175247109147924.jpg",
+"title": "💰 ดวงการเงินวันนี้ พุ่งแรงสุดคือใคร? • 26/11/2569 🥇 ราศีเมษ",
+"hook": "กดบันทึกไว้ดูทั้งวัน",
+"duration": "00:27",
+"privacy": "Everyone",
+"when": "2026-11-26T11:55+07:00",
 "scheduled": true,
 "views": 0,
 "likes": 0,
@@ -81,7 +95,7 @@
 "privacy": "Everyone",
 "when": "2026-11-25T18:15+07:00",
 "scheduled": false,
-"views": 16,
+"views": 17,
 "likes": 0,
 "comments": 0
 },
@@ -308,20 +322,6 @@
 "views": 87,
 "likes": 5,
 "comments": 2
-},
-{
-"id": "7710131687585303828",
-"url": "https://www.tiktok.com/@futurebest88/video/7710131687585303828",
-"cover": "data/covers/7710131687585303828.jpg",
-"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 21/11/2569 🥇 ราศีกรกฎ 95% — รับโอกาสใหญ่รอบด้าน 🥈 รา",
-"hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
-"duration": "00:23",
-"privacy": "Everyone",
-"when": "2026-11-21T09:45+07:00",
-"scheduled": false,
-"views": 106,
-"likes": 7,
-"comments": 0
 }
 ]
 }
