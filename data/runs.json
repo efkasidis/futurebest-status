@@ -2247,5 +2247,21 @@
 "voice_avg": 0.982,
 "voice_min": 0.957,
 "result": "preview"
+},
+{
+"ts": "2026-11-26T01:06+07:00",
+"kind": "test",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45671232322",
+"login_days": 137,
+"slot": "2026-11-26-07",
+"theme": "การงานสั้น",
+"voice": "f5:tavi1+bright",
+"best": [
+0,
+1
+],
+"voice_avg": 0.974,
+"voice_min": 0.956,
+"result": "preview"
 }
 ]
