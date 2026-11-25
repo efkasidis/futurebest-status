@@ -2169,5 +2169,21 @@
 ],
 "result": "scheduled",
 "scheduled_at": "2026-11-26T07:05+07:00"
+},
+{
+"ts": "2026-11-25T09:20+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45531540431",
+"login_days": 137,
+"slot": "2026-11-26-09",
+"theme": "พุ่งแรง",
+"best": [
+9,
+5,
+1
+],
+"sound": "ดาวบนฟ้ายังรอ / 00:50 · ลำธารตอนเย็น",
+"result": "scheduled",
+"scheduled_at": "2026-11-26T09:40+07:00"
 }
 ]
