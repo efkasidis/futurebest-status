@@ -2331,5 +2331,47 @@
 "voice_min": 0.945,
 "sound": "Defend yourself / 01:00 · Vue Bleue",
 "result": "failed"
+},
+{
+"ts": "2026-11-26T11:24+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45721700440",
+"login_days": 136,
+"slot": "2026-11-27-07",
+"theme": "เลือกไพ่",
+"best": [],
+"result": "scheduled",
+"scheduled_at": "2026-11-27T07:00+07:00"
+},
+{
+"ts": "2026-11-26T11:24+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45721700440",
+"login_days": 136,
+"slot": "2026-11-27-09",
+"theme": "พุ่งแรง",
+"best": [
+9,
+1,
+5
+],
+"sound": "책 속 소설 / 01:08 · 미나의 작은 방",
+"result": "scheduled",
+"scheduled_at": "2026-11-27T09:15+07:00"
+},
+{
+"ts": "2026-11-26T11:24+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45721700440",
+"login_days": 136,
+"slot": "2026-11-27-12",
+"theme": "การเงินสั้น",
+"best": [
+0,
+1,
+2
+],
+"result": "scheduled",
+"scheduled_at": "2026-11-27T11:50+07:00"
 }
 ]
