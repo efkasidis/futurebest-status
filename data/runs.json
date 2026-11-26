@@ -2391,5 +2391,21 @@
 "slot": "2026-11-26-09",
 "theme": "พุ่งแรง",
 "result": "skipped"
+},
+{
+"ts": "2026-11-26T22:08+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/45844247855",
+"login_days": 136,
+"slot": "2026-11-27-18",
+"theme": "คู่สมพงษ์",
+"voice": "f5:tavi1+bright",
+"best": [
+5,
+9
+],
+"voice_avg": 0.96,
+"voice_min": 0.907,
+"result": "failed"
 }
 ]
