@@ -1,6 +1,48 @@
 {
-"synced_at": "2026-11-26T04:00+07:00",
+"synced_at": "2026-11-26T11:25+07:00",
 "posts": [
+{
+"id": "7712331341806701825",
+"url": "https://www.tiktok.com/@futurebest88/video/7712331341806701825",
+"cover": "data/covers/7712331341806701825.jpg",
+"title": "💰 ดวงการเงินวันนี้ พุ่งแรงสุดคือใคร? • 27/11/2569 🥇 ราศีเมษ",
+"hook": "กดบันทึกไว้ดูทั้งวัน",
+"duration": "00:26",
+"privacy": "Everyone",
+"when": "2026-11-27T11:50+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7712330564350577940",
+"url": "https://www.tiktok.com/@futurebest88/video/7712330564350577940",
+"cover": "data/covers/7712330564350577940.jpg",
+"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 27/11/2569 🥇 ราศีตุลย์ 100% — โชคหล่นทับทุกทิศ 🥈 ราศ",
+"hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
+"duration": "00:23",
+"privacy": "Everyone",
+"when": "2026-11-27T09:15+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
+{
+"id": "7712329875197267220",
+"url": "https://www.tiktok.com/@futurebest88/video/7712329875197267220",
+"cover": "data/covers/7712329875197267220.jpg",
+"title": "เลือกไพ่ 1 ใบ • ข้อความจากจักรวาลถึงคุณ 27/11/2569 1️⃣ ไพ่ภูเขา — อดทนจนเห็นผล 2",
+"hook": "",
+"duration": "00:22",
+"privacy": "Everyone",
+"when": "2026-11-27T07:00+07:00",
+"scheduled": true,
+"views": 0,
+"likes": 0,
+"comments": 0
+},
 {
 "id": "7712176526736755969",
 "url": "https://www.tiktok.com/@futurebest88/video/7712176526736755969",
@@ -38,10 +80,10 @@
 "duration": "00:27",
 "privacy": "Everyone",
 "when": "2026-11-26T09:40+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
-"comments": 0
+"scheduled": false,
+"views": 35,
+"likes": 4,
+"comments": 2
 },
 {
 "id": "7712173927090441478",
@@ -52,9 +94,9 @@
 "duration": "00:26",
 "privacy": "Everyone",
 "when": "2026-11-26T07:05+07:00",
-"scheduled": true,
-"views": 0,
-"likes": 0,
+"scheduled": false,
+"views": 88,
+"likes": 8,
 "comments": 0
 },
 {
@@ -67,8 +109,8 @@
 "privacy": "Everyone",
 "when": "2026-11-25T18:15+07:00",
 "scheduled": false,
-"views": 24,
-"likes": 0,
+"views": 78,
+"likes": 1,
 "comments": 0
 },
 {
@@ -279,48 +321,6 @@
 "scheduled": false,
 "views": 77,
 "likes": 1,
-"comments": 0
-},
-{
-"id": "7710132628929694996",
-"url": "https://www.tiktok.com/@futurebest88/video/7710132628929694996",
-"cover": "data/covers/7710132628929694996.jpg",
-"title": "💰 ดวงการเงินวันนี้ พุ่งแรงสุดคือใคร? • 21/11/2569 🥇 ราศีกรกฎ",
-"hook": "กดบันทึกไว้ดูทั้งวัน",
-"duration": "00:26",
-"privacy": "Everyone",
-"when": "2026-11-21T12:05+07:00",
-"scheduled": false,
-"views": 87,
-"likes": 5,
-"comments": 2
-},
-{
-"id": "7710131687585303828",
-"url": "https://www.tiktok.com/@futurebest88/video/7710131687585303828",
-"cover": "data/covers/7710131687585303828.jpg",
-"title": "🏆 ราศีดวงพุ่งแรง 3 อันดับ • 21/11/2569 🥇 ราศีกรกฎ 95% — รับโอกาสใหญ่รอบด้าน 🥈 รา",
-"hook": "ช่วงวันเกิดตามเกณฑ์ที่ช่องใช้ • เพื่อความบันเทิง #ดวงพุ่งแรง #ดวงวันนี้ #12ราศี #ดูดวง #สา",
-"duration": "00:23",
-"privacy": "Everyone",
-"when": "2026-11-21T09:45+07:00",
-"scheduled": false,
-"views": 106,
-"likes": 7,
-"comments": 0
-},
-{
-"id": "7710130385404841236",
-"url": "https://www.tiktok.com/@futurebest88/video/7710130385404841236",
-"cover": "data/covers/7710130385404841236.jpg",
-"title": "💼 ดวงการงานวันนี้ พุ่งแรงสุดคือใคร? • 21/11/2569 🥇 ราศีกรกฎ",
-"hook": "กดบันทึกไว้ดูทั้งวัน",
-"duration": "00:27",
-"privacy": "Everyone",
-"when": "2026-11-21T06:45+07:00",
-"scheduled": false,
-"views": 129,
-"likes": 12,
 "comments": 0
 }
 ]
