@@ -1,5 +1,5 @@
 {
-"synced_at": "2026-11-26T11:27+07:00",
+"synced_at": "2026-11-26T11:55+07:00",
 "posts": [
 {
 "id": "7712331341806701825",
@@ -64,9 +64,9 @@
 "title": "💰 ดวงการเงินวันนี้ พุ่งแรงสุดคือใคร? • 26/11/2569 🥇 ราศีเมษ",
 "hook": "กดบันทึกไว้ดูทั้งวัน",
 "duration": "00:27",
-"privacy": "Everyone",
-"when": "2026-11-26T11:55+07:00",
-"scheduled": true,
+"privacy": "",
+"when": "",
+"scheduled": false,
 "views": 0,
 "likes": 0,
 "comments": 0
@@ -81,8 +81,8 @@
 "privacy": "Everyone",
 "when": "2026-11-26T09:40+07:00",
 "scheduled": false,
-"views": 40,
-"likes": 4,
+"views": 60,
+"likes": 5,
 "comments": 2
 },
 {
@@ -95,7 +95,7 @@
 "privacy": "Everyone",
 "when": "2026-11-26T07:05+07:00",
 "scheduled": false,
-"views": 89,
+"views": 92,
 "likes": 8,
 "comments": 0
 },
