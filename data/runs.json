@@ -2422,5 +2422,21 @@
 "voice_avg": 0.971,
 "voice_min": 0.92,
 "result": "failed"
+},
+{
+"ts": "2026-11-28T18:30+07:00",
+"kind": "post",
+"run_url": "https://github.com/efkasidis/tiktok-horoscope-bot/actions/runs/46081448250",
+"login_days": 134,
+"slot": "2026-11-29-18",
+"theme": "คู่สมพงษ์",
+"voice": "f5:tavi1+bright",
+"best": [
+10,
+2
+],
+"voice_avg": 0.968,
+"voice_min": 0.95,
+"result": "failed"
 }
 ]
